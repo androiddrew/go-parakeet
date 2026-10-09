@@ -59,3 +59,23 @@ func TestTextAssembly(t *testing.T) {
 		}
 	}
 }
+
+func TestIncrementalTextAssembly(t *testing.T) {
+	pieces := []string{"▁", "Hello", "▁", "!", "▁", "▁Καλημέρα", "▁κόσμε", "!", "▁", "▁Привет", "▁мир", "▁"}
+	want := Text(pieces)
+	for split := range len(pieces) + 1 {
+		var d TextDecoder
+		got := d.Append(pieces[:split]) + d.Append(pieces[split:])
+		if got != want {
+			t.Fatalf("split %d: %q != %q", split, got, want)
+		}
+	}
+	var d TextDecoder
+	var b strings.Builder
+	for _, piece := range pieces {
+		b.WriteString(d.Append([]string{piece}))
+	}
+	if b.String() != want {
+		t.Fatal(b.String())
+	}
+}

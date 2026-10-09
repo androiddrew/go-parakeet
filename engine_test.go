@@ -1,6 +1,7 @@
 package parakeet
 
 import (
+	"context"
 	"errors"
 	"math"
 	"testing"
@@ -13,19 +14,20 @@ func TestAudioValidation(t *testing.T) {
 		request Request
 		want    error
 	}{
-		{Request{make([]float32, 320), 16000}, nil},
-		{Request{nil, 16000}, ErrInvalidAudio},
-		{Request{make([]float32, 319), 16000}, ErrInvalidAudio},
-		{Request{make([]float32, 320), 24000}, ErrInvalidAudio},
-		{Request{make([]float32, MaxSamples+1), 16000}, ErrAudioTooLong},
+		{Request{Samples: make([]float32, 320), SampleRate: 16000}, nil},
+		{Request{SampleRate: 16000}, ErrInvalidAudio},
+		{Request{Samples: make([]float32, 319), SampleRate: 16000}, ErrInvalidAudio},
+		{Request{Samples: make([]float32, 320), SampleRate: 24000}, ErrInvalidAudio},
+		{Request{Samples: make([]float32, MaxSamples+1), SampleRate: 16000, Chunking: ChunkOptions{SinglePass: true}}, ErrAudioTooLong},
+		{Request{Samples: make([]float32, MaxSamples+1), SampleRate: 16000}, nil},
 	} {
-		if err := validateAudio(test.request); !errors.Is(err, test.want) {
+		if err := validateAudio(context.Background(), test.request); !errors.Is(err, test.want) {
 			t.Fatalf("%v, wanted %v", err, test.want)
 		}
 	}
 	samples := make([]float32, 320)
 	samples[319] = float32(math.NaN())
-	if err := validateAudio(Request{samples, 16000}); !errors.Is(err, ErrInvalidAudio) {
+	if err := validateAudio(context.Background(), Request{Samples: samples, SampleRate: 16000}); !errors.Is(err, ErrInvalidAudio) {
 		t.Fatal(err)
 	}
 }

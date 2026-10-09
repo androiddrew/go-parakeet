@@ -82,19 +82,32 @@ func LoadVocabulary(path string) (Vocabulary, error) {
 // Text reproduces onnx-asr's SentencePiece whitespace cleanup. Raw token pieces
 // remain available separately. It preserves Unicode letters/numbers and punctuation.
 func Text(pieces []string) string {
-	text := strings.ReplaceAll(strings.Join(pieces, ""), "▁", " ")
+	var decoder TextDecoder
+	return decoder.Append(pieces)
+}
+
+// TextDecoder preserves whitespace decisions across finalized chunks without
+// retaining earlier text. A pending space is emitted only when a later word
+// needs it; trailing whitespace requires no final flush.
+type TextDecoder struct {
+	space, haveText bool
+}
+
+func (d *TextDecoder) Append(pieces []string) string {
 	var b strings.Builder
-	space := false
-	for _, r := range text {
-		if unicode.IsSpace(r) {
-			space = true
-			continue
+	for _, piece := range pieces {
+		for _, r := range piece {
+			if r == '▁' || unicode.IsSpace(r) {
+				d.space = true
+				continue
+			}
+			if d.space && d.haveText && (unicode.IsLetter(r) || unicode.IsNumber(r) || r == '_') {
+				b.WriteByte(' ')
+			}
+			d.space = false
+			d.haveText = true
+			b.WriteRune(r)
 		}
-		if space && b.Len() > 0 && (unicode.IsLetter(r) || unicode.IsNumber(r) || r == '_') {
-			b.WriteByte(' ')
-		}
-		space = false
-		b.WriteRune(r)
 	}
 	return b.String()
 }

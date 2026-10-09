@@ -142,7 +142,7 @@ func TestNativeParity(t *testing.T) {
 				t.Fatal("encoder length mismatch")
 			}
 			for range 2 { // catches decoder state leaking across requests
-				result, err := e.Transcribe(context.Background(), Request{samples, SampleRate})
+				result, err := e.Transcribe(context.Background(), Request{Samples: samples, SampleRate: SampleRate})
 				if err != nil {
 					t.Fatal(err)
 				}
@@ -189,13 +189,13 @@ func TestNativeLifecycle(t *testing.T) {
 	if _, err := other.Transcribe(ctx, Request{}); !errors.Is(err, context.Canceled) {
 		t.Fatal(err)
 	}
-	if _, err := other.Transcribe(context.Background(), Request{make([]float32, 1600), SampleRate}); err != nil {
+	if _, err := other.Transcribe(context.Background(), Request{Samples: make([]float32, 1600), SampleRate: SampleRate}); err != nil {
 		t.Fatal("closing one engine invalidated another:", err)
 	}
 	// Exercise the minimum accepted duration and the 8x subsampling boundary,
 	// where physical encoder width and valid sequence length can differ.
 	for _, n := range []int{320, 321, 1279, 1280, 1281} {
-		if _, err := other.Transcribe(context.Background(), Request{make([]float32, n), SampleRate}); err != nil {
+		if _, err := other.Transcribe(context.Background(), Request{Samples: make([]float32, n), SampleRate: SampleRate}); err != nil {
 			t.Fatalf("short input (%d samples): %v", n, err)
 		}
 	}
@@ -212,7 +212,7 @@ func TestNativeLifecycle(t *testing.T) {
 	var wg sync.WaitGroup
 	for range 2 {
 		wg.Go(func() {
-			if _, err := other.Transcribe(context.Background(), Request{make([]float32, 1600), SampleRate}); err != nil && !errors.Is(err, ErrClosed) {
+			if _, err := other.Transcribe(context.Background(), Request{Samples: make([]float32, 1600), SampleRate: SampleRate}); err != nil && !errors.Is(err, ErrClosed) {
 				t.Error(err)
 			}
 		})
@@ -253,7 +253,7 @@ func TestCallerOwnedEnvironment(t *testing.T) {
 		t.Fatal(err)
 	}
 	defer e.Close()
-	if _, err := e.Transcribe(context.Background(), Request{make([]float32, 1600), SampleRate}); err != nil {
+	if _, err := e.Transcribe(context.Background(), Request{Samples: make([]float32, 1600), SampleRate: SampleRate}); err != nil {
 		t.Fatal(err)
 	}
 	if err := e.Close(); err != nil {

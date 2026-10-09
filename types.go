@@ -3,21 +3,32 @@ package parakeet
 
 import (
 	"errors"
+	"time"
 
 	"github.com/androiddrew/go-parakeet/internal/ortruntime"
 )
 
 const SampleRate = 16000
 
-// MaxSamples is the initial single-pass API's conservative 300-second bound.
-// It is not a claim about the maximum supported by every ONNX export or GPU.
-const MaxSamples = 300 * SampleRate
+// MaxWindowSamples bounds each native pass, not the complete recording.
+// It is not a memory guarantee on every GPU or an exact exported-model limit.
+const MaxWindowSamples = 300 * SampleRate
+
+// MaxSamples is retained as an alias for the single-pass bound.
+const MaxSamples = MaxWindowSamples
+
+const (
+	DefaultWindow  = 30 * time.Second
+	DefaultOverlap = 4 * time.Second
+)
 
 var (
-	ErrNotInitialized = ortruntime.ErrNotInitialized
-	ErrClosed         = errors.New("parakeet engine is closed")
-	ErrInvalidAudio   = errors.New("invalid audio")
-	ErrAudioTooLong   = errors.New("audio exceeds the single-pass limit")
+	ErrNotInitialized  = ortruntime.ErrNotInitialized
+	ErrClosed          = errors.New("parakeet engine is closed")
+	ErrInvalidAudio    = errors.New("invalid audio")
+	ErrAudioTooLong    = errors.New("audio exceeds the single-pass limit")
+	ErrInvalidChunking = errors.New("invalid chunking options")
+	ErrUnstableSeam    = errors.New("overlap cannot be finalized within bounded context")
 )
 
 type Provider string
@@ -45,15 +56,30 @@ type Config struct {
 }
 
 // Request supplies already-decoded mono PCM. Samples must remain unmodified
-// until Transcribe returns. Values must be finite, conventionally in [-1, 1].
+// until transcription returns. Values must be finite, conventionally in [-1, 1].
 // No implicit gain, clipping, channel conversion, or resampling is performed.
 type Request struct {
-	Samples    []float32 `json:"-"`
-	SampleRate int       `json:"sample_rate"`
+	Samples    []float32    `json:"-"`
+	SampleRate int          `json:"sample_rate"`
+	Chunking   ChunkOptions `json:"chunking"`
+}
+
+// ChunkOptions controls complete-audio windowing. Zero values enable automatic
+// chunking with 30-second windows and up to 4 seconds of overlap. Window is
+// 2..300 seconds; Overlap is at most half the window. Durations round down to
+// the 80 ms encoder grid. Zero Overlap selects min(4 seconds, Window/4).
+// A positive overlap must round to at least one frame. SinglePass disables
+// windowing and rejects audio beyond MaxWindowSamples; its durations must be zero.
+type ChunkOptions struct {
+	Window     time.Duration `json:"window"`
+	Overlap    time.Duration `json:"overlap"`
+	SinglePass bool          `json:"single_pass"`
 }
 
 // Token records a nonblank decoder emission. Piece is the raw SentencePiece
-// entry. StartSeconds is an emission position, not an aligned word boundary.
+// entry. Frame and StartSeconds are recording-relative emission positions, not
+// aligned word boundaries. Small backwards shifts at seams are clamped to keep
+// the assembled sequence nondecreasing.
 type Token struct {
 	ID           int     `json:"id"`
 	Piece        string  `json:"piece"`
@@ -70,11 +96,41 @@ type Timings struct {
 	AssemblySeconds      float64 `json:"assembly_seconds"`
 }
 
+// ChunkResult is finalized text and owned tokens. Text may start with a space;
+// concatenate it verbatim. The half-open sample span records finalized source
+// coverage, not precise word alignment or the encoder's overlapping window.
+// Seam is empty for the first window, then "aligned" or "timestamp".
+type ChunkResult struct {
+	Index       int     `json:"index"`
+	StartSample int     `json:"start_sample"`
+	EndSample   int     `json:"end_sample"`
+	Text        string  `json:"text"`
+	Tokens      []Token `json:"tokens"`
+	Seam        string  `json:"seam,omitempty"`
+}
+
+// Summary has constant size. Windows counts completed decodes; DeliveredChunks
+// counts callbacks that returned nil. On error it includes completed work and
+// timings (including work in a failed window), excluding time in callbacks.
+// ProcessedSeconds is the furthest decoded sample; FinalizedSeconds is the end
+// of the last successfully delivered chunk. Neither implies recognition accuracy.
+type Summary struct {
+	AudioSeconds     float64 `json:"audio_seconds"`
+	ProcessedSeconds float64 `json:"processed_seconds"`
+	FinalizedSeconds float64 `json:"finalized_seconds"`
+	Windows          int     `json:"windows"`
+	DeliveredChunks  int     `json:"delivered_chunks"`
+	WindowSamples    int     `json:"window_samples"`
+	OverlapSamples   int     `json:"overlap_samples"`
+	Timings          Timings `json:"timings"`
+}
+
+// Result collects the same finalized chunks emitted by TranscribeStream.
 type Result struct {
-	Text         string  `json:"text"`
-	Tokens       []Token `json:"tokens"`
-	AudioSeconds float64 `json:"audio_seconds"`
-	Timings      Timings `json:"timings"`
+	Text   string        `json:"text"`
+	Tokens []Token       `json:"tokens"`
+	Chunks []ChunkResult `json:"chunks"`
+	Summary
 }
 
 // Initialization includes metadata inspection, which loads temporary sessions

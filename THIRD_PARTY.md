@@ -17,7 +17,9 @@ The decoder in `internal/decoder/greedy.go` adapts the decisions in
 `src/onnx_asr/asr.py` and `src/onnx_asr/models/nemo.py`. Changes separate native
 execution from state commits, add context/error checks, and validate outputs.
 `internal/assets/assets.go` implements the reference's SentencePiece whitespace
-cleanup in Go. `tools/fixtures/reference.py` adapts the Python loop into a
+cleanup in Go, extended to preserve cleanup state across finalized callbacks.
+Window planning and the word/time-alignment seam implementation are original
+Go code. `tools/fixtures/reference.py` adapts the Python loop into a
 single-utterance fixture exporter with explicit tensor types and stage dumps.
 
 [achetronic/parakeet](https://github.com/achetronic/parakeet/tree/436daa8a75fa8c6d115a3188e18ef046444edccf)

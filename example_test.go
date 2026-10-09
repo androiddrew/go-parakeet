@@ -33,3 +33,18 @@ func ExampleEngine_Transcribe() {
 	}
 	_ = transcribe
 }
+
+func ExampleEngine_TranscribeStream() {
+	// Reuse an initialized engine. The application owns decoding, resampling,
+	// network framing, and any queue used to consume chunks asynchronously.
+	transcribe := func(ctx context.Context, engine *parakeet.Engine, samples []float32) error {
+		_, err := engine.TranscribeStream(ctx, parakeet.Request{
+			Samples: samples, SampleRate: parakeet.SampleRate,
+		}, func(chunk parakeet.ChunkResult) error {
+			fmt.Print(chunk.Text) // concatenate verbatim, including leading spaces
+			return ctx.Err()
+		})
+		return err
+	}
+	_ = transcribe
+}

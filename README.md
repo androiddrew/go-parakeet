@@ -7,13 +7,11 @@ audio decoding/resampling and their own CLI or serving layer.
 
 ## Development status
 
-Implementation is in progress; v0.1.0 has not been released. **Single-pass
-transcription is implemented**, including CPU/CUDA sessions, token timing,
-metadata, initialization/request timings, and native lifecycle tests.
-Long-audio windowing and finalized-chunk callbacks remain required v0.1.0
-milestones. The current API accepts 20 ms to 300 seconds of audio and rejects
-longer requests; 300 seconds is a conservative API cap, not a measured memory
-guarantee on every machine.
+Implementation is in progress; v0.1.0 has not been released. CPU/CUDA inference,
+**long-audio windowing**, and **finalized-chunk callbacks** are implemented.
+Both transcription methods accept complete audio of at least 20 ms and use the
+same pipeline. A 308-second recording has been checked on CPU FP32/INT8 and CUDA
+FP32; see [VALIDATION.md](VALIDATION.md) for evidence and remaining release gates.
 
 ## Usage
 
@@ -50,11 +48,104 @@ Reuse an initialized engine across requests in an application. For INT8 CPU
 inference, select `encoder-model.int8.onnx` and `decoder_joint-model.int8.onnx`.
 FP32's `encoder-model.onnx.data` must be beside its graph.
 
-`Result.Tokens` retains raw SentencePiece IDs/pieces, emission frames, timestamps,
-and predicted frame advances. `ModelInfo()` returns owned tensor metadata and
+`Result.Tokens` retains raw SentencePiece IDs/pieces, recording-relative emission
+frames/timestamps, and predicted frame advances. `Result.Chunks` contains the
+finalized chunks. Its embedded `Summary` reports duration, decoded windows,
+delivered chunks, finalized source coverage, effective window sizes, and timings.
+`ModelInfo()` returns owned tensor metadata and
 `Initialization()` reports loading times and the actual native runtime version.
-An error returns no partial transcript. Invalid/nonfinite input fails before
+`Transcribe` returns no partial transcript on error. Invalid/nonfinite input fails before
 inference; samples are not rescaled or clipped.
+
+## Long audio
+
+`ChunkOptions{}` automatically uses **30-second windows with 4-second overlap**.
+Audio fitting one window follows the original single-pass path. Customize the
+latency/context tradeoff per request:
+
+```go
+// Import "time" for durations.
+result, err := engine.Transcribe(ctx, parakeet.Request{
+    Samples: samples, SampleRate: parakeet.SampleRate,
+    Chunking: parakeet.ChunkOptions{
+        Window:  30 * time.Second,
+        Overlap: 4 * time.Second,
+    },
+})
+```
+
+- `Window`: 2–300 seconds; zero selects 30 seconds.
+- `Overlap`: positive, at most half the window; zero selects
+  `min(4 seconds, Window/4)`.
+- Durations round down to the 80 ms encoder grid. A positive overlap must round
+  to at least one frame. Effective sizes are reported as sample counts in Summary.
+- `SinglePass: true`: disables windowing and rejects input exceeding
+  `MaxWindowSamples` (300 seconds). Window/Overlap must then be zero.
+- `MaxSamples` remains an alias for the per-pass limit; it no longer limits a
+  normally windowed recording. The cap is not a memory guarantee on every GPU.
+
+Each window is preprocessed independently and starts with fresh decoder state.
+Seam reconciliation aligns whole SentencePiece words using timestamps and a
+bounded word-alignment search. It prefers quiet regions for boundaries and uses
+timestamp ownership when alignment is ambiguous. The unresolved overlap and a
+640 ms timestamp-drift margin are retained until the next window is decoded.
+Small backwards timestamp differences at a splice are clamped, retaining words
+and nondecreasing times. `ChunkResult.Seam` identifies `aligned` or `timestamp`
+joins; its first chunk has an empty seam value.
+
+A pathological unbroken hypothesis that cannot be finalized within two windows'
+maximum token budget returns `ErrUnstableSeam`. This keeps stream memory bounded
+and avoids silently cutting an unresolved word; already delivered chunks remain
+valid. Increasing window context or splitting the input at pauses can help.
+
+Windowing bounds intermediate inference memory. The caller still holds the
+complete PCM input. `Transcribe` additionally retains the complete output.
+Smaller windows change acoustic context and per-window normalization and can
+change recognition. Keep the defaults for INT8 unless shorter windows are
+validated on your inputs: an 8-second stress configuration omitted speech in
+the quantized model's raw predictions on our small corpus.
+
+## Incremental finalized text
+
+Use `TranscribeStream` to consume stable text before the complete recording
+finishes. Reuse the initialized engine from the example above:
+
+```go
+// output is an application-supplied io.Writer.
+summary, err := engine.TranscribeStream(ctx, parakeet.Request{
+    Samples: samples, SampleRate: parakeet.SampleRate,
+}, func(chunk parakeet.ChunkResult) error {
+    // Forward, display, or enqueue the chunk. Text may begin with a space.
+    _, err := io.WriteString(output, chunk.Text)
+    return err
+})
+```
+
+Concatenating `chunk.Text` **verbatim** equals a successful `Transcribe` result
+with the same settings. Text is never revised. Each callback owns its token
+slice, which remains valid after further inference, errors, and engine closure.
+Chunks describe contiguous finalized source spans in `StartSample`/`EndSample`;
+these are progress boundaries, not precise word alignment. Empty text chunks
+can report progress through silence.
+
+The callback is synchronous and applies backpressure. The library starts no
+background goroutines and retains no aggregate output in streaming mode.
+It waits for a complete encoder window before decoding/delivering that window's
+stable prefix; this is incremental output from complete audio, rather than a
+live microphone input API.
+
+**Failure and cancellation:** callback errors stop processing, are wrapped with
+the chunk index, and support `errors.Is`/`errors.As`. Previously delivered data
+remains usable. Summary includes completed work and timings on error;
+`DeliveredChunks` counts callbacks that returned nil, and `FinalizedSeconds`
+ends at the last such chunk. A callback that returns an error may already have
+consumed some of its chunk. Cancellation is checked between native calls and
+before/after callbacks, including the final callback. Blocking callbacks must
+observe context themselves. Timings exclude consumer callback time.
+
+Requests and Close stay serialized for the whole stream. **Do not call
+Transcribe, TranscribeStream, or Close on the same engine from its callback**;
+that can deadlock. Close the engine after transcription returns.
 
 ## Runtime and assets
 
@@ -103,7 +194,8 @@ native Run cannot be interrupted by this binding.
 
 Parakeet v3 supports 25 languages with punctuation and capitalization. Token
 timestamps describe model emission positions, not exact word boundaries.
-The planned incremental API delivers finalized text from complete input audio.
+Incremental delivery finalizes text, not recognition accuracy. Model emission
+timestamps are approximate and can change with chunk settings.
 
 ## Development
 
@@ -122,12 +214,19 @@ generation and CPU/CUDA commands. CUDA needs both the `cuda` build tag and
 `PARAKEET_TEST_CUDA_ORT`.
 
 `cmd/inference-probe` accepts already-resampled little-endian float32 PCM and
-prints JSON metadata, timings, text, and tokens:
+prints JSON metadata, timings, text, and tokens. It accepts long recordings;
+`--window`, `--overlap`, and `--single-pass` control windowing. `--stream` writes
+`type: "chunk"` JSON lines followed by a final `type: "done"` metadata/summary
+object. Failure after partial output exits nonzero without a success summary:
 
 ```bash
 go run ./cmd/inference-probe --assets runtime-assets/parakeet \
     --ort libonnxruntime.so --provider cpu \
     --input artifacts/reference-fp32/clean-us.samples.f32
+
+go run ./cmd/inference-probe --assets runtime-assets/parakeet \
+    --ort libonnxruntime.so --provider cuda --stream \
+    --window 30s --overlap 4s --input artifacts/long/recording.samples.f32
 ```
 
 Original code is [Apache-2.0](LICENSE). See [THIRD_PARTY.md](THIRD_PARTY.md),
