@@ -1,0 +1,212 @@
+{
+  "runtime": "1.22.0",
+  "precision": "int8",
+  "audio_sha256": "bcc12dfe846101fd5ace7334453817acd04a62a94ccc7ef4a2144ec0c856507a",
+  "feature_length": 382,
+  "encoded_length": 48,
+  "text": "The little bird landed on the windowsill. Please open the blue door.",
+  "tokens": [
+    {
+      "id": 1502,
+      "piece": "▁The",
+      "frame": 0,
+      "start_seconds": 0.0,
+      "advance": 2
+    },
+    {
+      "id": 7052,
+      "piece": "▁little",
+      "frame": 2,
+      "start_seconds": 0.16,
+      "advance": 2
+    },
+    {
+      "id": 302,
+      "piece": "▁b",
+      "frame": 5,
+      "start_seconds": 0.4,
+      "advance": 2
+    },
+    {
+      "id": 4430,
+      "piece": "ird",
+      "frame": 7,
+      "start_seconds": 0.56,
+      "advance": 2
+    },
+    {
+      "id": 3650,
+      "piece": "▁land",
+      "frame": 11,
+      "start_seconds": 0.88,
+      "advance": 3
+    },
+    {
+      "id": 326,
+      "piece": "ed",
+      "frame": 14,
+      "start_seconds": 1.12,
+      "advance": 2
+    },
+    {
+      "id": 431,
+      "piece": "▁on",
+      "frame": 16,
+      "start_seconds": 1.28,
+      "advance": 2
+    },
+    {
+      "id": 506,
+      "piece": "▁the",
+      "frame": 18,
+      "start_seconds": 1.44,
+      "advance": 1
+    },
+    {
+      "id": 328,
+      "piece": "▁w",
+      "frame": 19,
+      "start_seconds": 1.52,
+      "advance": 1
+    },
+    {
+      "id": 558,
+      "piece": "ind",
+      "frame": 20,
+      "start_seconds": 1.6,
+      "advance": 2
+    },
+    {
+      "id": 596,
+      "piece": "ow",
+      "frame": 22,
+      "start_seconds": 1.76,
+      "advance": 1
+    },
+    {
+      "id": 7870,
+      "piece": "s",
+      "frame": 23,
+      "start_seconds": 1.84,
+      "advance": 2
+    },
+    {
+      "id": 532,
+      "piece": "ill",
+      "frame": 25,
+      "start_seconds": 2.0,
+      "advance": 2
+    },
+    {
+      "id": 7883,
+      "piece": ".",
+      "frame": 27,
+      "start_seconds": 2.16,
+      "advance": 2
+    },
+    {
+      "id": 373,
+      "piece": "▁P",
+      "frame": 29,
+      "start_seconds": 2.32,
+      "advance": 1
+    },
+    {
+      "id": 337,
+      "piece": "le",
+      "frame": 30,
+      "start_seconds": 2.4,
+      "advance": 1
+    },
+    {
+      "id": 1605,
+      "piece": "ase",
+      "frame": 31,
+      "start_seconds": 2.48,
+      "advance": 2
+    },
+    {
+      "id": 599,
+      "piece": "▁op",
+      "frame": 33,
+      "start_seconds": 2.64,
+      "advance": 2
+    },
+    {
+      "id": 274,
+      "piece": "en",
+      "frame": 35,
+      "start_seconds": 2.8000000000000003,
+      "advance": 2
+    },
+    {
+      "id": 506,
+      "piece": "▁the",
+      "frame": 37,
+      "start_seconds": 2.96,
+      "advance": 1
+    },
+    {
+      "id": 302,
+      "piece": "▁b",
+      "frame": 38,
+      "start_seconds": 3.04,
+      "advance": 1
+    },
+    {
+      "id": 629,
+      "piece": "lu",
+      "frame": 39,
+      "start_seconds": 3.12,
+      "advance": 1
+    },
+    {
+      "id": 7864,
+      "piece": "e",
+      "frame": 40,
+      "start_seconds": 3.2,
+      "advance": 2
+    },
+    {
+      "id": 2892,
+      "piece": "▁door",
+      "frame": 42,
+      "start_seconds": 3.36,
+      "advance": 3
+    },
+    {
+      "id": 7883,
+      "piece": ".",
+      "frame": 45,
+      "start_seconds": 3.6,
+      "advance": 1
+    }
+  ],
+  "stages": {
+    "samples": {
+      "file": "../blobs/f2c2589f09a7535fed93974a6f6ced3f6b4a101567e872f72edf3c2d7e311cbb.f32.gz",
+      "shape": [
+        60971
+      ],
+      "sha256": "f2c2589f09a7535fed93974a6f6ced3f6b4a101567e872f72edf3c2d7e311cbb"
+    },
+    "features": {
+      "file": "../blobs/d2cee8741ecf602efad472cccb0559b2355300c487c5f4dcb73dcbf0091b4c9e.f32.gz",
+      "shape": [
+        1,
+        128,
+        382
+      ],
+      "sha256": "d2cee8741ecf602efad472cccb0559b2355300c487c5f4dcb73dcbf0091b4c9e"
+    },
+    "encoder": {
+      "file": "../blobs/aa3f5e7726a4c6f04225f3411e9e04349fd655e6255d4371216692be3e884490.f32.gz",
+      "shape": [
+        1,
+        1024,
+        48
+      ],
+      "sha256": "aa3f5e7726a4c6f04225f3411e9e04349fd655e6255d4371216692be3e884490"
+    }
+  }
+}

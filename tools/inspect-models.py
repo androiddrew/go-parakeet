@@ -24,6 +24,13 @@ for path in sorted(args.assets.glob("*.onnx")):
         "ir": model.ir_version,
         "opsets": {o.domain: o.version for o in model.opset_import},
         "metadata": {p.key: p.value for p in model.metadata_props},
+        "position_tables": [
+            {"node": node.name, "shape": list(attribute.t.dims)}
+            for node in model.graph.node for attribute in node.attribute
+            if attribute.HasField("t") and len(attribute.t.dims) == 3
+            and attribute.t.dims[0] == 1 and attribute.t.dims[1] >= 5000
+            and attribute.t.dims[2] == 1024
+        ],
         "inputs": [describe(v) for v in model.graph.input],
         "outputs": [describe(v) for v in model.graph.output],
     }, indent=2))

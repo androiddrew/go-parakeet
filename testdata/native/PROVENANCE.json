@@ -1,0 +1,140 @@
+{
+  "license": "Apache-2.0 (original prompts and fixture data)",
+  "model_revision": "8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce",
+  "reference_runtime": "onnxruntime 1.22.0 CPU, one thread",
+  "reference_algorithm": "onnx-asr 675f0e68c24d846ee1775743e92d9b4ed452380e",
+  "sources": {
+    "clean-us": {
+      "request": {
+        "model": "kokoro-v1.0",
+        "voice": "af_heart",
+        "input": "The little bird landed on the windowsill. Please open the blue door.",
+        "speed": 1,
+        "response_format": "wav"
+      },
+      "expected_spoken_text": "The little bird landed on the windowsill. Please open the blue door.",
+      "source": "private Kokoro v1.0 TTS service (OpenAI-compatible speech API)",
+      "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+      "conversion": [
+        "ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "pipe:0",
+        "-af",
+        "aresample=16000:resampler=soxr:precision=28",
+        "-ac",
+        "1",
+        "-c:a",
+        "pcm_s16le",
+        "artifacts/fixtures/clean-us.wav"
+      ],
+      "sha256": {
+        "clean-us.source.wav": "dd22fc521ae45d1c7173658779dda9ca8ac59e61a7c32fc58723cf733feeb3b2",
+        "clean-us.wav": "bcc12dfe846101fd5ace7334453817acd04a62a94ccc7ef4a2144ec0c856507a"
+      }
+    },
+    "clean-gb": {
+      "request": {
+        "model": "kokoro-v1.0",
+        "voice": "bf_emma",
+        "input": "Our meeting starts at half past ten. Please bring a notebook and a pencil.",
+        "speed": 1,
+        "response_format": "wav"
+      },
+      "expected_spoken_text": "Our meeting starts at half past ten. Please bring a notebook and a pencil.",
+      "source": "private Kokoro v1.0 TTS service (OpenAI-compatible speech API)",
+      "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+      "conversion": [
+        "ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "pipe:0",
+        "-af",
+        "aresample=16000:resampler=soxr:precision=28",
+        "-ac",
+        "1",
+        "-c:a",
+        "pcm_s16le",
+        "artifacts/fixtures/clean-gb.wav"
+      ],
+      "sha256": {
+        "clean-gb.source.wav": "8f4c8da6b83f089c6956129fd844aede5888ad9fbcdb5e32325fa8b3ecbfc3de",
+        "clean-gb.wav": "ddba7f097f91e8e3b4e3b5a52a86354d654b81d5f031886dc12ac5e54d173d17"
+      }
+    },
+    "repetition-us": {
+      "request": {
+        "model": "kokoro-v1.0",
+        "voice": "am_adam",
+        "input": "This is very, very important. We need to check it again, and again, before we leave.",
+        "speed": 1,
+        "response_format": "wav"
+      },
+      "expected_spoken_text": "This is very, very important. We need to check it again, and again, before we leave.",
+      "source": "private Kokoro v1.0 TTS service (OpenAI-compatible speech API)",
+      "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+      "conversion": [
+        "ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "pipe:0",
+        "-af",
+        "aresample=16000:resampler=soxr:precision=28",
+        "-ac",
+        "1",
+        "-c:a",
+        "pcm_s16le",
+        "artifacts/fixtures/repetition-us.wav"
+      ],
+      "sha256": {
+        "repetition-us.source.wav": "b28124cc8497e815c67d1a907d75fae76336235e1a7e5f1d5a8d1de20f51f97d",
+        "repetition-us.wav": "6f163dc9ff5ff127637604e55a797cb098f4bef578ebd171f8e15039b13a562a"
+      }
+    },
+    "repetition-gb": {
+      "request": {
+        "model": "kokoro-v1.0",
+        "voice": "bm_george",
+        "input": "One more time. One more time. The red boat passed the green boat near the bridge.",
+        "speed": 1,
+        "response_format": "wav"
+      },
+      "expected_spoken_text": "One more time. One more time. The red boat passed the green boat near the bridge.",
+      "source": "private Kokoro v1.0 TTS service (OpenAI-compatible speech API)",
+      "ffmpeg": "ffmpeg version 6.1.1-3ubuntu5 Copyright (c) 2000-2023 the FFmpeg developers",
+      "conversion": [
+        "ffmpeg",
+        "-nostdin",
+        "-hide_banner",
+        "-loglevel",
+        "error",
+        "-n",
+        "-i",
+        "pipe:0",
+        "-af",
+        "aresample=16000:resampler=soxr:precision=28",
+        "-ac",
+        "1",
+        "-c:a",
+        "pcm_s16le",
+        "artifacts/fixtures/repetition-gb.wav"
+      ],
+      "sha256": {
+        "repetition-gb.source.wav": "e767b4fb6c2d8e1e3e4f18e3a40692795ecf191f12dd8f2ca69e821efc9a3216",
+        "repetition-gb.wav": "a828a12e55511073549cc0befaefcccfcd4073b60259037b5cca0be9f4cb56ce"
+      }
+    }
+  }
+}

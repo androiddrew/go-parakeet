@@ -26,3 +26,43 @@ jobs:
       - run: go vet ./...
       - run: go test -race ./...
       - run: go build ./cmd/inference-probe
+      - run: go build ./cmd/inference-bench
+
+  native:
+    name: Native CPU (ORT 1.22.2, INT8)
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      PARAKEET_TEST_PRECISION: int8
+      PARAKEET_TEST_EXPECT_ORT: 1.22.2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.x"
+      - uses: actions/cache@v4
+        id: ort
+        with:
+          path: |
+            ~/.cache/parakeet-ort/Release/libonnxruntime.so*
+            ~/.cache/parakeet-ort/build-report.json
+          key: ort-1.22.2-linux-x64-gcc12-${{ hashFiles('tools/build-runtime.py') }}
+      - name: Build pinned CPU runtime
+        if: steps.ort.outputs.cache-hit != 'true'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++-12 cmake ninja-build git patch python3
+          python3 tools/build-runtime.py --source "$RUNNER_TEMP/ort-source" \
+            --build "$HOME/.cache/parakeet-ort" --jobs 2 \
+            --cc /usr/bin/gcc-12 --cxx /usr/bin/g++-12
+      - uses: actions/cache@v4
+        with:
+          path: ~/parakeet-assets
+          key: parakeet-int8-${{ hashFiles('SHA256SUMS') }}
+      - name: Provision and verify INT8 assets
+        run: python3 tools/download-assets.py --root "$HOME/parakeet-assets" --precision int8
+      - name: Native parity, natural speech, streaming and lifecycle checks
+        run: |
+          PARAKEET_TEST_ORT="$HOME/.cache/parakeet-ort/Release/libonnxruntime.so.1.22.2" \
+          PARAKEET_TEST_ASSETS="$HOME/parakeet-assets/parakeet" \
+            go test -race -count=1 -timeout=15m -v ./...

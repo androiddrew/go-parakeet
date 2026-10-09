@@ -1,6 +1,7 @@
 """Build a reproducible long PCM fixture from the saved short reference inputs."""
 
 import argparse
+import gzip
 import hashlib
 import json
 from pathlib import Path
@@ -24,6 +25,8 @@ def main():
         ref = json.loads((args.references / f"{name}.json").read_text())
         source = ref["stages"]["samples"]
         raw = (args.references / source["file"]).read_bytes()
+        if source["file"].endswith(".gz"):
+            raw = gzip.decompress(raw)
         if len(raw) % 4 or hashlib.sha256(raw).hexdigest() != source["sha256"]:
             raise RuntimeError(f"invalid/checksum-mismatched PCM: {source['file']}")
         blocks.extend((raw, bytes(2560 * 4)))  # 160 ms gap at 16 kHz

@@ -1,0 +1,7583 @@
+{
+  "en_us-0": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "However, due to the slow communication channels, styles in the west could lag behind by 25-30 years.",
+    "tokens": [
+      {
+        "id": 425,
+        "piece": "▁H",
+        "frame": 8,
+        "start_seconds": 0.64,
+        "advance": 4
+      },
+      {
+        "id": 4534,
+        "piece": "owe",
+        "frame": 12,
+        "start_seconds": 0.96,
+        "advance": 4
+      },
+      {
+        "id": 548,
+        "piece": "ver",
+        "frame": 16,
+        "start_seconds": 1.28,
+        "advance": 3
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 19,
+        "start_seconds": 1.52,
+        "advance": 3
+      },
+      {
+        "id": 5333,
+        "piece": "▁due",
+        "frame": 22,
+        "start_seconds": 1.76,
+        "advance": 4
+      },
+      {
+        "id": 366,
+        "piece": "▁to",
+        "frame": 26,
+        "start_seconds": 2.08,
+        "advance": 1
+      },
+      {
+        "id": 506,
+        "piece": "▁the",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 2
+      },
+      {
+        "id": 1468,
+        "piece": "▁sl",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 3
+      },
+      {
+        "id": 596,
+        "piece": "ow",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 2
+      },
+      {
+        "id": 491,
+        "piece": "▁com",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 2
+      },
+      {
+        "id": 4649,
+        "piece": "mun",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 2
+      },
+      {
+        "id": 404,
+        "piece": "ic",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 3
+      },
+      {
+        "id": 761,
+        "piece": "ation",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 2
+      },
+      {
+        "id": 627,
+        "piece": "▁ch",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 1607,
+        "piece": "ann",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 3
+      },
+      {
+        "id": 2205,
+        "piece": "els",
+        "frame": 48,
+        "start_seconds": 3.84,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 4
+      },
+      {
+        "id": 405,
+        "piece": "▁st",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 4
+      },
+      {
+        "id": 7893,
+        "piece": "y",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 3
+      },
+      {
+        "id": 1272,
+        "piece": "les",
+        "frame": 61,
+        "start_seconds": 4.88,
+        "advance": 2
+      },
+      {
+        "id": 334,
+        "piece": "▁in",
+        "frame": 63,
+        "start_seconds": 5.04,
+        "advance": 2
+      },
+      {
+        "id": 506,
+        "piece": "▁the",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 3
+      },
+      {
+        "id": 328,
+        "piece": "▁w",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 3
+      },
+      {
+        "id": 365,
+        "piece": "est",
+        "frame": 71,
+        "start_seconds": 5.68,
+        "advance": 2
+      },
+      {
+        "id": 6167,
+        "piece": "▁could",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 3
+      },
+      {
+        "id": 4967,
+        "piece": "▁lag",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 4
+      },
+      {
+        "id": 3039,
+        "piece": "▁beh",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 4
+      },
+      {
+        "id": 558,
+        "piece": "ind",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 3
+      },
+      {
+        "id": 652,
+        "piece": "▁by",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 3
+      },
+      {
+        "id": 7863,
+        "piece": "▁",
+        "frame": 91,
+        "start_seconds": 7.28,
+        "advance": 2
+      },
+      {
+        "id": 236,
+        "piece": "2",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 3
+      },
+      {
+        "id": 239,
+        "piece": "5",
+        "frame": 96,
+        "start_seconds": 7.68,
+        "advance": 4
+      },
+      {
+        "id": 7918,
+        "piece": "-",
+        "frame": 100,
+        "start_seconds": 8.0,
+        "advance": 2
+      },
+      {
+        "id": 237,
+        "piece": "3",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 1
+      },
+      {
+        "id": 234,
+        "piece": "0",
+        "frame": 106,
+        "start_seconds": 8.48,
+        "advance": 3
+      },
+      {
+        "id": 4070,
+        "piece": "▁ye",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 4
+      },
+      {
+        "id": 2451,
+        "piece": "ars",
+        "frame": 113,
+        "start_seconds": 9.040000000000001,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 117,
+        "start_seconds": 9.36,
+        "advance": 4
+      }
+    ]
+  },
+  "en_us-1": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "All nouns alongside the word say for you always begin with a capital letter even in the middle of a sentence.",
+    "tokens": [
+      {
+        "id": 6222,
+        "piece": "▁All",
+        "frame": 4,
+        "start_seconds": 0.32,
+        "advance": 4
+      },
+      {
+        "id": 493,
+        "piece": "▁no",
+        "frame": 8,
+        "start_seconds": 0.64,
+        "advance": 4
+      },
+      {
+        "id": 3169,
+        "piece": "uns",
+        "frame": 12,
+        "start_seconds": 0.96,
+        "advance": 3
+      },
+      {
+        "id": 413,
+        "piece": "▁al",
+        "frame": 15,
+        "start_seconds": 1.2,
+        "advance": 2
+      },
+      {
+        "id": 1870,
+        "piece": "ong",
+        "frame": 17,
+        "start_seconds": 1.36,
+        "advance": 2
+      },
+      {
+        "id": 7870,
+        "piece": "s",
+        "frame": 19,
+        "start_seconds": 1.52,
+        "advance": 1
+      },
+      {
+        "id": 1267,
+        "piece": "ide",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 2
+      },
+      {
+        "id": 506,
+        "piece": "▁the",
+        "frame": 22,
+        "start_seconds": 1.76,
+        "advance": 2
+      },
+      {
+        "id": 4128,
+        "piece": "▁word",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 2
+      },
+      {
+        "id": 7206,
+        "piece": "▁say",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 3
+      },
+      {
+        "id": 509,
+        "piece": "▁for",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 3
+      },
+      {
+        "id": 1180,
+        "piece": "▁you",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 4
+      },
+      {
+        "id": 413,
+        "piece": "▁al",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 728,
+        "piece": "wa",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 2
+      },
+      {
+        "id": 676,
+        "piece": "ys",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 2
+      },
+      {
+        "id": 2126,
+        "piece": "▁beg",
+        "frame": 51,
+        "start_seconds": 4.08,
+        "advance": 4
+      },
+      {
+        "id": 281,
+        "piece": "in",
+        "frame": 55,
+        "start_seconds": 4.4,
+        "advance": 2
+      },
+      {
+        "id": 1868,
+        "piece": "▁with",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 3
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 2
+      },
+      {
+        "id": 2112,
+        "piece": "▁cap",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 3
+      },
+      {
+        "id": 3329,
+        "piece": "ital",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 4
+      },
+      {
+        "id": 2019,
+        "piece": "▁let",
+        "frame": 69,
+        "start_seconds": 5.5200000000000005,
+        "advance": 3
+      },
+      {
+        "id": 441,
+        "piece": "ter",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 2
+      },
+      {
+        "id": 4951,
+        "piece": "▁even",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 4
+      },
+      {
+        "id": 334,
+        "piece": "▁in",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 2
+      },
+      {
+        "id": 506,
+        "piece": "▁the",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 1
+      },
+      {
+        "id": 3414,
+        "piece": "▁mid",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 2
+      },
+      {
+        "id": 7874,
+        "piece": "d",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 1
+      },
+      {
+        "id": 337,
+        "piece": "le",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 2
+      },
+      {
+        "id": 592,
+        "piece": "▁of",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 1
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 4
+      },
+      {
+        "id": 5044,
+        "piece": "▁sent",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 4
+      },
+      {
+        "id": 3832,
+        "piece": "ence",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 4
+      }
+    ]
+  },
+  "en_us-2": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "To the north and within easy reach is the romantic and fascinating town of Sintra, and which was made famous to foreigners after a glowing account of its splendours recorded by Lord Byron.",
+    "tokens": [
+      {
+        "id": 1004,
+        "piece": "▁To",
+        "frame": 2,
+        "start_seconds": 0.16,
+        "advance": 3
+      },
+      {
+        "id": 506,
+        "piece": "▁the",
+        "frame": 5,
+        "start_seconds": 0.4,
+        "advance": 1
+      },
+      {
+        "id": 285,
+        "piece": "▁n",
+        "frame": 6,
+        "start_seconds": 0.48,
+        "advance": 1
+      },
+      {
+        "id": 6170,
+        "piece": "orth",
+        "frame": 7,
+        "start_seconds": 0.56,
+        "advance": 2
+      },
+      {
+        "id": 575,
+        "piece": "▁and",
+        "frame": 10,
+        "start_seconds": 0.8,
+        "advance": 2
+      },
+      {
+        "id": 1868,
+        "piece": "▁with",
+        "frame": 12,
+        "start_seconds": 0.96,
+        "advance": 2
+      },
+      {
+        "id": 281,
+        "piece": "in",
+        "frame": 14,
+        "start_seconds": 1.12,
+        "advance": 3
+      },
+      {
+        "id": 325,
+        "piece": "▁e",
+        "frame": 17,
+        "start_seconds": 1.36,
+        "advance": 1
+      },
+      {
+        "id": 297,
+        "piece": "as",
+        "frame": 18,
+        "start_seconds": 1.44,
+        "advance": 1
+      },
+      {
+        "id": 7893,
+        "piece": "y",
+        "frame": 19,
+        "start_seconds": 1.52,
+        "advance": 2
+      },
+      {
+        "id": 427,
+        "piece": "▁re",
+        "frame": 21,
+        "start_seconds": 1.68,
+        "advance": 1
+      },
+      {
+        "id": 1896,
+        "piece": "ach",
+        "frame": 22,
+        "start_seconds": 1.76,
+        "advance": 2
+      },
+      {
+        "id": 508,
+        "piece": "▁is",
+        "frame": 25,
+        "start_seconds": 2.0,
+        "advance": 2
+      },
+      {
+        "id": 506,
+        "piece": "▁the",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 2
+      },
+      {
+        "id": 5430,
+        "piece": "▁rom",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 2
+      },
+      {
+        "id": 1865,
+        "piece": "anti",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 2
+      },
+      {
+        "id": 7880,
+        "piece": "c",
+        "frame": 33,
+        "start_seconds": 2.64,
+        "advance": 2
+      },
+      {
+        "id": 575,
+        "piece": "▁and",
+        "frame": 35,
+        "start_seconds": 2.8000000000000003,
+        "advance": 2
+      },
+      {
+        "id": 309,
+        "piece": "▁f",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 1
+      },
+      {
+        "id": 297,
+        "piece": "as",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 2
+      },
+      {
+        "id": 4387,
+        "piece": "cin",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 1
+      },
+      {
+        "id": 296,
+        "piece": "at",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 1
+      },
+      {
+        "id": 381,
+        "piece": "ing",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 2
+      },
+      {
+        "id": 366,
+        "piece": "▁to",
+        "frame": 44,
+        "start_seconds": 3.52,
+        "advance": 2
+      },
+      {
+        "id": 1471,
+        "piece": "wn",
+        "frame": 46,
+        "start_seconds": 3.68,
+        "advance": 1
+      },
+      {
+        "id": 592,
+        "piece": "▁of",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 3
+      },
+      {
+        "id": 343,
+        "piece": "▁S",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 3
+      },
+      {
+        "id": 942,
+        "piece": "int",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 3
+      },
+      {
+        "id": 314,
+        "piece": "ra",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 1
+      },
+      {
+        "id": 575,
+        "piece": "▁and",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 3
+      },
+      {
+        "id": 4333,
+        "piece": "▁which",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 2
+      },
+      {
+        "id": 924,
+        "piece": "▁was",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 3
+      },
+      {
+        "id": 282,
+        "piece": "▁m",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 2
+      },
+      {
+        "id": 731,
+        "piece": "ade",
+        "frame": 69,
+        "start_seconds": 5.5200000000000005,
+        "advance": 3
+      },
+      {
+        "id": 309,
+        "piece": "▁f",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 2
+      },
+      {
+        "id": 972,
+        "piece": "amo",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 3
+      },
+      {
+        "id": 323,
+        "piece": "us",
+        "frame": 77,
+        "start_seconds": 6.16,
+        "advance": 3
+      },
+      {
+        "id": 366,
+        "piece": "▁to",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 3
+      },
+      {
+        "id": 509,
+        "piece": "▁for",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 2
+      },
+      {
+        "id": 7864,
+        "piece": "e",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 2
+      },
+      {
+        "id": 3591,
+        "piece": "ign",
+        "frame": 87,
+        "start_seconds": 6.96,
+        "advance": 2
+      },
+      {
+        "id": 496,
+        "piece": "ers",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 2
+      },
+      {
+        "id": 799,
+        "piece": "▁af",
+        "frame": 91,
+        "start_seconds": 7.28,
+        "advance": 1
+      },
+      {
+        "id": 441,
+        "piece": "ter",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 2
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 94,
+        "start_seconds": 7.5200000000000005,
+        "advance": 1
+      },
+      {
+        "id": 1627,
+        "piece": "▁gl",
+        "frame": 95,
+        "start_seconds": 7.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 596,
+        "piece": "ow",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 2
+      },
+      {
+        "id": 381,
+        "piece": "ing",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 2
+      },
+      {
+        "id": 691,
+        "piece": "▁ac",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 1
+      },
+      {
+        "id": 923,
+        "piece": "co",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 1
+      },
+      {
+        "id": 1113,
+        "piece": "unt",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 2
+      },
+      {
+        "id": 592,
+        "piece": "▁of",
+        "frame": 105,
+        "start_seconds": 8.4,
+        "advance": 2
+      },
+      {
+        "id": 5404,
+        "piece": "▁its",
+        "frame": 107,
+        "start_seconds": 8.56,
+        "advance": 2
+      },
+      {
+        "id": 485,
+        "piece": "▁sp",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 1
+      },
+      {
+        "id": 7872,
+        "piece": "l",
+        "frame": 110,
+        "start_seconds": 8.8,
+        "advance": 2
+      },
+      {
+        "id": 1975,
+        "piece": "endo",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 2
+      },
+      {
+        "id": 1410,
+        "piece": "urs",
+        "frame": 114,
+        "start_seconds": 9.120000000000001,
+        "advance": 2
+      },
+      {
+        "id": 1875,
+        "piece": "▁rec",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 2
+      },
+      {
+        "id": 711,
+        "piece": "ord",
+        "frame": 120,
+        "start_seconds": 9.6,
+        "advance": 1
+      },
+      {
+        "id": 326,
+        "piece": "ed",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 2
+      },
+      {
+        "id": 652,
+        "piece": "▁by",
+        "frame": 123,
+        "start_seconds": 9.84,
+        "advance": 2
+      },
+      {
+        "id": 439,
+        "piece": "▁L",
+        "frame": 125,
+        "start_seconds": 10.0,
+        "advance": 2
+      },
+      {
+        "id": 711,
+        "piece": "ord",
+        "frame": 127,
+        "start_seconds": 10.16,
+        "advance": 2
+      },
+      {
+        "id": 426,
+        "piece": "▁B",
+        "frame": 129,
+        "start_seconds": 10.32,
+        "advance": 3
+      },
+      {
+        "id": 2839,
+        "piece": "yr",
+        "frame": 132,
+        "start_seconds": 10.56,
+        "advance": 3
+      },
+      {
+        "id": 289,
+        "piece": "on",
+        "frame": 135,
+        "start_seconds": 10.8,
+        "advance": 3
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 138,
+        "start_seconds": 11.040000000000001,
+        "advance": 3
+      }
+    ]
+  },
+  "fr_fr-0": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "L'accident a eu lieu en terrain montagneux, et il semblerait que cela ait été causé par un incendie malveillant.",
+    "tokens": [
+      {
+        "id": 439,
+        "piece": "▁L",
+        "frame": 21,
+        "start_seconds": 1.68,
+        "advance": 2
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 23,
+        "start_seconds": 1.84,
+        "advance": 3
+      },
+      {
+        "id": 566,
+        "piece": "ac",
+        "frame": 26,
+        "start_seconds": 2.08,
+        "advance": 2
+      },
+      {
+        "id": 7880,
+        "piece": "c",
+        "frame": 28,
+        "start_seconds": 2.24,
+        "advance": 3
+      },
+      {
+        "id": 2762,
+        "piece": "ident",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 3
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 3
+      },
+      {
+        "id": 1709,
+        "piece": "▁eu",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 2
+      },
+      {
+        "id": 3358,
+        "piece": "▁lie",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 2
+      },
+      {
+        "id": 7873,
+        "piece": "u",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 2
+      },
+      {
+        "id": 364,
+        "piece": "▁en",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 826,
+        "piece": "▁ter",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 314,
+        "piece": "ra",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 2
+      },
+      {
+        "id": 281,
+        "piece": "in",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 2
+      },
+      {
+        "id": 1849,
+        "piece": "▁mon",
+        "frame": 51,
+        "start_seconds": 4.08,
+        "advance": 2
+      },
+      {
+        "id": 4561,
+        "piece": "tag",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 3
+      },
+      {
+        "id": 432,
+        "piece": "ne",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 1
+      },
+      {
+        "id": 1273,
+        "piece": "ux",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 1
+      },
+      {
+        "id": 453,
+        "piece": "▁et",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 2
+      },
+      {
+        "id": 516,
+        "piece": "▁il",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 3
+      },
+      {
+        "id": 1003,
+        "piece": "▁sem",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 2
+      },
+      {
+        "id": 893,
+        "piece": "bl",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 2
+      },
+      {
+        "id": 1026,
+        "piece": "era",
+        "frame": 69,
+        "start_seconds": 5.5200000000000005,
+        "advance": 2
+      },
+      {
+        "id": 301,
+        "piece": "it",
+        "frame": 71,
+        "start_seconds": 5.68,
+        "advance": 1
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 2
+      },
+      {
+        "id": 4237,
+        "piece": "▁cela",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 4
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 1
+      },
+      {
+        "id": 301,
+        "piece": "it",
+        "frame": 79,
+        "start_seconds": 6.32,
+        "advance": 2
+      },
+      {
+        "id": 3374,
+        "piece": "▁été",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 4
+      },
+      {
+        "id": 1553,
+        "piece": "▁ca",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 1
+      },
+      {
+        "id": 323,
+        "piece": "us",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 3
+      },
+      {
+        "id": 7906,
+        "piece": "é",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 1
+      },
+      {
+        "id": 450,
+        "piece": "▁par",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 2
+      },
+      {
+        "id": 352,
+        "piece": "▁un",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 2
+      },
+      {
+        "id": 1662,
+        "piece": "▁inc",
+        "frame": 94,
+        "start_seconds": 7.5200000000000005,
+        "advance": 3
+      },
+      {
+        "id": 488,
+        "piece": "end",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 2
+      },
+      {
+        "id": 304,
+        "piece": "ie",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 3
+      },
+      {
+        "id": 1400,
+        "piece": "▁mal",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 3
+      },
+      {
+        "id": 507,
+        "piece": "ve",
+        "frame": 105,
+        "start_seconds": 8.4,
+        "advance": 3
+      },
+      {
+        "id": 532,
+        "piece": "ill",
+        "frame": 108,
+        "start_seconds": 8.64,
+        "advance": 4
+      },
+      {
+        "id": 527,
+        "piece": "ant",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 116,
+        "start_seconds": 9.28,
+        "advance": 4
+      }
+    ]
+  },
+  "fr_fr-1": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Nous sommes d'accord avec la déclaration de l'USOC, Comité olympique des États-Unis, selon laquelle les intérêts de nos athlètes et de nos clubs, ainsi que de leur sport, pourraient être mieux servis. Cela peut être fait en allant de l'avant et en procédant plutôt à des changements significatifs au sein de notre organisation qu'à la révocation d'accréditation.",
+    "tokens": [
+      {
+        "id": 4246,
+        "piece": "▁Nous",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 4
+      },
+      {
+        "id": 590,
+        "piece": "▁som",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 2
+      },
+      {
+        "id": 2002,
+        "piece": "mes",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 2
+      },
+      {
+        "id": 276,
+        "piece": "▁d",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 1
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 2
+      },
+      {
+        "id": 6887,
+        "piece": "accord",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 2504,
+        "piece": "▁avec",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 393,
+        "piece": "▁la",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 1
+      },
+      {
+        "id": 5157,
+        "piece": "▁déc",
+        "frame": 48,
+        "start_seconds": 3.84,
+        "advance": 2
+      },
+      {
+        "id": 2387,
+        "piece": "lar",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 3
+      },
+      {
+        "id": 761,
+        "piece": "ation",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 1
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 1
+      },
+      {
+        "id": 293,
+        "piece": "▁l",
+        "frame": 55,
+        "start_seconds": 4.4,
+        "advance": 1
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 1
+      },
+      {
+        "id": 7987,
+        "piece": "U",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 7923,
+        "piece": "S",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 1
+      },
+      {
+        "id": 7970,
+        "piece": "O",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 2
+      },
+      {
+        "id": 7960,
+        "piece": "C",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 1
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 2
+      },
+      {
+        "id": 1619,
+        "piece": "▁Com",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 2
+      },
+      {
+        "id": 2217,
+        "piece": "ité",
+        "frame": 69,
+        "start_seconds": 5.5200000000000005,
+        "advance": 2
+      },
+      {
+        "id": 768,
+        "piece": "▁ol",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 1
+      },
+      {
+        "id": 913,
+        "piece": "ym",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 2
+      },
+      {
+        "id": 1262,
+        "piece": "pi",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 2
+      },
+      {
+        "id": 959,
+        "piece": "que",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 1
+      },
+      {
+        "id": 594,
+        "piece": "▁des",
+        "frame": 79,
+        "start_seconds": 6.32,
+        "advance": 2
+      },
+      {
+        "id": 2008,
+        "piece": "▁É",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 1
+      },
+      {
+        "id": 7868,
+        "piece": "t",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 1
+      },
+      {
+        "id": 1780,
+        "piece": "ats",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 0
+      },
+      {
+        "id": 7918,
+        "piece": "-",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 1
+      },
+      {
+        "id": 7987,
+        "piece": "U",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 2
+      },
+      {
+        "id": 3764,
+        "piece": "nis",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 2
+      },
+      {
+        "id": 1971,
+        "piece": "▁sel",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 2
+      },
+      {
+        "id": 289,
+        "piece": "on",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 2
+      },
+      {
+        "id": 393,
+        "piece": "▁la",
+        "frame": 94,
+        "start_seconds": 7.5200000000000005,
+        "advance": 2
+      },
+      {
+        "id": 341,
+        "piece": "qu",
+        "frame": 96,
+        "start_seconds": 7.68,
+        "advance": 1
+      },
+      {
+        "id": 947,
+        "piece": "elle",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 2
+      },
+      {
+        "id": 850,
+        "piece": "▁les",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 2
+      },
+      {
+        "id": 1895,
+        "piece": "▁int",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 1
+      },
+      {
+        "id": 907,
+        "piece": "ér",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 1
+      },
+      {
+        "id": 8027,
+        "piece": "ê",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 1
+      },
+      {
+        "id": 769,
+        "piece": "ts",
+        "frame": 104,
+        "start_seconds": 8.32,
+        "advance": 1
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 105,
+        "start_seconds": 8.4,
+        "advance": 1
+      },
+      {
+        "id": 1371,
+        "piece": "▁nos",
+        "frame": 106,
+        "start_seconds": 8.48,
+        "advance": 2
+      },
+      {
+        "id": 407,
+        "piece": "▁at",
+        "frame": 108,
+        "start_seconds": 8.64,
+        "advance": 2
+      },
+      {
+        "id": 2316,
+        "piece": "hl",
+        "frame": 110,
+        "start_seconds": 8.8,
+        "advance": 1
+      },
+      {
+        "id": 8017,
+        "piece": "è",
+        "frame": 111,
+        "start_seconds": 8.88,
+        "advance": 2
+      },
+      {
+        "id": 4157,
+        "piece": "tes",
+        "frame": 113,
+        "start_seconds": 9.040000000000001,
+        "advance": 1
+      },
+      {
+        "id": 453,
+        "piece": "▁et",
+        "frame": 114,
+        "start_seconds": 9.120000000000001,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 116,
+        "start_seconds": 9.28,
+        "advance": 2
+      },
+      {
+        "id": 1371,
+        "piece": "▁nos",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 2
+      },
+      {
+        "id": 298,
+        "piece": "▁c",
+        "frame": 120,
+        "start_seconds": 9.6,
+        "advance": 1
+      },
+      {
+        "id": 5129,
+        "piece": "lub",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 2
+      },
+      {
+        "id": 7870,
+        "piece": "s",
+        "frame": 123,
+        "start_seconds": 9.84,
+        "advance": 1
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 124,
+        "start_seconds": 9.92,
+        "advance": 2
+      },
+      {
+        "id": 4634,
+        "piece": "▁ain",
+        "frame": 126,
+        "start_seconds": 10.08,
+        "advance": 2
+      },
+      {
+        "id": 513,
+        "piece": "si",
+        "frame": 128,
+        "start_seconds": 10.24,
+        "advance": 2
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 130,
+        "start_seconds": 10.4,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 132,
+        "start_seconds": 10.56,
+        "advance": 1
+      },
+      {
+        "id": 5593,
+        "piece": "▁leur",
+        "frame": 133,
+        "start_seconds": 10.64,
+        "advance": 2
+      },
+      {
+        "id": 6782,
+        "piece": "▁sport",
+        "frame": 137,
+        "start_seconds": 10.96,
+        "advance": 3
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 140,
+        "start_seconds": 11.200000000000001,
+        "advance": 2
+      },
+      {
+        "id": 1194,
+        "piece": "▁pour",
+        "frame": 142,
+        "start_seconds": 11.36,
+        "advance": 2
+      },
+      {
+        "id": 3328,
+        "piece": "rai",
+        "frame": 144,
+        "start_seconds": 11.52,
+        "advance": 1
+      },
+      {
+        "id": 340,
+        "piece": "ent",
+        "frame": 145,
+        "start_seconds": 11.6,
+        "advance": 2
+      },
+      {
+        "id": 4145,
+        "piece": "▁être",
+        "frame": 150,
+        "start_seconds": 12.0,
+        "advance": 3
+      },
+      {
+        "id": 3345,
+        "piece": "▁mie",
+        "frame": 153,
+        "start_seconds": 12.24,
+        "advance": 1
+      },
+      {
+        "id": 1273,
+        "piece": "ux",
+        "frame": 154,
+        "start_seconds": 12.32,
+        "advance": 2
+      },
+      {
+        "id": 878,
+        "piece": "▁ser",
+        "frame": 156,
+        "start_seconds": 12.48,
+        "advance": 3
+      },
+      {
+        "id": 1344,
+        "piece": "vis",
+        "frame": 159,
+        "start_seconds": 12.72,
+        "advance": 3
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 162,
+        "start_seconds": 12.96,
+        "advance": 3
+      },
+      {
+        "id": 417,
+        "piece": "▁C",
+        "frame": 165,
+        "start_seconds": 13.200000000000001,
+        "advance": 2
+      },
+      {
+        "id": 932,
+        "piece": "ela",
+        "frame": 167,
+        "start_seconds": 13.36,
+        "advance": 3
+      },
+      {
+        "id": 5284,
+        "piece": "▁peut",
+        "frame": 170,
+        "start_seconds": 13.6,
+        "advance": 3
+      },
+      {
+        "id": 4145,
+        "piece": "▁être",
+        "frame": 173,
+        "start_seconds": 13.84,
+        "advance": 2
+      },
+      {
+        "id": 3409,
+        "piece": "▁fait",
+        "frame": 175,
+        "start_seconds": 14.0,
+        "advance": 4
+      },
+      {
+        "id": 364,
+        "piece": "▁en",
+        "frame": 179,
+        "start_seconds": 14.32,
+        "advance": 3
+      },
+      {
+        "id": 1111,
+        "piece": "▁all",
+        "frame": 182,
+        "start_seconds": 14.56,
+        "advance": 2
+      },
+      {
+        "id": 527,
+        "piece": "ant",
+        "frame": 184,
+        "start_seconds": 14.72,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 186,
+        "start_seconds": 14.88,
+        "advance": 1
+      },
+      {
+        "id": 293,
+        "piece": "▁l",
+        "frame": 187,
+        "start_seconds": 14.96,
+        "advance": 1
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 188,
+        "start_seconds": 15.040000000000001,
+        "advance": 1
+      },
+      {
+        "id": 384,
+        "piece": "av",
+        "frame": 189,
+        "start_seconds": 15.120000000000001,
+        "advance": 2
+      },
+      {
+        "id": 527,
+        "piece": "ant",
+        "frame": 191,
+        "start_seconds": 15.280000000000001,
+        "advance": 2
+      },
+      {
+        "id": 453,
+        "piece": "▁et",
+        "frame": 193,
+        "start_seconds": 15.44,
+        "advance": 1
+      },
+      {
+        "id": 364,
+        "piece": "▁en",
+        "frame": 194,
+        "start_seconds": 15.52,
+        "advance": 2
+      },
+      {
+        "id": 6193,
+        "piece": "▁proc",
+        "frame": 196,
+        "start_seconds": 15.68,
+        "advance": 2
+      },
+      {
+        "id": 3354,
+        "piece": "éd",
+        "frame": 198,
+        "start_seconds": 15.84,
+        "advance": 2
+      },
+      {
+        "id": 527,
+        "piece": "ant",
+        "frame": 200,
+        "start_seconds": 16.0,
+        "advance": 2
+      },
+      {
+        "id": 707,
+        "piece": "▁pl",
+        "frame": 202,
+        "start_seconds": 16.16,
+        "advance": 1
+      },
+      {
+        "id": 351,
+        "piece": "ut",
+        "frame": 203,
+        "start_seconds": 16.240000000000002,
+        "advance": 1
+      },
+      {
+        "id": 8045,
+        "piece": "ô",
+        "frame": 204,
+        "start_seconds": 16.32,
+        "advance": 1
+      },
+      {
+        "id": 7868,
+        "piece": "t",
+        "frame": 205,
+        "start_seconds": 16.4,
+        "advance": 1
+      },
+      {
+        "id": 832,
+        "piece": "▁à",
+        "frame": 206,
+        "start_seconds": 16.48,
+        "advance": 1
+      },
+      {
+        "id": 594,
+        "piece": "▁des",
+        "frame": 207,
+        "start_seconds": 16.56,
+        "advance": 2
+      },
+      {
+        "id": 627,
+        "piece": "▁ch",
+        "frame": 209,
+        "start_seconds": 16.72,
+        "advance": 1
+      },
+      {
+        "id": 937,
+        "piece": "ang",
+        "frame": 210,
+        "start_seconds": 16.8,
+        "advance": 3
+      },
+      {
+        "id": 6494,
+        "piece": "ements",
+        "frame": 213,
+        "start_seconds": 17.04,
+        "advance": 2
+      },
+      {
+        "id": 7672,
+        "piece": "▁signific",
+        "frame": 215,
+        "start_seconds": 17.2,
+        "advance": 4
+      },
+      {
+        "id": 655,
+        "piece": "ati",
+        "frame": 219,
+        "start_seconds": 17.52,
+        "advance": 2
+      },
+      {
+        "id": 4416,
+        "piece": "fs",
+        "frame": 221,
+        "start_seconds": 17.68,
+        "advance": 3
+      },
+      {
+        "id": 694,
+        "piece": "▁au",
+        "frame": 224,
+        "start_seconds": 17.92,
+        "advance": 2
+      },
+      {
+        "id": 2612,
+        "piece": "▁sein",
+        "frame": 226,
+        "start_seconds": 18.080000000000002,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 228,
+        "start_seconds": 18.240000000000002,
+        "advance": 2
+      },
+      {
+        "id": 4808,
+        "piece": "▁notre",
+        "frame": 230,
+        "start_seconds": 18.400000000000002,
+        "advance": 2
+      },
+      {
+        "id": 2513,
+        "piece": "▁organ",
+        "frame": 232,
+        "start_seconds": 18.56,
+        "advance": 2
+      },
+      {
+        "id": 290,
+        "piece": "is",
+        "frame": 234,
+        "start_seconds": 18.72,
+        "advance": 2
+      },
+      {
+        "id": 761,
+        "piece": "ation",
+        "frame": 236,
+        "start_seconds": 18.88,
+        "advance": 2
+      },
+      {
+        "id": 363,
+        "piece": "▁qu",
+        "frame": 240,
+        "start_seconds": 19.2,
+        "advance": 1
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 241,
+        "start_seconds": 19.28,
+        "advance": 2
+      },
+      {
+        "id": 8007,
+        "piece": "à",
+        "frame": 243,
+        "start_seconds": 19.44,
+        "advance": 1
+      },
+      {
+        "id": 393,
+        "piece": "▁la",
+        "frame": 244,
+        "start_seconds": 19.52,
+        "advance": 1
+      },
+      {
+        "id": 1831,
+        "piece": "▁ré",
+        "frame": 245,
+        "start_seconds": 19.6,
+        "advance": 2
+      },
+      {
+        "id": 528,
+        "piece": "vo",
+        "frame": 247,
+        "start_seconds": 19.76,
+        "advance": 1
+      },
+      {
+        "id": 7880,
+        "piece": "c",
+        "frame": 248,
+        "start_seconds": 19.84,
+        "advance": 2
+      },
+      {
+        "id": 761,
+        "piece": "ation",
+        "frame": 250,
+        "start_seconds": 20.0,
+        "advance": 1
+      },
+      {
+        "id": 276,
+        "piece": "▁d",
+        "frame": 251,
+        "start_seconds": 20.080000000000002,
+        "advance": 1
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 252,
+        "start_seconds": 20.16,
+        "advance": 1
+      },
+      {
+        "id": 566,
+        "piece": "ac",
+        "frame": 253,
+        "start_seconds": 20.240000000000002,
+        "advance": 2
+      },
+      {
+        "id": 7880,
+        "piece": "c",
+        "frame": 255,
+        "start_seconds": 20.400000000000002,
+        "advance": 1
+      },
+      {
+        "id": 7871,
+        "piece": "r",
+        "frame": 256,
+        "start_seconds": 20.48,
+        "advance": 1
+      },
+      {
+        "id": 3354,
+        "piece": "éd",
+        "frame": 257,
+        "start_seconds": 20.56,
+        "advance": 2
+      },
+      {
+        "id": 301,
+        "piece": "it",
+        "frame": 259,
+        "start_seconds": 20.72,
+        "advance": 3
+      },
+      {
+        "id": 761,
+        "piece": "ation",
+        "frame": 262,
+        "start_seconds": 20.96,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 266,
+        "start_seconds": 21.28,
+        "advance": 4
+      }
+    ]
+  },
+  "fr_fr-2": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Il a ajouté qu'on ne devrait cependant pas leur demander d'assumer des obligations qui dépassent leur stade de développement, leurs responsabilités et leurs capacités.",
+    "tokens": [
+      {
+        "id": 1100,
+        "piece": "▁Il",
+        "frame": 4,
+        "start_seconds": 0.32,
+        "advance": 2
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 8,
+        "start_seconds": 0.64,
+        "advance": 2
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 10,
+        "start_seconds": 0.8,
+        "advance": 1
+      },
+      {
+        "id": 791,
+        "piece": "jo",
+        "frame": 11,
+        "start_seconds": 0.88,
+        "advance": 2
+      },
+      {
+        "id": 351,
+        "piece": "ut",
+        "frame": 13,
+        "start_seconds": 1.04,
+        "advance": 2
+      },
+      {
+        "id": 7906,
+        "piece": "é",
+        "frame": 15,
+        "start_seconds": 1.2,
+        "advance": 1
+      },
+      {
+        "id": 363,
+        "piece": "▁qu",
+        "frame": 16,
+        "start_seconds": 1.28,
+        "advance": 1
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 17,
+        "start_seconds": 1.36,
+        "advance": 0
+      },
+      {
+        "id": 289,
+        "piece": "on",
+        "frame": 17,
+        "start_seconds": 1.36,
+        "advance": 1
+      },
+      {
+        "id": 409,
+        "piece": "▁ne",
+        "frame": 18,
+        "start_seconds": 1.44,
+        "advance": 2
+      },
+      {
+        "id": 2426,
+        "piece": "▁dev",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 2
+      },
+      {
+        "id": 5526,
+        "piece": "rait",
+        "frame": 22,
+        "start_seconds": 1.76,
+        "advance": 2
+      },
+      {
+        "id": 872,
+        "piece": "▁ce",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 1
+      },
+      {
+        "id": 4736,
+        "piece": "pend",
+        "frame": 25,
+        "start_seconds": 2.0,
+        "advance": 2
+      },
+      {
+        "id": 527,
+        "piece": "ant",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 1
+      },
+      {
+        "id": 677,
+        "piece": "▁pas",
+        "frame": 28,
+        "start_seconds": 2.24,
+        "advance": 2
+      },
+      {
+        "id": 5593,
+        "piece": "▁leur",
+        "frame": 30,
+        "start_seconds": 2.4,
+        "advance": 2
+      },
+      {
+        "id": 1044,
+        "piece": "▁dem",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 2
+      },
+      {
+        "id": 6626,
+        "piece": "ander",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 2
+      },
+      {
+        "id": 276,
+        "piece": "▁d",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 1
+      },
+      {
+        "id": 7931,
+        "piece": "'",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 0
+      },
+      {
+        "id": 1838,
+        "piece": "ass",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 2
+      },
+      {
+        "id": 385,
+        "piece": "um",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 1
+      },
+      {
+        "id": 277,
+        "piece": "er",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 2
+      },
+      {
+        "id": 594,
+        "piece": "▁des",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 1
+      },
+      {
+        "id": 601,
+        "piece": "▁ob",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 1055,
+        "piece": "lig",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 2821,
+        "piece": "ations",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 1
+      },
+      {
+        "id": 1474,
+        "piece": "▁qui",
+        "frame": 48,
+        "start_seconds": 3.84,
+        "advance": 2
+      },
+      {
+        "id": 1705,
+        "piece": "▁dé",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 2
+      },
+      {
+        "id": 7878,
+        "piece": "p",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 1
+      },
+      {
+        "id": 1838,
+        "piece": "ass",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 1
+      },
+      {
+        "id": 340,
+        "piece": "ent",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 2
+      },
+      {
+        "id": 5593,
+        "piece": "▁leur",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 2
+      },
+      {
+        "id": 405,
+        "piece": "▁st",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 2
+      },
+      {
+        "id": 731,
+        "piece": "ade",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 1
+      },
+      {
+        "id": 1705,
+        "piece": "▁dé",
+        "frame": 63,
+        "start_seconds": 5.04,
+        "advance": 1
+      },
+      {
+        "id": 1475,
+        "piece": "vel",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 1
+      },
+      {
+        "id": 7869,
+        "piece": "o",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 1
+      },
+      {
+        "id": 557,
+        "piece": "pp",
+        "frame": 66,
+        "start_seconds": 5.28,
+        "advance": 2
+      },
+      {
+        "id": 926,
+        "piece": "ement",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 70,
+        "start_seconds": 5.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 481,
+        "piece": "▁le",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 1
+      },
+      {
+        "id": 1410,
+        "piece": "urs",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 1
+      },
+      {
+        "id": 7123,
+        "piece": "▁respons",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 4
+      },
+      {
+        "id": 3261,
+        "piece": "abil",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 3
+      },
+      {
+        "id": 301,
+        "piece": "it",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 2
+      },
+      {
+        "id": 821,
+        "piece": "és",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 1
+      },
+      {
+        "id": 453,
+        "piece": "▁et",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 2
+      },
+      {
+        "id": 481,
+        "piece": "▁le",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 1
+      },
+      {
+        "id": 1410,
+        "piece": "urs",
+        "frame": 87,
+        "start_seconds": 6.96,
+        "advance": 2
+      },
+      {
+        "id": 6729,
+        "piece": "▁capac",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 4
+      },
+      {
+        "id": 301,
+        "piece": "it",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 3
+      },
+      {
+        "id": 821,
+        "piece": "és",
+        "frame": 96,
+        "start_seconds": 7.68,
+        "advance": 3
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 2
+      }
+    ]
+  },
+  "de_de-0": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Für die besten Aussichten auf Hongkong sollten sie die Insel verlassen und zum gegenüberliegenden Ufer von Kowlon fahren.",
+    "tokens": [
+      {
+        "id": 515,
+        "piece": "▁F",
+        "frame": 48,
+        "start_seconds": 3.84,
+        "advance": 4
+      },
+      {
+        "id": 1304,
+        "piece": "ür",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 2
+      },
+      {
+        "id": 615,
+        "piece": "▁die",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 3
+      },
+      {
+        "id": 3792,
+        "piece": "▁best",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 4
+      },
+      {
+        "id": 274,
+        "piece": "en",
+        "frame": 61,
+        "start_seconds": 4.88,
+        "advance": 3
+      },
+      {
+        "id": 6737,
+        "piece": "▁Aus",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 4
+      },
+      {
+        "id": 513,
+        "piece": "si",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 2
+      },
+      {
+        "id": 3308,
+        "piece": "chten",
+        "frame": 70,
+        "start_seconds": 5.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 1593,
+        "piece": "▁auf",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 3
+      },
+      {
+        "id": 425,
+        "piece": "▁H",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 2
+      },
+      {
+        "id": 1870,
+        "piece": "ong",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 2
+      },
+      {
+        "id": 1554,
+        "piece": "kon",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 3
+      },
+      {
+        "id": 7881,
+        "piece": "g",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 4
+      },
+      {
+        "id": 5257,
+        "piece": "▁soll",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 3
+      },
+      {
+        "id": 571,
+        "piece": "ten",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 3
+      },
+      {
+        "id": 1301,
+        "piece": "▁sie",
+        "frame": 95,
+        "start_seconds": 7.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 615,
+        "piece": "▁die",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 2
+      },
+      {
+        "id": 892,
+        "piece": "▁In",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 4
+      },
+      {
+        "id": 4324,
+        "piece": "sel",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 3
+      },
+      {
+        "id": 614,
+        "piece": "▁ver",
+        "frame": 106,
+        "start_seconds": 8.48,
+        "advance": 3
+      },
+      {
+        "id": 1028,
+        "piece": "las",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 3
+      },
+      {
+        "id": 1122,
+        "piece": "sen",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 3
+      },
+      {
+        "id": 657,
+        "piece": "▁und",
+        "frame": 115,
+        "start_seconds": 9.200000000000001,
+        "advance": 3
+      },
+      {
+        "id": 5879,
+        "piece": "▁zum",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 3
+      },
+      {
+        "id": 317,
+        "piece": "▁g",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 2
+      },
+      {
+        "id": 3666,
+        "piece": "egen",
+        "frame": 123,
+        "start_seconds": 9.84,
+        "advance": 3
+      },
+      {
+        "id": 7965,
+        "piece": "ü",
+        "frame": 126,
+        "start_seconds": 10.08,
+        "advance": 2
+      },
+      {
+        "id": 748,
+        "piece": "ber",
+        "frame": 128,
+        "start_seconds": 10.24,
+        "advance": 3
+      },
+      {
+        "id": 3128,
+        "piece": "lie",
+        "frame": 131,
+        "start_seconds": 10.48,
+        "advance": 2
+      },
+      {
+        "id": 7881,
+        "piece": "g",
+        "frame": 133,
+        "start_seconds": 10.64,
+        "advance": 2
+      },
+      {
+        "id": 3133,
+        "piece": "enden",
+        "frame": 135,
+        "start_seconds": 10.8,
+        "advance": 4
+      },
+      {
+        "id": 517,
+        "piece": "▁U",
+        "frame": 139,
+        "start_seconds": 11.120000000000001,
+        "advance": 4
+      },
+      {
+        "id": 1611,
+        "piece": "fer",
+        "frame": 143,
+        "start_seconds": 11.44,
+        "advance": 4
+      },
+      {
+        "id": 1473,
+        "piece": "▁von",
+        "frame": 149,
+        "start_seconds": 11.92,
+        "advance": 4
+      },
+      {
+        "id": 430,
+        "piece": "▁K",
+        "frame": 153,
+        "start_seconds": 12.24,
+        "advance": 2
+      },
+      {
+        "id": 596,
+        "piece": "ow",
+        "frame": 155,
+        "start_seconds": 12.4,
+        "advance": 2
+      },
+      {
+        "id": 7872,
+        "piece": "l",
+        "frame": 159,
+        "start_seconds": 12.72,
+        "advance": 2
+      },
+      {
+        "id": 289,
+        "piece": "on",
+        "frame": 163,
+        "start_seconds": 13.040000000000001,
+        "advance": 4
+      },
+      {
+        "id": 1263,
+        "piece": "▁fa",
+        "frame": 167,
+        "start_seconds": 13.36,
+        "advance": 4
+      },
+      {
+        "id": 3539,
+        "piece": "hren",
+        "frame": 171,
+        "start_seconds": 13.68,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 175,
+        "start_seconds": 14.0,
+        "advance": 4
+      }
+    ]
+  },
+  "de_de-1": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Er griff auch alles an, was ins Wasser kam: Selbst ein großer Dinosaurier wie der T Rex war ihm nicht gewachsen.",
+    "tokens": [
+      {
+        "id": 1853,
+        "piece": "▁Er",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 3
+      },
+      {
+        "id": 317,
+        "piece": "▁g",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 2
+      },
+      {
+        "id": 330,
+        "piece": "ri",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 3
+      },
+      {
+        "id": 651,
+        "piece": "ff",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 2
+      },
+      {
+        "id": 3204,
+        "piece": "▁auch",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 3
+      },
+      {
+        "id": 5419,
+        "piece": "▁alles",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 4
+      },
+      {
+        "id": 411,
+        "piece": "▁an",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 3
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 44,
+        "start_seconds": 3.52,
+        "advance": 3
+      },
+      {
+        "id": 924,
+        "piece": "▁was",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 3
+      },
+      {
+        "id": 2999,
+        "piece": "▁ins",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 3
+      },
+      {
+        "id": 4020,
+        "piece": "▁Was",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 2
+      },
+      {
+        "id": 1308,
+        "piece": "ser",
+        "frame": 55,
+        "start_seconds": 4.4,
+        "advance": 3
+      },
+      {
+        "id": 2021,
+        "piece": "▁kam",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 4
+      },
+      {
+        "id": 8033,
+        "piece": ":",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 3
+      },
+      {
+        "id": 7491,
+        "piece": "▁Sel",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 1
+      },
+      {
+        "id": 7886,
+        "piece": "b",
+        "frame": 66,
+        "start_seconds": 5.28,
+        "advance": 2
+      },
+      {
+        "id": 368,
+        "piece": "st",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 2
+      },
+      {
+        "id": 842,
+        "piece": "▁ein",
+        "frame": 70,
+        "start_seconds": 5.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 1751,
+        "piece": "▁gro",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 1
+      },
+      {
+        "id": 8054,
+        "piece": "ß",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 2
+      },
+      {
+        "id": 277,
+        "piece": "er",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 1
+      },
+      {
+        "id": 5917,
+        "piece": "▁Din",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 3
+      },
+      {
+        "id": 308,
+        "piece": "os",
+        "frame": 79,
+        "start_seconds": 6.32,
+        "advance": 2
+      },
+      {
+        "id": 620,
+        "piece": "au",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 2
+      },
+      {
+        "id": 330,
+        "piece": "ri",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 1
+      },
+      {
+        "id": 277,
+        "piece": "er",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 1
+      },
+      {
+        "id": 1549,
+        "piece": "▁wie",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 2
+      },
+      {
+        "id": 623,
+        "piece": "▁der",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 2
+      },
+      {
+        "id": 357,
+        "piece": "▁T",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 3
+      },
+      {
+        "id": 1990,
+        "piece": "▁Re",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 2
+      },
+      {
+        "id": 7950,
+        "piece": "x",
+        "frame": 95,
+        "start_seconds": 7.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 1479,
+        "piece": "▁war",
+        "frame": 98,
+        "start_seconds": 7.84,
+        "advance": 2
+      },
+      {
+        "id": 5562,
+        "piece": "▁ihm",
+        "frame": 100,
+        "start_seconds": 8.0,
+        "advance": 2
+      },
+      {
+        "id": 1511,
+        "piece": "▁nicht",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 3
+      },
+      {
+        "id": 873,
+        "piece": "▁ge",
+        "frame": 105,
+        "start_seconds": 8.4,
+        "advance": 2
+      },
+      {
+        "id": 728,
+        "piece": "wa",
+        "frame": 107,
+        "start_seconds": 8.56,
+        "advance": 2
+      },
+      {
+        "id": 310,
+        "piece": "ch",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 3
+      },
+      {
+        "id": 1122,
+        "piece": "sen",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 116,
+        "start_seconds": 9.28,
+        "advance": 4
+      }
+    ]
+  },
+  "de_de-2": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Wenn Sie den Film Das Vermächtnis der Tempelritter gesehen haben, denken Sie vielleicht, dass auf der Rückseite der Unabhängigkeitserklärung eine Schatzkarte gezeichnet wurde.x",
+    "tokens": [
+      {
+        "id": 5838,
+        "piece": "▁Wenn",
+        "frame": 12,
+        "start_seconds": 0.96,
+        "advance": 4
+      },
+      {
+        "id": 1339,
+        "piece": "▁Sie",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 4
+      },
+      {
+        "id": 602,
+        "piece": "▁den",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 4
+      },
+      {
+        "id": 5426,
+        "piece": "▁Fil",
+        "frame": 28,
+        "start_seconds": 2.24,
+        "advance": 3
+      },
+      {
+        "id": 7875,
+        "piece": "m",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 3
+      },
+      {
+        "id": 3211,
+        "piece": "▁Das",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 3
+      },
+      {
+        "id": 2497,
+        "piece": "▁Ver",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 3
+      },
+      {
+        "id": 3605,
+        "piece": "mä",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 1
+      },
+      {
+        "id": 721,
+        "piece": "cht",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 1
+      },
+      {
+        "id": 3764,
+        "piece": "nis",
+        "frame": 44,
+        "start_seconds": 3.52,
+        "advance": 2
+      },
+      {
+        "id": 623,
+        "piece": "▁der",
+        "frame": 46,
+        "start_seconds": 3.68,
+        "advance": 2
+      },
+      {
+        "id": 357,
+        "piece": "▁T",
+        "frame": 48,
+        "start_seconds": 3.84,
+        "advance": 1
+      },
+      {
+        "id": 2375,
+        "piece": "emp",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 3
+      },
+      {
+        "id": 292,
+        "piece": "el",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 2
+      },
+      {
+        "id": 1006,
+        "piece": "rit",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 2
+      },
+      {
+        "id": 441,
+        "piece": "ter",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 3
+      },
+      {
+        "id": 317,
+        "piece": "▁g",
+        "frame": 61,
+        "start_seconds": 4.88,
+        "advance": 1
+      },
+      {
+        "id": 1334,
+        "piece": "ese",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 3
+      },
+      {
+        "id": 1722,
+        "piece": "hen",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 3
+      },
+      {
+        "id": 2362,
+        "piece": "▁haben",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 4
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 4
+      },
+      {
+        "id": 602,
+        "piece": "▁den",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 3
+      },
+      {
+        "id": 1255,
+        "piece": "ken",
+        "frame": 79,
+        "start_seconds": 6.32,
+        "advance": 3
+      },
+      {
+        "id": 1339,
+        "piece": "▁Sie",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 502,
+        "piece": "▁vi",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 1
+      },
+      {
+        "id": 947,
+        "piece": "elle",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 2
+      },
+      {
+        "id": 5708,
+        "piece": "icht",
+        "frame": 87,
+        "start_seconds": 6.96,
+        "advance": 1
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 2
+      },
+      {
+        "id": 1540,
+        "piece": "▁dass",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 2
+      },
+      {
+        "id": 1593,
+        "piece": "▁auf",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 2
+      },
+      {
+        "id": 623,
+        "piece": "▁der",
+        "frame": 94,
+        "start_seconds": 7.5200000000000005,
+        "advance": 2
+      },
+      {
+        "id": 518,
+        "piece": "▁R",
+        "frame": 96,
+        "start_seconds": 7.68,
+        "advance": 1
+      },
+      {
+        "id": 3976,
+        "piece": "ück",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 2
+      },
+      {
+        "id": 467,
+        "piece": "se",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 2
+      },
+      {
+        "id": 582,
+        "piece": "ite",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 2
+      },
+      {
+        "id": 623,
+        "piece": "▁der",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 2
+      },
+      {
+        "id": 1114,
+        "piece": "▁Un",
+        "frame": 105,
+        "start_seconds": 8.4,
+        "advance": 2
+      },
+      {
+        "id": 436,
+        "piece": "ab",
+        "frame": 107,
+        "start_seconds": 8.56,
+        "advance": 2
+      },
+      {
+        "id": 7882,
+        "piece": "h",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 2
+      },
+      {
+        "id": 5326,
+        "piece": "äng",
+        "frame": 111,
+        "start_seconds": 8.88,
+        "advance": 2
+      },
+      {
+        "id": 378,
+        "piece": "ig",
+        "frame": 113,
+        "start_seconds": 9.040000000000001,
+        "advance": 1
+      },
+      {
+        "id": 5765,
+        "piece": "keit",
+        "frame": 114,
+        "start_seconds": 9.120000000000001,
+        "advance": 2
+      },
+      {
+        "id": 1308,
+        "piece": "ser",
+        "frame": 116,
+        "start_seconds": 9.28,
+        "advance": 1
+      },
+      {
+        "id": 981,
+        "piece": "kl",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 2
+      },
+      {
+        "id": 494,
+        "piece": "är",
+        "frame": 120,
+        "start_seconds": 9.6,
+        "advance": 1
+      },
+      {
+        "id": 874,
+        "piece": "ung",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 3
+      },
+      {
+        "id": 1830,
+        "piece": "▁eine",
+        "frame": 124,
+        "start_seconds": 9.92,
+        "advance": 2
+      },
+      {
+        "id": 1817,
+        "piece": "▁Sch",
+        "frame": 126,
+        "start_seconds": 10.08,
+        "advance": 2
+      },
+      {
+        "id": 296,
+        "piece": "at",
+        "frame": 128,
+        "start_seconds": 10.24,
+        "advance": 2
+      },
+      {
+        "id": 7888,
+        "piece": "z",
+        "frame": 130,
+        "start_seconds": 10.4,
+        "advance": 2
+      },
+      {
+        "id": 7876,
+        "piece": "k",
+        "frame": 132,
+        "start_seconds": 10.56,
+        "advance": 2
+      },
+      {
+        "id": 2935,
+        "piece": "arte",
+        "frame": 134,
+        "start_seconds": 10.72,
+        "advance": 2
+      },
+      {
+        "id": 873,
+        "piece": "▁ge",
+        "frame": 136,
+        "start_seconds": 10.88,
+        "advance": 2
+      },
+      {
+        "id": 537,
+        "piece": "ze",
+        "frame": 138,
+        "start_seconds": 11.040000000000001,
+        "advance": 2
+      },
+      {
+        "id": 915,
+        "piece": "ich",
+        "frame": 140,
+        "start_seconds": 11.200000000000001,
+        "advance": 3
+      },
+      {
+        "id": 1999,
+        "piece": "net",
+        "frame": 143,
+        "start_seconds": 11.44,
+        "advance": 3
+      },
+      {
+        "id": 4117,
+        "piece": "▁wurde",
+        "frame": 146,
+        "start_seconds": 11.68,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 150,
+        "start_seconds": 12.0,
+        "advance": 4
+      },
+      {
+        "id": 7950,
+        "piece": "x",
+        "frame": 154,
+        "start_seconds": 12.32,
+        "advance": 2
+      }
+    ]
+  },
+  "es_419-0": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Se recomienda enfáticamente a los viajeros que se informen sobre cualquier riesgo del clima extremo en el área que visitan, dado que ello pueda afectar sus planes de viaje.",
+    "tokens": [
+      {
+        "id": 891,
+        "piece": "▁Se",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 4
+      },
+      {
+        "id": 1875,
+        "piece": "▁rec",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 4
+      },
+      {
+        "id": 313,
+        "piece": "om",
+        "frame": 28,
+        "start_seconds": 2.24,
+        "advance": 2
+      },
+      {
+        "id": 442,
+        "piece": "ien",
+        "frame": 30,
+        "start_seconds": 2.4,
+        "advance": 2
+      },
+      {
+        "id": 591,
+        "piece": "da",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 3
+      },
+      {
+        "id": 364,
+        "piece": "▁en",
+        "frame": 35,
+        "start_seconds": 2.8000000000000003,
+        "advance": 2
+      },
+      {
+        "id": 7894,
+        "piece": "f",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 2
+      },
+      {
+        "id": 7910,
+        "piece": "á",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 1
+      },
+      {
+        "id": 2810,
+        "piece": "tic",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 3
+      },
+      {
+        "id": 1292,
+        "piece": "amente",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 1154,
+        "piece": "▁los",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 1
+      },
+      {
+        "id": 3005,
+        "piece": "▁via",
+        "frame": 48,
+        "start_seconds": 3.84,
+        "advance": 3
+      },
+      {
+        "id": 1844,
+        "piece": "jer",
+        "frame": 51,
+        "start_seconds": 4.08,
+        "advance": 2
+      },
+      {
+        "id": 308,
+        "piece": "os",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 2
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 55,
+        "start_seconds": 4.4,
+        "advance": 2
+      },
+      {
+        "id": 347,
+        "piece": "▁se",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 334,
+        "piece": "▁in",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 2
+      },
+      {
+        "id": 786,
+        "piece": "for",
+        "frame": 61,
+        "start_seconds": 4.88,
+        "advance": 2
+      },
+      {
+        "id": 825,
+        "piece": "men",
+        "frame": 63,
+        "start_seconds": 5.04,
+        "advance": 4
+      },
+      {
+        "id": 2269,
+        "piece": "▁sobre",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 4
+      },
+      {
+        "id": 852,
+        "piece": "▁cu",
+        "frame": 71,
+        "start_seconds": 5.68,
+        "advance": 1
+      },
+      {
+        "id": 295,
+        "piece": "al",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 2
+      },
+      {
+        "id": 341,
+        "piece": "qu",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 1
+      },
+      {
+        "id": 628,
+        "piece": "ier",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 2
+      },
+      {
+        "id": 797,
+        "piece": "▁ri",
+        "frame": 77,
+        "start_seconds": 6.16,
+        "advance": 1
+      },
+      {
+        "id": 283,
+        "piece": "es",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 3
+      },
+      {
+        "id": 1002,
+        "piece": "go",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 1
+      },
+      {
+        "id": 682,
+        "piece": "▁del",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 3
+      },
+      {
+        "id": 3271,
+        "piece": "▁cli",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 3
+      },
+      {
+        "id": 470,
+        "piece": "ma",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 2
+      },
+      {
+        "id": 743,
+        "piece": "▁ex",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 3
+      },
+      {
+        "id": 1310,
+        "piece": "tre",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 3
+      },
+      {
+        "id": 810,
+        "piece": "mo",
+        "frame": 96,
+        "start_seconds": 7.68,
+        "advance": 2
+      },
+      {
+        "id": 364,
+        "piece": "▁en",
+        "frame": 98,
+        "start_seconds": 7.84,
+        "advance": 2
+      },
+      {
+        "id": 460,
+        "piece": "▁el",
+        "frame": 100,
+        "start_seconds": 8.0,
+        "advance": 2
+      },
+      {
+        "id": 3079,
+        "piece": "▁á",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 2
+      },
+      {
+        "id": 4662,
+        "piece": "rea",
+        "frame": 104,
+        "start_seconds": 8.32,
+        "advance": 2
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 106,
+        "start_seconds": 8.48,
+        "advance": 3
+      },
+      {
+        "id": 854,
+        "piece": "▁vis",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 3
+      },
+      {
+        "id": 5006,
+        "piece": "itan",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 3
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 115,
+        "start_seconds": 9.200000000000001,
+        "advance": 2
+      },
+      {
+        "id": 276,
+        "piece": "▁d",
+        "frame": 117,
+        "start_seconds": 9.36,
+        "advance": 2
+      },
+      {
+        "id": 894,
+        "piece": "ado",
+        "frame": 119,
+        "start_seconds": 9.52,
+        "advance": 2
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 2
+      },
+      {
+        "id": 460,
+        "piece": "▁el",
+        "frame": 123,
+        "start_seconds": 9.84,
+        "advance": 2
+      },
+      {
+        "id": 630,
+        "piece": "lo",
+        "frame": 125,
+        "start_seconds": 10.0,
+        "advance": 2
+      },
+      {
+        "id": 778,
+        "piece": "▁pu",
+        "frame": 127,
+        "start_seconds": 10.16,
+        "advance": 1
+      },
+      {
+        "id": 1066,
+        "piece": "eda",
+        "frame": 128,
+        "start_seconds": 10.24,
+        "advance": 2
+      },
+      {
+        "id": 799,
+        "piece": "▁af",
+        "frame": 130,
+        "start_seconds": 10.4,
+        "advance": 2
+      },
+      {
+        "id": 7596,
+        "piece": "ect",
+        "frame": 132,
+        "start_seconds": 10.56,
+        "advance": 2
+      },
+      {
+        "id": 287,
+        "piece": "ar",
+        "frame": 134,
+        "start_seconds": 10.72,
+        "advance": 2
+      },
+      {
+        "id": 1683,
+        "piece": "▁sus",
+        "frame": 136,
+        "start_seconds": 10.88,
+        "advance": 3
+      },
+      {
+        "id": 2536,
+        "piece": "▁plan",
+        "frame": 139,
+        "start_seconds": 11.120000000000001,
+        "advance": 3
+      },
+      {
+        "id": 283,
+        "piece": "es",
+        "frame": 142,
+        "start_seconds": 11.36,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 144,
+        "start_seconds": 11.52,
+        "advance": 2
+      },
+      {
+        "id": 3005,
+        "piece": "▁via",
+        "frame": 146,
+        "start_seconds": 11.68,
+        "advance": 4
+      },
+      {
+        "id": 419,
+        "piece": "je",
+        "frame": 150,
+        "start_seconds": 12.0,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 154,
+        "start_seconds": 12.32,
+        "advance": 4
+      }
+    ]
+  },
+  "es_419-1": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "El uso adecuado de los blogs puede empoderar a los alumnos para que sean más analíticos y críticos a través de la respuesta activa a los contenidos de Internet. Pueden definir sus posturas en el contexto de los escritos de otros, además de establecer sus perspectivas sobre temas específicos. ORABEC 2002.",
+    "tokens": [
+      {
+        "id": 1546,
+        "piece": "▁El",
+        "frame": 16,
+        "start_seconds": 1.28,
+        "advance": 4
+      },
+      {
+        "id": 307,
+        "piece": "▁u",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 2
+      },
+      {
+        "id": 845,
+        "piece": "so",
+        "frame": 22,
+        "start_seconds": 1.76,
+        "advance": 2
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 2
+      },
+      {
+        "id": 401,
+        "piece": "de",
+        "frame": 26,
+        "start_seconds": 2.08,
+        "advance": 1
+      },
+      {
+        "id": 996,
+        "piece": "cu",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 2
+      },
+      {
+        "id": 894,
+        "piece": "ado",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 1
+      },
+      {
+        "id": 1154,
+        "piece": "▁los",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 3
+      },
+      {
+        "id": 1639,
+        "piece": "▁bl",
+        "frame": 35,
+        "start_seconds": 2.8000000000000003,
+        "advance": 2
+      },
+      {
+        "id": 396,
+        "piece": "og",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 2
+      },
+      {
+        "id": 7870,
+        "piece": "s",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 3
+      },
+      {
+        "id": 6720,
+        "piece": "▁puede",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 3
+      },
+      {
+        "id": 746,
+        "piece": "▁em",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 2632,
+        "piece": "pod",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 2
+      },
+      {
+        "id": 277,
+        "piece": "er",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 1
+      },
+      {
+        "id": 287,
+        "piece": "ar",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 2
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 2
+      },
+      {
+        "id": 1154,
+        "piece": "▁los",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 2
+      },
+      {
+        "id": 413,
+        "piece": "▁al",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 1
+      },
+      {
+        "id": 385,
+        "piece": "um",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 995,
+        "piece": "nos",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 3
+      },
+      {
+        "id": 815,
+        "piece": "▁para",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 2
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 2
+      },
+      {
+        "id": 347,
+        "piece": "▁se",
+        "frame": 66,
+        "start_seconds": 5.28,
+        "advance": 2
+      },
+      {
+        "id": 284,
+        "piece": "an",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 1
+      },
+      {
+        "id": 1623,
+        "piece": "▁más",
+        "frame": 69,
+        "start_seconds": 5.5200000000000005,
+        "advance": 2
+      },
+      {
+        "id": 6709,
+        "piece": "▁anal",
+        "frame": 71,
+        "start_seconds": 5.68,
+        "advance": 4
+      },
+      {
+        "id": 7920,
+        "piece": "í",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 1
+      },
+      {
+        "id": 2810,
+        "piece": "tic",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 2
+      },
+      {
+        "id": 308,
+        "piece": "os",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 2
+      },
+      {
+        "id": 459,
+        "piece": "▁y",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 2
+      },
+      {
+        "id": 2813,
+        "piece": "▁cr",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 7920,
+        "piece": "í",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 2
+      },
+      {
+        "id": 2810,
+        "piece": "tic",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 3
+      },
+      {
+        "id": 308,
+        "piece": "os",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 4
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 2
+      },
+      {
+        "id": 7367,
+        "piece": "▁trav",
+        "frame": 95,
+        "start_seconds": 7.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 821,
+        "piece": "és",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 1
+      },
+      {
+        "id": 393,
+        "piece": "▁la",
+        "frame": 100,
+        "start_seconds": 8.0,
+        "advance": 2
+      },
+      {
+        "id": 1021,
+        "piece": "▁res",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 2
+      },
+      {
+        "id": 1188,
+        "piece": "pu",
+        "frame": 104,
+        "start_seconds": 8.32,
+        "advance": 2
+      },
+      {
+        "id": 1360,
+        "piece": "esta",
+        "frame": 106,
+        "start_seconds": 8.48,
+        "advance": 3
+      },
+      {
+        "id": 691,
+        "piece": "▁ac",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 2
+      },
+      {
+        "id": 7409,
+        "piece": "tiva",
+        "frame": 111,
+        "start_seconds": 8.88,
+        "advance": 2
+      },
+      {
+        "id": 279,
+        "piece": "▁a",
+        "frame": 113,
+        "start_seconds": 9.040000000000001,
+        "advance": 2
+      },
+      {
+        "id": 1154,
+        "piece": "▁los",
+        "frame": 115,
+        "start_seconds": 9.200000000000001,
+        "advance": 1
+      },
+      {
+        "id": 471,
+        "piece": "▁con",
+        "frame": 116,
+        "start_seconds": 9.28,
+        "advance": 2
+      },
+      {
+        "id": 571,
+        "piece": "ten",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 3
+      },
+      {
+        "id": 4824,
+        "piece": "idos",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 1
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 122,
+        "start_seconds": 9.76,
+        "advance": 3
+      },
+      {
+        "id": 6620,
+        "piece": "▁Inter",
+        "frame": 125,
+        "start_seconds": 10.0,
+        "advance": 3
+      },
+      {
+        "id": 1999,
+        "piece": "net",
+        "frame": 128,
+        "start_seconds": 10.24,
+        "advance": 3
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 131,
+        "start_seconds": 10.48,
+        "advance": 3
+      },
+      {
+        "id": 5572,
+        "piece": "▁Pu",
+        "frame": 134,
+        "start_seconds": 10.72,
+        "advance": 3
+      },
+      {
+        "id": 3740,
+        "piece": "eden",
+        "frame": 137,
+        "start_seconds": 10.96,
+        "advance": 2
+      },
+      {
+        "id": 4520,
+        "piece": "▁defin",
+        "frame": 139,
+        "start_seconds": 11.120000000000001,
+        "advance": 3
+      },
+      {
+        "id": 399,
+        "piece": "ir",
+        "frame": 142,
+        "start_seconds": 11.36,
+        "advance": 2
+      },
+      {
+        "id": 1683,
+        "piece": "▁sus",
+        "frame": 144,
+        "start_seconds": 11.52,
+        "advance": 3
+      },
+      {
+        "id": 2692,
+        "piece": "▁post",
+        "frame": 147,
+        "start_seconds": 11.76,
+        "advance": 3
+      },
+      {
+        "id": 344,
+        "piece": "ur",
+        "frame": 150,
+        "start_seconds": 12.0,
+        "advance": 1
+      },
+      {
+        "id": 297,
+        "piece": "as",
+        "frame": 151,
+        "start_seconds": 12.08,
+        "advance": 2
+      },
+      {
+        "id": 364,
+        "piece": "▁en",
+        "frame": 153,
+        "start_seconds": 12.24,
+        "advance": 2
+      },
+      {
+        "id": 460,
+        "piece": "▁el",
+        "frame": 155,
+        "start_seconds": 12.4,
+        "advance": 2
+      },
+      {
+        "id": 471,
+        "piece": "▁con",
+        "frame": 157,
+        "start_seconds": 12.56,
+        "advance": 2
+      },
+      {
+        "id": 315,
+        "piece": "te",
+        "frame": 159,
+        "start_seconds": 12.72,
+        "advance": 1
+      },
+      {
+        "id": 7950,
+        "piece": "x",
+        "frame": 160,
+        "start_seconds": 12.8,
+        "advance": 2
+      },
+      {
+        "id": 434,
+        "piece": "to",
+        "frame": 162,
+        "start_seconds": 12.96,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 164,
+        "start_seconds": 13.120000000000001,
+        "advance": 1
+      },
+      {
+        "id": 1154,
+        "piece": "▁los",
+        "frame": 165,
+        "start_seconds": 13.200000000000001,
+        "advance": 3
+      },
+      {
+        "id": 2902,
+        "piece": "▁esc",
+        "frame": 168,
+        "start_seconds": 13.44,
+        "advance": 2
+      },
+      {
+        "id": 1006,
+        "piece": "rit",
+        "frame": 170,
+        "start_seconds": 13.6,
+        "advance": 2
+      },
+      {
+        "id": 308,
+        "piece": "os",
+        "frame": 172,
+        "start_seconds": 13.76,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 174,
+        "start_seconds": 13.92,
+        "advance": 3
+      },
+      {
+        "id": 5340,
+        "piece": "▁otr",
+        "frame": 177,
+        "start_seconds": 14.16,
+        "advance": 2
+      },
+      {
+        "id": 308,
+        "piece": "os",
+        "frame": 179,
+        "start_seconds": 14.32,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 181,
+        "start_seconds": 14.48,
+        "advance": 2
+      },
+      {
+        "id": 1110,
+        "piece": "▁ad",
+        "frame": 183,
+        "start_seconds": 14.64,
+        "advance": 2
+      },
+      {
+        "id": 311,
+        "piece": "em",
+        "frame": 185,
+        "start_seconds": 14.8,
+        "advance": 2
+      },
+      {
+        "id": 654,
+        "piece": "ás",
+        "frame": 187,
+        "start_seconds": 14.96,
+        "advance": 2
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 189,
+        "start_seconds": 15.120000000000001,
+        "advance": 1
+      },
+      {
+        "id": 1938,
+        "piece": "▁esta",
+        "frame": 190,
+        "start_seconds": 15.200000000000001,
+        "advance": 3
+      },
+      {
+        "id": 2099,
+        "piece": "ble",
+        "frame": 193,
+        "start_seconds": 15.44,
+        "advance": 2
+      },
+      {
+        "id": 1577,
+        "piece": "cer",
+        "frame": 195,
+        "start_seconds": 15.6,
+        "advance": 3
+      },
+      {
+        "id": 1683,
+        "piece": "▁sus",
+        "frame": 198,
+        "start_seconds": 15.84,
+        "advance": 2
+      },
+      {
+        "id": 1108,
+        "piece": "▁pers",
+        "frame": 200,
+        "start_seconds": 16.0,
+        "advance": 2
+      },
+      {
+        "id": 4892,
+        "piece": "pec",
+        "frame": 202,
+        "start_seconds": 16.16,
+        "advance": 3
+      },
+      {
+        "id": 1202,
+        "piece": "tiv",
+        "frame": 205,
+        "start_seconds": 16.4,
+        "advance": 2
+      },
+      {
+        "id": 297,
+        "piece": "as",
+        "frame": 207,
+        "start_seconds": 16.56,
+        "advance": 4
+      },
+      {
+        "id": 2269,
+        "piece": "▁sobre",
+        "frame": 211,
+        "start_seconds": 16.88,
+        "advance": 4
+      },
+      {
+        "id": 936,
+        "piece": "▁tem",
+        "frame": 215,
+        "start_seconds": 17.2,
+        "advance": 3
+      },
+      {
+        "id": 297,
+        "piece": "as",
+        "frame": 218,
+        "start_seconds": 17.44,
+        "advance": 2
+      },
+      {
+        "id": 4514,
+        "piece": "▁espe",
+        "frame": 220,
+        "start_seconds": 17.6,
+        "advance": 3
+      },
+      {
+        "id": 2377,
+        "piece": "cí",
+        "frame": 223,
+        "start_seconds": 17.84,
+        "advance": 2
+      },
+      {
+        "id": 1609,
+        "piece": "fic",
+        "frame": 225,
+        "start_seconds": 18.0,
+        "advance": 2
+      },
+      {
+        "id": 308,
+        "piece": "os",
+        "frame": 227,
+        "start_seconds": 18.16,
+        "advance": 3
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 230,
+        "start_seconds": 18.400000000000002,
+        "advance": 3
+      },
+      {
+        "id": 452,
+        "piece": "▁O",
+        "frame": 233,
+        "start_seconds": 18.64,
+        "advance": 3
+      },
+      {
+        "id": 7991,
+        "piece": "R",
+        "frame": 236,
+        "start_seconds": 18.88,
+        "advance": 1
+      },
+      {
+        "id": 7924,
+        "piece": "A",
+        "frame": 237,
+        "start_seconds": 18.96,
+        "advance": 2
+      },
+      {
+        "id": 7963,
+        "piece": "B",
+        "frame": 239,
+        "start_seconds": 19.12,
+        "advance": 1
+      },
+      {
+        "id": 7936,
+        "piece": "E",
+        "frame": 240,
+        "start_seconds": 19.2,
+        "advance": 1
+      },
+      {
+        "id": 7960,
+        "piece": "C",
+        "frame": 241,
+        "start_seconds": 19.28,
+        "advance": 1
+      },
+      {
+        "id": 7863,
+        "piece": "▁",
+        "frame": 244,
+        "start_seconds": 19.52,
+        "advance": 1
+      },
+      {
+        "id": 236,
+        "piece": "2",
+        "frame": 245,
+        "start_seconds": 19.6,
+        "advance": 2
+      },
+      {
+        "id": 234,
+        "piece": "0",
+        "frame": 247,
+        "start_seconds": 19.76,
+        "advance": 1
+      },
+      {
+        "id": 234,
+        "piece": "0",
+        "frame": 248,
+        "start_seconds": 19.84,
+        "advance": 1
+      },
+      {
+        "id": 236,
+        "piece": "2",
+        "frame": 249,
+        "start_seconds": 19.92,
+        "advance": 3
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 252,
+        "start_seconds": 20.16,
+        "advance": 4
+      }
+    ]
+  },
+  "es_419-2": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Fue tanta la cantidad de gente que se concentró que no todos pudieron acceder al funeral en la plaza de San Pedro.",
+    "tokens": [
+      {
+        "id": 515,
+        "piece": "▁F",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 4
+      },
+      {
+        "id": 1803,
+        "piece": "ue",
+        "frame": 28,
+        "start_seconds": 2.24,
+        "advance": 3
+      },
+      {
+        "id": 2824,
+        "piece": "▁tan",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 3
+      },
+      {
+        "id": 327,
+        "piece": "ta",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 2
+      },
+      {
+        "id": 393,
+        "piece": "▁la",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 2
+      },
+      {
+        "id": 298,
+        "piece": "▁c",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 1
+      },
+      {
+        "id": 1865,
+        "piece": "anti",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 1
+      },
+      {
+        "id": 7874,
+        "piece": "d",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 2
+      },
+      {
+        "id": 319,
+        "piece": "ad",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 1
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 317,
+        "piece": "▁g",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 584,
+        "piece": "ente",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 2
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 2
+      },
+      {
+        "id": 347,
+        "piece": "▁se",
+        "frame": 51,
+        "start_seconds": 4.08,
+        "advance": 2
+      },
+      {
+        "id": 471,
+        "piece": "▁con",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 2
+      },
+      {
+        "id": 2103,
+        "piece": "cent",
+        "frame": 55,
+        "start_seconds": 4.4,
+        "advance": 4
+      },
+      {
+        "id": 3899,
+        "piece": "ró",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 3
+      },
+      {
+        "id": 443,
+        "piece": "▁que",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 3
+      },
+      {
+        "id": 493,
+        "piece": "▁no",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 2
+      },
+      {
+        "id": 3360,
+        "piece": "▁todos",
+        "frame": 69,
+        "start_seconds": 5.5200000000000005,
+        "advance": 3
+      },
+      {
+        "id": 278,
+        "piece": "▁p",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 1
+      },
+      {
+        "id": 376,
+        "piece": "ud",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 2
+      },
+      {
+        "id": 628,
+        "piece": "ier",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 1
+      },
+      {
+        "id": 289,
+        "piece": "on",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 2
+      },
+      {
+        "id": 3240,
+        "piece": "▁acc",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 3
+      },
+      {
+        "id": 3800,
+        "piece": "eder",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 3
+      },
+      {
+        "id": 413,
+        "piece": "▁al",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 2
+      },
+      {
+        "id": 3046,
+        "piece": "▁fun",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 3
+      },
+      {
+        "id": 277,
+        "piece": "er",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 3
+      },
+      {
+        "id": 295,
+        "piece": "al",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 2
+      },
+      {
+        "id": 364,
+        "piece": "▁en",
+        "frame": 94,
+        "start_seconds": 7.5200000000000005,
+        "advance": 2
+      },
+      {
+        "id": 393,
+        "piece": "▁la",
+        "frame": 96,
+        "start_seconds": 7.68,
+        "advance": 2
+      },
+      {
+        "id": 1700,
+        "piece": "▁pla",
+        "frame": 98,
+        "start_seconds": 7.84,
+        "advance": 3
+      },
+      {
+        "id": 777,
+        "piece": "za",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 1
+      },
+      {
+        "id": 318,
+        "piece": "▁de",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 2
+      },
+      {
+        "id": 5767,
+        "piece": "▁San",
+        "frame": 104,
+        "start_seconds": 8.32,
+        "advance": 3
+      },
+      {
+        "id": 373,
+        "piece": "▁P",
+        "frame": 107,
+        "start_seconds": 8.56,
+        "advance": 3
+      },
+      {
+        "id": 326,
+        "piece": "ed",
+        "frame": 110,
+        "start_seconds": 8.8,
+        "advance": 3
+      },
+      {
+        "id": 320,
+        "piece": "ro",
+        "frame": 113,
+        "start_seconds": 9.040000000000001,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 117,
+        "start_seconds": 9.36,
+        "advance": 3
+      }
+    ]
+  },
+  "ru_ru-0": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "В древнем Китае использовали уникальный способ обозначения периодов времени, каждый этап Китая или каждая семья, находившаяся у власти, были особой династией.",
+    "tokens": [
+      {
+        "id": 828,
+        "piece": "▁В",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 4
+      },
+      {
+        "id": 361,
+        "piece": "▁д",
+        "frame": 28,
+        "start_seconds": 2.24,
+        "advance": 1
+      },
+      {
+        "id": 418,
+        "piece": "ре",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 2
+      },
+      {
+        "id": 7895,
+        "piece": "в",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 2
+      },
+      {
+        "id": 6631,
+        "piece": "нем",
+        "frame": 33,
+        "start_seconds": 2.64,
+        "advance": 1
+      },
+      {
+        "id": 1000,
+        "piece": "▁К",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 1
+      },
+      {
+        "id": 7890,
+        "piece": "и",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 2
+      },
+      {
+        "id": 374,
+        "piece": "та",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 2
+      },
+      {
+        "id": 7889,
+        "piece": "е",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 4
+      },
+      {
+        "id": 6184,
+        "piece": "▁исполь",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 4
+      },
+      {
+        "id": 1621,
+        "piece": "зо",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 3
+      },
+      {
+        "id": 3062,
+        "piece": "вали",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 2
+      },
+      {
+        "id": 585,
+        "piece": "▁у",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 2
+      },
+      {
+        "id": 4937,
+        "piece": "ника",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 3
+      },
+      {
+        "id": 543,
+        "piece": "ль",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 2
+      },
+      {
+        "id": 2805,
+        "piece": "ный",
+        "frame": 61,
+        "start_seconds": 4.88,
+        "advance": 2
+      },
+      {
+        "id": 2424,
+        "piece": "▁спо",
+        "frame": 63,
+        "start_seconds": 5.04,
+        "advance": 2
+      },
+      {
+        "id": 1137,
+        "piece": "со",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 2
+      },
+      {
+        "id": 7921,
+        "piece": "б",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 3
+      },
+      {
+        "id": 7320,
+        "piece": "▁обо",
+        "frame": 70,
+        "start_seconds": 5.6000000000000005,
+        "advance": 3
+      },
+      {
+        "id": 1964,
+        "piece": "зна",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 2
+      },
+      {
+        "id": 775,
+        "piece": "че",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 3
+      },
+      {
+        "id": 1040,
+        "piece": "ния",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 2
+      },
+      {
+        "id": 4101,
+        "piece": "▁пе",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 1
+      },
+      {
+        "id": 449,
+        "piece": "ри",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 2
+      },
+      {
+        "id": 7885,
+        "piece": "о",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 1
+      },
+      {
+        "id": 5080,
+        "piece": "дов",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 2
+      },
+      {
+        "id": 3873,
+        "piece": "▁време",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 4
+      },
+      {
+        "id": 383,
+        "piece": "ни",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 3
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 96,
+        "start_seconds": 7.68,
+        "advance": 3
+      },
+      {
+        "id": 678,
+        "piece": "▁ка",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 2
+      },
+      {
+        "id": 7951,
+        "piece": "ж",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 1
+      },
+      {
+        "id": 3814,
+        "piece": "ды",
+        "frame": 102,
+        "start_seconds": 8.16,
+        "advance": 1
+      },
+      {
+        "id": 7952,
+        "piece": "й",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 2
+      },
+      {
+        "id": 805,
+        "piece": "▁э",
+        "frame": 105,
+        "start_seconds": 8.4,
+        "advance": 1
+      },
+      {
+        "id": 374,
+        "piece": "та",
+        "frame": 106,
+        "start_seconds": 8.48,
+        "advance": 2
+      },
+      {
+        "id": 7909,
+        "piece": "п",
+        "frame": 108,
+        "start_seconds": 8.64,
+        "advance": 2
+      },
+      {
+        "id": 1000,
+        "piece": "▁К",
+        "frame": 110,
+        "start_seconds": 8.8,
+        "advance": 1
+      },
+      {
+        "id": 7890,
+        "piece": "и",
+        "frame": 111,
+        "start_seconds": 8.88,
+        "advance": 1
+      },
+      {
+        "id": 374,
+        "piece": "та",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 3
+      },
+      {
+        "id": 7914,
+        "piece": "я",
+        "frame": 115,
+        "start_seconds": 9.200000000000001,
+        "advance": 3
+      },
+      {
+        "id": 2045,
+        "piece": "▁или",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 3
+      },
+      {
+        "id": 678,
+        "piece": "▁ка",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 2
+      },
+      {
+        "id": 2183,
+        "piece": "жда",
+        "frame": 123,
+        "start_seconds": 9.84,
+        "advance": 1
+      },
+      {
+        "id": 7914,
+        "piece": "я",
+        "frame": 126,
+        "start_seconds": 10.08,
+        "advance": 2
+      },
+      {
+        "id": 656,
+        "piece": "▁се",
+        "frame": 128,
+        "start_seconds": 10.24,
+        "advance": 2
+      },
+      {
+        "id": 7904,
+        "piece": "м",
+        "frame": 130,
+        "start_seconds": 10.4,
+        "advance": 2
+      },
+      {
+        "id": 7941,
+        "piece": "ь",
+        "frame": 132,
+        "start_seconds": 10.56,
+        "advance": 3
+      },
+      {
+        "id": 7914,
+        "piece": "я",
+        "frame": 135,
+        "start_seconds": 10.8,
+        "advance": 3
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 138,
+        "start_seconds": 11.040000000000001,
+        "advance": 3
+      },
+      {
+        "id": 391,
+        "piece": "▁на",
+        "frame": 141,
+        "start_seconds": 11.28,
+        "advance": 3
+      },
+      {
+        "id": 2483,
+        "piece": "ходи",
+        "frame": 144,
+        "start_seconds": 11.52,
+        "advance": 3
+      },
+      {
+        "id": 7895,
+        "piece": "в",
+        "frame": 147,
+        "start_seconds": 11.76,
+        "advance": 2
+      },
+      {
+        "id": 1818,
+        "piece": "ша",
+        "frame": 149,
+        "start_seconds": 11.92,
+        "advance": 1
+      },
+      {
+        "id": 7914,
+        "piece": "я",
+        "frame": 150,
+        "start_seconds": 12.0,
+        "advance": 2
+      },
+      {
+        "id": 565,
+        "piece": "ся",
+        "frame": 152,
+        "start_seconds": 12.16,
+        "advance": 2
+      },
+      {
+        "id": 585,
+        "piece": "▁у",
+        "frame": 154,
+        "start_seconds": 12.32,
+        "advance": 2
+      },
+      {
+        "id": 5993,
+        "piece": "▁вла",
+        "frame": 156,
+        "start_seconds": 12.48,
+        "advance": 4
+      },
+      {
+        "id": 943,
+        "piece": "сти",
+        "frame": 160,
+        "start_seconds": 12.8,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 162,
+        "start_seconds": 12.96,
+        "advance": 2
+      },
+      {
+        "id": 5516,
+        "piece": "▁были",
+        "frame": 164,
+        "start_seconds": 13.120000000000001,
+        "advance": 3
+      },
+      {
+        "id": 5299,
+        "piece": "▁осо",
+        "frame": 167,
+        "start_seconds": 13.36,
+        "advance": 3
+      },
+      {
+        "id": 866,
+        "piece": "бо",
+        "frame": 170,
+        "start_seconds": 13.6,
+        "advance": 2
+      },
+      {
+        "id": 7952,
+        "piece": "й",
+        "frame": 172,
+        "start_seconds": 13.76,
+        "advance": 1
+      },
+      {
+        "id": 2550,
+        "piece": "▁ди",
+        "frame": 173,
+        "start_seconds": 13.84,
+        "advance": 2
+      },
+      {
+        "id": 422,
+        "piece": "на",
+        "frame": 175,
+        "start_seconds": 14.0,
+        "advance": 3
+      },
+      {
+        "id": 943,
+        "piece": "сти",
+        "frame": 178,
+        "start_seconds": 14.24,
+        "advance": 3
+      },
+      {
+        "id": 2622,
+        "piece": "ей",
+        "frame": 181,
+        "start_seconds": 14.48,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 185,
+        "start_seconds": 14.8,
+        "advance": 4
+      }
+    ]
+  },
+  "ru_ru-1": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Мадагаскар намного больше других и является самобытным континентом в том, что касается дикой природы.",
+    "tokens": [
+      {
+        "id": 4352,
+        "piece": "▁Ма",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 4
+      },
+      {
+        "id": 556,
+        "piece": "да",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 2
+      },
+      {
+        "id": 662,
+        "piece": "га",
+        "frame": 33,
+        "start_seconds": 2.64,
+        "advance": 2
+      },
+      {
+        "id": 1591,
+        "piece": "ска",
+        "frame": 35,
+        "start_seconds": 2.8000000000000003,
+        "advance": 2
+      },
+      {
+        "id": 7896,
+        "piece": "р",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 3
+      },
+      {
+        "id": 5186,
+        "piece": "▁нам",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 3
+      },
+      {
+        "id": 1178,
+        "piece": "ного",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 3
+      },
+      {
+        "id": 6267,
+        "piece": "▁больше",
+        "frame": 48,
+        "start_seconds": 3.84,
+        "advance": 4
+      },
+      {
+        "id": 4066,
+        "piece": "▁други",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 3
+      },
+      {
+        "id": 7958,
+        "piece": "х",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 3
+      },
+      {
+        "id": 402,
+        "piece": "▁и",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 3
+      },
+      {
+        "id": 7818,
+        "piece": "▁явля",
+        "frame": 63,
+        "start_seconds": 5.04,
+        "advance": 4
+      },
+      {
+        "id": 2931,
+        "piece": "ется",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 2
+      },
+      {
+        "id": 2966,
+        "piece": "▁само",
+        "frame": 69,
+        "start_seconds": 5.5200000000000005,
+        "advance": 4
+      },
+      {
+        "id": 2120,
+        "piece": "бы",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 2
+      },
+      {
+        "id": 7891,
+        "piece": "т",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 3
+      },
+      {
+        "id": 3482,
+        "piece": "ным",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 2
+      },
+      {
+        "id": 2253,
+        "piece": "▁кон",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 2
+      },
+      {
+        "id": 415,
+        "piece": "ти",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 4834,
+        "piece": "нен",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 3
+      },
+      {
+        "id": 4260,
+        "piece": "том",
+        "frame": 87,
+        "start_seconds": 6.96,
+        "advance": 3
+      },
+      {
+        "id": 338,
+        "piece": "▁в",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 3
+      },
+      {
+        "id": 7183,
+        "piece": "▁том",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 95,
+        "start_seconds": 7.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 862,
+        "piece": "▁что",
+        "frame": 97,
+        "start_seconds": 7.76,
+        "advance": 2
+      },
+      {
+        "id": 678,
+        "piece": "▁ка",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 2
+      },
+      {
+        "id": 1463,
+        "piece": "са",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 2
+      },
+      {
+        "id": 2931,
+        "piece": "ется",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 3
+      },
+      {
+        "id": 2550,
+        "piece": "▁ди",
+        "frame": 106,
+        "start_seconds": 8.48,
+        "advance": 3
+      },
+      {
+        "id": 4994,
+        "piece": "кой",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 1
+      },
+      {
+        "id": 843,
+        "piece": "▁при",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 3
+      },
+      {
+        "id": 394,
+        "piece": "ро",
+        "frame": 115,
+        "start_seconds": 9.200000000000001,
+        "advance": 2
+      },
+      {
+        "id": 3814,
+        "piece": "ды",
+        "frame": 117,
+        "start_seconds": 9.36,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 4
+      }
+    ]
+  },
+  "ru_ru-2": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Во всех научных вопросах, включая психологию, были приняты взгляды Аристотеля.",
+    "tokens": [
+      {
+        "id": 4199,
+        "piece": "▁Во",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 3
+      },
+      {
+        "id": 1425,
+        "piece": "▁все",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 3
+      },
+      {
+        "id": 7958,
+        "piece": "х",
+        "frame": 30,
+        "start_seconds": 2.4,
+        "advance": 2
+      },
+      {
+        "id": 391,
+        "piece": "▁на",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 2
+      },
+      {
+        "id": 7912,
+        "piece": "у",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 2
+      },
+      {
+        "id": 7929,
+        "piece": "ч",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 2
+      },
+      {
+        "id": 2584,
+        "piece": "ных",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 2
+      },
+      {
+        "id": 982,
+        "piece": "▁во",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 1
+      },
+      {
+        "id": 2241,
+        "piece": "про",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 2
+      },
+      {
+        "id": 1463,
+        "piece": "са",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 7958,
+        "piece": "х",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 2
+      },
+      {
+        "id": 5616,
+        "piece": "▁вклю",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 3
+      },
+      {
+        "id": 859,
+        "piece": "ча",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 2
+      },
+      {
+        "id": 7914,
+        "piece": "я",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 2
+      },
+      {
+        "id": 329,
+        "piece": "▁п",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 2
+      },
+      {
+        "id": 883,
+        "piece": "си",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 1
+      },
+      {
+        "id": 779,
+        "piece": "хо",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 2
+      },
+      {
+        "id": 546,
+        "piece": "ло",
+        "frame": 61,
+        "start_seconds": 4.88,
+        "advance": 1
+      },
+      {
+        "id": 1318,
+        "piece": "ги",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 2
+      },
+      {
+        "id": 7976,
+        "piece": "ю",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 1
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 2
+      },
+      {
+        "id": 5516,
+        "piece": "▁были",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 3
+      },
+      {
+        "id": 843,
+        "piece": "▁при",
+        "frame": 70,
+        "start_seconds": 5.6000000000000005,
+        "advance": 2
+      },
+      {
+        "id": 827,
+        "piece": "ня",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 2
+      },
+      {
+        "id": 2467,
+        "piece": "ты",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 3
+      },
+      {
+        "id": 7673,
+        "piece": "▁вз",
+        "frame": 77,
+        "start_seconds": 6.16,
+        "advance": 1
+      },
+      {
+        "id": 4013,
+        "piece": "гля",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 3
+      },
+      {
+        "id": 3814,
+        "piece": "ды",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 2
+      },
+      {
+        "id": 1259,
+        "piece": "▁А",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 2
+      },
+      {
+        "id": 449,
+        "piece": "ри",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 2
+      },
+      {
+        "id": 876,
+        "piece": "сто",
+        "frame": 87,
+        "start_seconds": 6.96,
+        "advance": 3
+      },
+      {
+        "id": 389,
+        "piece": "те",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 4
+      },
+      {
+        "id": 660,
+        "piece": "ля",
+        "frame": 94,
+        "start_seconds": 7.5200000000000005,
+        "advance": 4
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 98,
+        "start_seconds": 7.84,
+        "advance": 4
+      }
+    ]
+  },
+  "el_gr-0": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Η δέκατη καταιγίδα τη εποχή των Ατλαντικών τυφώνων που απέκτησε όνομα η υποτροπική καταιγίδα Τζέρι σχηματίστηκε σήμερα στον Ατλαντικό ωκεανό.",
+    "tokens": [
+      {
+        "id": 2383,
+        "piece": "▁Η",
+        "frame": 6,
+        "start_seconds": 0.48,
+        "advance": 3
+      },
+      {
+        "id": 622,
+        "piece": "▁δ",
+        "frame": 9,
+        "start_seconds": 0.72,
+        "advance": 1
+      },
+      {
+        "id": 7962,
+        "piece": "έ",
+        "frame": 10,
+        "start_seconds": 0.8,
+        "advance": 2
+      },
+      {
+        "id": 1968,
+        "piece": "κα",
+        "frame": 12,
+        "start_seconds": 0.96,
+        "advance": 2
+      },
+      {
+        "id": 789,
+        "piece": "τη",
+        "frame": 14,
+        "start_seconds": 1.12,
+        "advance": 2
+      },
+      {
+        "id": 1009,
+        "piece": "▁κα",
+        "frame": 16,
+        "start_seconds": 1.28,
+        "advance": 2
+      },
+      {
+        "id": 1396,
+        "piece": "ται",
+        "frame": 18,
+        "start_seconds": 1.44,
+        "advance": 2
+      },
+      {
+        "id": 7977,
+        "piece": "γ",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 1
+      },
+      {
+        "id": 7954,
+        "piece": "ί",
+        "frame": 21,
+        "start_seconds": 1.68,
+        "advance": 1
+      },
+      {
+        "id": 3451,
+        "piece": "δα",
+        "frame": 22,
+        "start_seconds": 1.76,
+        "advance": 2
+      },
+      {
+        "id": 668,
+        "piece": "▁τη",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 2
+      },
+      {
+        "id": 472,
+        "piece": "▁ε",
+        "frame": 26,
+        "start_seconds": 2.08,
+        "advance": 1
+      },
+      {
+        "id": 696,
+        "piece": "πο",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 2
+      },
+      {
+        "id": 5077,
+        "piece": "χή",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 2
+      },
+      {
+        "id": 2201,
+        "piece": "▁των",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 2
+      },
+      {
+        "id": 1335,
+        "piece": "▁Α",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 1
+      },
+      {
+        "id": 7905,
+        "piece": "τ",
+        "frame": 35,
+        "start_seconds": 2.8000000000000003,
+        "advance": 1
+      },
+      {
+        "id": 7949,
+        "piece": "λ",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 1
+      },
+      {
+        "id": 1079,
+        "piece": "αν",
+        "frame": 37,
+        "start_seconds": 2.96,
+        "advance": 1
+      },
+      {
+        "id": 1115,
+        "piece": "τικ",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 1
+      },
+      {
+        "id": 1641,
+        "piece": "ών",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 1
+      },
+      {
+        "id": 379,
+        "piece": "▁τ",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 1
+      },
+      {
+        "id": 7938,
+        "piece": "υ",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 2
+      },
+      {
+        "id": 8014,
+        "piece": "φ",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 1641,
+        "piece": "ών",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 2
+      },
+      {
+        "id": 1070,
+        "piece": "ων",
+        "frame": 49,
+        "start_seconds": 3.92,
+        "advance": 3
+      },
+      {
+        "id": 1138,
+        "piece": "▁που",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 3
+      },
+      {
+        "id": 3759,
+        "piece": "▁απ",
+        "frame": 55,
+        "start_seconds": 4.4,
+        "advance": 3
+      },
+      {
+        "id": 7962,
+        "piece": "έ",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 2
+      },
+      {
+        "id": 7935,
+        "piece": "κ",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 2
+      },
+      {
+        "id": 789,
+        "piece": "τη",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 2
+      },
+      {
+        "id": 1398,
+        "piece": "σε",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 2
+      },
+      {
+        "id": 740,
+        "piece": "▁ό",
+        "frame": 66,
+        "start_seconds": 5.28,
+        "advance": 2
+      },
+      {
+        "id": 927,
+        "piece": "νο",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 3
+      },
+      {
+        "id": 754,
+        "piece": "μα",
+        "frame": 71,
+        "start_seconds": 5.68,
+        "advance": 1
+      },
+      {
+        "id": 1324,
+        "piece": "▁η",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 2
+      },
+      {
+        "id": 4456,
+        "piece": "▁υπο",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 3
+      },
+      {
+        "id": 4955,
+        "piece": "τρο",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 1
+      },
+      {
+        "id": 7928,
+        "piece": "π",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 2
+      },
+      {
+        "id": 2553,
+        "piece": "ική",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 1009,
+        "piece": "▁κα",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 1
+      },
+      {
+        "id": 1396,
+        "piece": "ται",
+        "frame": 85,
+        "start_seconds": 6.8,
+        "advance": 2
+      },
+      {
+        "id": 7977,
+        "piece": "γ",
+        "frame": 87,
+        "start_seconds": 6.96,
+        "advance": 1
+      },
+      {
+        "id": 7954,
+        "piece": "ί",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 1
+      },
+      {
+        "id": 3451,
+        "piece": "δα",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 1
+      },
+      {
+        "id": 1582,
+        "piece": "▁Τ",
+        "frame": 90,
+        "start_seconds": 7.2,
+        "advance": 1
+      },
+      {
+        "id": 8036,
+        "piece": "ζ",
+        "frame": 91,
+        "start_seconds": 7.28,
+        "advance": 1
+      },
+      {
+        "id": 7962,
+        "piece": "έ",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 1
+      },
+      {
+        "id": 887,
+        "piece": "ρι",
+        "frame": 95,
+        "start_seconds": 7.6000000000000005,
+        "advance": 1
+      },
+      {
+        "id": 6242,
+        "piece": "▁σχ",
+        "frame": 98,
+        "start_seconds": 7.84,
+        "advance": 1
+      },
+      {
+        "id": 7944,
+        "piece": "η",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 1
+      },
+      {
+        "id": 754,
+        "piece": "μα",
+        "frame": 100,
+        "start_seconds": 8.0,
+        "advance": 1
+      },
+      {
+        "id": 2396,
+        "piece": "τί",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 2
+      },
+      {
+        "id": 3888,
+        "piece": "στη",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 1
+      },
+      {
+        "id": 1732,
+        "piece": "κε",
+        "frame": 104,
+        "start_seconds": 8.32,
+        "advance": 2
+      },
+      {
+        "id": 466,
+        "piece": "▁σ",
+        "frame": 107,
+        "start_seconds": 8.56,
+        "advance": 1
+      },
+      {
+        "id": 7988,
+        "piece": "ή",
+        "frame": 108,
+        "start_seconds": 8.64,
+        "advance": 1
+      },
+      {
+        "id": 824,
+        "piece": "με",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 1
+      },
+      {
+        "id": 729,
+        "piece": "ρα",
+        "frame": 110,
+        "start_seconds": 8.8,
+        "advance": 2
+      },
+      {
+        "id": 5196,
+        "piece": "▁στον",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 2
+      },
+      {
+        "id": 1335,
+        "piece": "▁Α",
+        "frame": 114,
+        "start_seconds": 9.120000000000001,
+        "advance": 1
+      },
+      {
+        "id": 7905,
+        "piece": "τ",
+        "frame": 115,
+        "start_seconds": 9.200000000000001,
+        "advance": 1
+      },
+      {
+        "id": 7949,
+        "piece": "λ",
+        "frame": 116,
+        "start_seconds": 9.28,
+        "advance": 1
+      },
+      {
+        "id": 1079,
+        "piece": "αν",
+        "frame": 117,
+        "start_seconds": 9.36,
+        "advance": 1
+      },
+      {
+        "id": 2728,
+        "piece": "τικό",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 1
+      },
+      {
+        "id": 4435,
+        "piece": "▁ω",
+        "frame": 121,
+        "start_seconds": 9.68,
+        "advance": 1
+      },
+      {
+        "id": 1732,
+        "piece": "κε",
+        "frame": 122,
+        "start_seconds": 9.76,
+        "advance": 2
+      },
+      {
+        "id": 1079,
+        "piece": "αν",
+        "frame": 124,
+        "start_seconds": 9.92,
+        "advance": 1
+      },
+      {
+        "id": 7955,
+        "piece": "ό",
+        "frame": 127,
+        "start_seconds": 10.16,
+        "advance": 3
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 130,
+        "start_seconds": 10.4,
+        "advance": 4
+      }
+    ]
+  },
+  "el_gr-1": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Πιο παραδοσιακέ εκκλησίε συχνά πραγματοποιούν την ακολουθή τη ανάσταση το βράδυ του Σαβάτου μέσα στο Σαβατοκύριακο του Πάσχα, με το εκκλησία με να ξεσπάσει εορτασμού ακριβώ τα μεσάνυχτα ήμνοντα την ανάσταση του Χριστού.",
+    "tokens": [
+      {
+        "id": 1809,
+        "piece": "▁Π",
+        "frame": 4,
+        "start_seconds": 0.32,
+        "advance": 2
+      },
+      {
+        "id": 1483,
+        "piece": "ιο",
+        "frame": 6,
+        "start_seconds": 0.48,
+        "advance": 2
+      },
+      {
+        "id": 4057,
+        "piece": "▁παρα",
+        "frame": 10,
+        "start_seconds": 0.8,
+        "advance": 2
+      },
+      {
+        "id": 2832,
+        "piece": "δο",
+        "frame": 13,
+        "start_seconds": 1.04,
+        "advance": 2
+      },
+      {
+        "id": 7061,
+        "piece": "σια",
+        "frame": 15,
+        "start_seconds": 1.2,
+        "advance": 2
+      },
+      {
+        "id": 7935,
+        "piece": "κ",
+        "frame": 18,
+        "start_seconds": 1.44,
+        "advance": 1
+      },
+      {
+        "id": 7962,
+        "piece": "έ",
+        "frame": 19,
+        "start_seconds": 1.52,
+        "advance": 1
+      },
+      {
+        "id": 2725,
+        "piece": "▁εκ",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 1
+      },
+      {
+        "id": 7935,
+        "piece": "κ",
+        "frame": 21,
+        "start_seconds": 1.68,
+        "advance": 1
+      },
+      {
+        "id": 1823,
+        "piece": "λη",
+        "frame": 22,
+        "start_seconds": 1.76,
+        "advance": 1
+      },
+      {
+        "id": 7922,
+        "piece": "σ",
+        "frame": 23,
+        "start_seconds": 1.84,
+        "advance": 1
+      },
+      {
+        "id": 4897,
+        "piece": "ίε",
+        "frame": 24,
+        "start_seconds": 1.92,
+        "advance": 1
+      },
+      {
+        "id": 1271,
+        "piece": "▁συ",
+        "frame": 25,
+        "start_seconds": 2.0,
+        "advance": 2
+      },
+      {
+        "id": 7994,
+        "piece": "χ",
+        "frame": 27,
+        "start_seconds": 2.16,
+        "advance": 1
+      },
+      {
+        "id": 5633,
+        "piece": "νά",
+        "frame": 28,
+        "start_seconds": 2.24,
+        "advance": 1
+      },
+      {
+        "id": 4960,
+        "piece": "▁πραγμα",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 3
+      },
+      {
+        "id": 715,
+        "piece": "το",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 1
+      },
+      {
+        "id": 2960,
+        "piece": "ποι",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 1
+      },
+      {
+        "id": 4160,
+        "piece": "ούν",
+        "frame": 35,
+        "start_seconds": 2.8000000000000003,
+        "advance": 1
+      },
+      {
+        "id": 1168,
+        "piece": "▁την",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 1
+      },
+      {
+        "id": 457,
+        "piece": "▁α",
+        "frame": 39,
+        "start_seconds": 3.12,
+        "advance": 2
+      },
+      {
+        "id": 4417,
+        "piece": "κολ",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 1
+      },
+      {
+        "id": 428,
+        "piece": "ου",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 1
+      },
+      {
+        "id": 5623,
+        "piece": "θή",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 1
+      },
+      {
+        "id": 668,
+        "piece": "▁τη",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 6506,
+        "piece": "▁ανά",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 3
+      },
+      {
+        "id": 5288,
+        "piece": "στα",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 2
+      },
+      {
+        "id": 911,
+        "piece": "ση",
+        "frame": 52,
+        "start_seconds": 4.16,
+        "advance": 2
+      },
+      {
+        "id": 658,
+        "piece": "▁το",
+        "frame": 54,
+        "start_seconds": 4.32,
+        "advance": 1
+      },
+      {
+        "id": 1340,
+        "piece": "▁β",
+        "frame": 55,
+        "start_seconds": 4.4,
+        "advance": 1
+      },
+      {
+        "id": 1234,
+        "piece": "ρά",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 1
+      },
+      {
+        "id": 7981,
+        "piece": "δ",
+        "frame": 57,
+        "start_seconds": 4.5600000000000005,
+        "advance": 1
+      },
+      {
+        "id": 7938,
+        "piece": "υ",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 1
+      },
+      {
+        "id": 829,
+        "piece": "▁του",
+        "frame": 59,
+        "start_seconds": 4.72,
+        "advance": 1
+      },
+      {
+        "id": 1756,
+        "piece": "▁Σ",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 1
+      },
+      {
+        "id": 7899,
+        "piece": "α",
+        "frame": 61,
+        "start_seconds": 4.88,
+        "advance": 1
+      },
+      {
+        "id": 6806,
+        "piece": "βά",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 1
+      },
+      {
+        "id": 3778,
+        "piece": "του",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 0
+      },
+      {
+        "id": 2173,
+        "piece": "▁μέ",
+        "frame": 65,
+        "start_seconds": 5.2,
+        "advance": 2
+      },
+      {
+        "id": 2151,
+        "piece": "σα",
+        "frame": 67,
+        "start_seconds": 5.36,
+        "advance": 1
+      },
+      {
+        "id": 1393,
+        "piece": "▁στο",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 2
+      },
+      {
+        "id": 1756,
+        "piece": "▁Σ",
+        "frame": 70,
+        "start_seconds": 5.6000000000000005,
+        "advance": 1
+      },
+      {
+        "id": 7899,
+        "piece": "α",
+        "frame": 71,
+        "start_seconds": 5.68,
+        "advance": 1
+      },
+      {
+        "id": 4845,
+        "piece": "βα",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 1
+      },
+      {
+        "id": 715,
+        "piece": "το",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 1
+      },
+      {
+        "id": 7935,
+        "piece": "κ",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 1
+      },
+      {
+        "id": 8002,
+        "piece": "ύ",
+        "frame": 75,
+        "start_seconds": 6.0,
+        "advance": 1
+      },
+      {
+        "id": 5712,
+        "piece": "ρια",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 1
+      },
+      {
+        "id": 3528,
+        "piece": "κο",
+        "frame": 78,
+        "start_seconds": 6.24,
+        "advance": 1
+      },
+      {
+        "id": 829,
+        "piece": "▁του",
+        "frame": 79,
+        "start_seconds": 6.32,
+        "advance": 2
+      },
+      {
+        "id": 1809,
+        "piece": "▁Π",
+        "frame": 81,
+        "start_seconds": 6.48,
+        "advance": 1
+      },
+      {
+        "id": 7957,
+        "piece": "ά",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 1
+      },
+      {
+        "id": 7922,
+        "piece": "σ",
+        "frame": 83,
+        "start_seconds": 6.640000000000001,
+        "advance": 1
+      },
+      {
+        "id": 4712,
+        "piece": "χα",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 1
+      },
+      {
+        "id": 7877,
+        "piece": ",",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 1
+      },
+      {
+        "id": 888,
+        "piece": "▁με",
+        "frame": 87,
+        "start_seconds": 6.96,
+        "advance": 2
+      },
+      {
+        "id": 658,
+        "piece": "▁το",
+        "frame": 89,
+        "start_seconds": 7.12,
+        "advance": 2
+      },
+      {
+        "id": 2725,
+        "piece": "▁εκ",
+        "frame": 91,
+        "start_seconds": 7.28,
+        "advance": 1
+      },
+      {
+        "id": 7935,
+        "piece": "κ",
+        "frame": 92,
+        "start_seconds": 7.36,
+        "advance": 1
+      },
+      {
+        "id": 1823,
+        "piece": "λη",
+        "frame": 93,
+        "start_seconds": 7.44,
+        "advance": 1
+      },
+      {
+        "id": 4778,
+        "piece": "σία",
+        "frame": 94,
+        "start_seconds": 7.5200000000000005,
+        "advance": 1
+      },
+      {
+        "id": 888,
+        "piece": "▁με",
+        "frame": 98,
+        "start_seconds": 7.84,
+        "advance": 1
+      },
+      {
+        "id": 643,
+        "piece": "▁να",
+        "frame": 99,
+        "start_seconds": 7.92,
+        "advance": 2
+      },
+      {
+        "id": 5508,
+        "piece": "▁ξε",
+        "frame": 101,
+        "start_seconds": 8.08,
+        "advance": 1
+      },
+      {
+        "id": 7922,
+        "piece": "σ",
+        "frame": 103,
+        "start_seconds": 8.24,
+        "advance": 1
+      },
+      {
+        "id": 2650,
+        "piece": "πά",
+        "frame": 104,
+        "start_seconds": 8.32,
+        "advance": 1
+      },
+      {
+        "id": 1464,
+        "piece": "σει",
+        "frame": 105,
+        "start_seconds": 8.4,
+        "advance": 1
+      },
+      {
+        "id": 472,
+        "piece": "▁ε",
+        "frame": 107,
+        "start_seconds": 8.56,
+        "advance": 1
+      },
+      {
+        "id": 7907,
+        "piece": "ο",
+        "frame": 108,
+        "start_seconds": 8.64,
+        "advance": 1
+      },
+      {
+        "id": 7925,
+        "piece": "ρ",
+        "frame": 109,
+        "start_seconds": 8.72,
+        "advance": 1
+      },
+      {
+        "id": 593,
+        "piece": "τα",
+        "frame": 110,
+        "start_seconds": 8.8,
+        "advance": 1
+      },
+      {
+        "id": 7922,
+        "piece": "σ",
+        "frame": 111,
+        "start_seconds": 8.88,
+        "advance": 1
+      },
+      {
+        "id": 7849,
+        "piece": "μού",
+        "frame": 112,
+        "start_seconds": 8.96,
+        "advance": 1
+      },
+      {
+        "id": 5247,
+        "piece": "▁ακ",
+        "frame": 115,
+        "start_seconds": 9.200000000000001,
+        "advance": 2
+      },
+      {
+        "id": 887,
+        "piece": "ρι",
+        "frame": 117,
+        "start_seconds": 9.36,
+        "advance": 1
+      },
+      {
+        "id": 8023,
+        "piece": "β",
+        "frame": 118,
+        "start_seconds": 9.44,
+        "advance": 1
+      },
+      {
+        "id": 8012,
+        "piece": "ώ",
+        "frame": 119,
+        "start_seconds": 9.52,
+        "advance": 1
+      },
+      {
+        "id": 1312,
+        "piece": "▁τα",
+        "frame": 120,
+        "start_seconds": 9.6,
+        "advance": 2
+      },
+      {
+        "id": 888,
+        "piece": "▁με",
+        "frame": 122,
+        "start_seconds": 9.76,
+        "advance": 1
+      },
+      {
+        "id": 7922,
+        "piece": "σ",
+        "frame": 123,
+        "start_seconds": 9.84,
+        "advance": 0
+      },
+      {
+        "id": 1260,
+        "piece": "άν",
+        "frame": 124,
+        "start_seconds": 9.92,
+        "advance": 1
+      },
+      {
+        "id": 7938,
+        "piece": "υ",
+        "frame": 125,
+        "start_seconds": 10.0,
+        "advance": 1
+      },
+      {
+        "id": 7994,
+        "piece": "χ",
+        "frame": 126,
+        "start_seconds": 10.08,
+        "advance": 1
+      },
+      {
+        "id": 593,
+        "piece": "τα",
+        "frame": 127,
+        "start_seconds": 10.16,
+        "advance": 0
+      },
+      {
+        "id": 1482,
+        "piece": "▁ή",
+        "frame": 128,
+        "start_seconds": 10.24,
+        "advance": 1
+      },
+      {
+        "id": 7932,
+        "piece": "μ",
+        "frame": 129,
+        "start_seconds": 10.32,
+        "advance": 1
+      },
+      {
+        "id": 927,
+        "piece": "νο",
+        "frame": 131,
+        "start_seconds": 10.48,
+        "advance": 1
+      },
+      {
+        "id": 6561,
+        "piece": "ντα",
+        "frame": 132,
+        "start_seconds": 10.56,
+        "advance": 1
+      },
+      {
+        "id": 1168,
+        "piece": "▁την",
+        "frame": 134,
+        "start_seconds": 10.72,
+        "advance": 2
+      },
+      {
+        "id": 6506,
+        "piece": "▁ανά",
+        "frame": 136,
+        "start_seconds": 10.88,
+        "advance": 1
+      },
+      {
+        "id": 5288,
+        "piece": "στα",
+        "frame": 139,
+        "start_seconds": 11.120000000000001,
+        "advance": 2
+      },
+      {
+        "id": 911,
+        "piece": "ση",
+        "frame": 141,
+        "start_seconds": 11.28,
+        "advance": 2
+      },
+      {
+        "id": 829,
+        "piece": "▁του",
+        "frame": 143,
+        "start_seconds": 11.44,
+        "advance": 1
+      },
+      {
+        "id": 5988,
+        "piece": "▁Χ",
+        "frame": 144,
+        "start_seconds": 11.52,
+        "advance": 2
+      },
+      {
+        "id": 3525,
+        "piece": "ρισ",
+        "frame": 146,
+        "start_seconds": 11.68,
+        "advance": 2
+      },
+      {
+        "id": 3443,
+        "piece": "τού",
+        "frame": 148,
+        "start_seconds": 11.84,
+        "advance": 2
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 150,
+        "start_seconds": 12.0,
+        "advance": 4
+      }
+    ]
+  },
+  "el_gr-2": {
+    "runtime": "1.22.0",
+    "precision": "fp32",
+    "text": "Κάποια άτομα έχουν μην σταθερού πυρήνε και αυτό το οδηγεί στη διάσταση αν του θα σκεφτεί μικρή ακόμη και καθόλου πίεση.",
+    "tokens": [
+      {
+        "id": 1612,
+        "piece": "▁Κ",
+        "frame": 4,
+        "start_seconds": 0.32,
+        "advance": 3
+      },
+      {
+        "id": 7957,
+        "piece": "ά",
+        "frame": 7,
+        "start_seconds": 0.56,
+        "advance": 1
+      },
+      {
+        "id": 696,
+        "piece": "πο",
+        "frame": 8,
+        "start_seconds": 0.64,
+        "advance": 2
+      },
+      {
+        "id": 568,
+        "piece": "ια",
+        "frame": 10,
+        "start_seconds": 0.8,
+        "advance": 1
+      },
+      {
+        "id": 1959,
+        "piece": "▁ά",
+        "frame": 11,
+        "start_seconds": 0.88,
+        "advance": 2
+      },
+      {
+        "id": 715,
+        "piece": "το",
+        "frame": 13,
+        "start_seconds": 1.04,
+        "advance": 2
+      },
+      {
+        "id": 754,
+        "piece": "μα",
+        "frame": 15,
+        "start_seconds": 1.2,
+        "advance": 1
+      },
+      {
+        "id": 5818,
+        "piece": "▁έχουν",
+        "frame": 16,
+        "start_seconds": 1.28,
+        "advance": 3
+      },
+      {
+        "id": 5352,
+        "piece": "▁μη",
+        "frame": 19,
+        "start_seconds": 1.52,
+        "advance": 1
+      },
+      {
+        "id": 7913,
+        "piece": "ν",
+        "frame": 20,
+        "start_seconds": 1.6,
+        "advance": 3
+      },
+      {
+        "id": 3791,
+        "piece": "▁στα",
+        "frame": 23,
+        "start_seconds": 1.84,
+        "advance": 2
+      },
+      {
+        "id": 2153,
+        "piece": "θε",
+        "frame": 25,
+        "start_seconds": 2.0,
+        "advance": 1
+      },
+      {
+        "id": 2643,
+        "piece": "ρού",
+        "frame": 26,
+        "start_seconds": 2.08,
+        "advance": 1
+      },
+      {
+        "id": 437,
+        "piece": "▁π",
+        "frame": 29,
+        "start_seconds": 2.32,
+        "advance": 1
+      },
+      {
+        "id": 7938,
+        "piece": "υ",
+        "frame": 30,
+        "start_seconds": 2.4,
+        "advance": 1
+      },
+      {
+        "id": 2973,
+        "piece": "ρή",
+        "frame": 31,
+        "start_seconds": 2.48,
+        "advance": 1
+      },
+      {
+        "id": 1564,
+        "piece": "νε",
+        "frame": 32,
+        "start_seconds": 2.56,
+        "advance": 1
+      },
+      {
+        "id": 701,
+        "piece": "▁και",
+        "frame": 34,
+        "start_seconds": 2.72,
+        "advance": 2
+      },
+      {
+        "id": 1996,
+        "piece": "▁αυτό",
+        "frame": 36,
+        "start_seconds": 2.88,
+        "advance": 2
+      },
+      {
+        "id": 658,
+        "piece": "▁το",
+        "frame": 38,
+        "start_seconds": 3.04,
+        "advance": 2
+      },
+      {
+        "id": 840,
+        "piece": "▁ο",
+        "frame": 40,
+        "start_seconds": 3.2,
+        "advance": 1
+      },
+      {
+        "id": 4816,
+        "piece": "δη",
+        "frame": 41,
+        "start_seconds": 3.2800000000000002,
+        "advance": 1
+      },
+      {
+        "id": 7977,
+        "piece": "γ",
+        "frame": 42,
+        "start_seconds": 3.36,
+        "advance": 1
+      },
+      {
+        "id": 917,
+        "piece": "εί",
+        "frame": 43,
+        "start_seconds": 3.44,
+        "advance": 1
+      },
+      {
+        "id": 1658,
+        "piece": "▁στη",
+        "frame": 45,
+        "start_seconds": 3.6,
+        "advance": 2
+      },
+      {
+        "id": 6025,
+        "piece": "▁διά",
+        "frame": 47,
+        "start_seconds": 3.7600000000000002,
+        "advance": 3
+      },
+      {
+        "id": 5288,
+        "piece": "στα",
+        "frame": 50,
+        "start_seconds": 4.0,
+        "advance": 1
+      },
+      {
+        "id": 911,
+        "piece": "ση",
+        "frame": 53,
+        "start_seconds": 4.24,
+        "advance": 2
+      },
+      {
+        "id": 1466,
+        "piece": "▁αν",
+        "frame": 56,
+        "start_seconds": 4.48,
+        "advance": 2
+      },
+      {
+        "id": 829,
+        "piece": "▁του",
+        "frame": 58,
+        "start_seconds": 4.64,
+        "advance": 2
+      },
+      {
+        "id": 1461,
+        "piece": "▁θα",
+        "frame": 60,
+        "start_seconds": 4.8,
+        "advance": 2
+      },
+      {
+        "id": 466,
+        "piece": "▁σ",
+        "frame": 62,
+        "start_seconds": 4.96,
+        "advance": 1
+      },
+      {
+        "id": 1732,
+        "piece": "κε",
+        "frame": 63,
+        "start_seconds": 5.04,
+        "advance": 0
+      },
+      {
+        "id": 8014,
+        "piece": "φ",
+        "frame": 63,
+        "start_seconds": 5.04,
+        "advance": 1
+      },
+      {
+        "id": 7364,
+        "piece": "τεί",
+        "frame": 64,
+        "start_seconds": 5.12,
+        "advance": 1
+      },
+      {
+        "id": 6937,
+        "piece": "▁μικ",
+        "frame": 66,
+        "start_seconds": 5.28,
+        "advance": 1
+      },
+      {
+        "id": 2973,
+        "piece": "ρή",
+        "frame": 68,
+        "start_seconds": 5.44,
+        "advance": 2
+      },
+      {
+        "id": 457,
+        "piece": "▁α",
+        "frame": 72,
+        "start_seconds": 5.76,
+        "advance": 1
+      },
+      {
+        "id": 2889,
+        "piece": "κό",
+        "frame": 73,
+        "start_seconds": 5.84,
+        "advance": 1
+      },
+      {
+        "id": 3231,
+        "piece": "μη",
+        "frame": 74,
+        "start_seconds": 5.92,
+        "advance": 1
+      },
+      {
+        "id": 701,
+        "piece": "▁και",
+        "frame": 76,
+        "start_seconds": 6.08,
+        "advance": 1
+      },
+      {
+        "id": 4065,
+        "piece": "▁καθ",
+        "frame": 77,
+        "start_seconds": 6.16,
+        "advance": 1
+      },
+      {
+        "id": 7955,
+        "piece": "ό",
+        "frame": 79,
+        "start_seconds": 6.32,
+        "advance": 1
+      },
+      {
+        "id": 5630,
+        "piece": "λου",
+        "frame": 80,
+        "start_seconds": 6.4,
+        "advance": 1
+      },
+      {
+        "id": 437,
+        "piece": "▁π",
+        "frame": 82,
+        "start_seconds": 6.5600000000000005,
+        "advance": 2
+      },
+      {
+        "id": 4897,
+        "piece": "ίε",
+        "frame": 84,
+        "start_seconds": 6.72,
+        "advance": 2
+      },
+      {
+        "id": 911,
+        "piece": "ση",
+        "frame": 86,
+        "start_seconds": 6.88,
+        "advance": 2
+      },
+      {
+        "id": 7883,
+        "piece": ".",
+        "frame": 88,
+        "start_seconds": 7.04,
+        "advance": 3
+      }
+    ]
+  }
+}

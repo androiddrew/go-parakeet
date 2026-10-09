@@ -8,3 +8,7 @@ in third_party/licenses/onnx-asr.txt. See THIRD_PARTY.md for exact provenance.
 
 NVIDIA Parakeet model weights and their ONNX conversion are external assets
 under CC-BY-4.0; the Go code license does not relicense those assets.
+
+Natural test audio and human transcripts from Google FLEURS, Conneau et al.
+(2022), are CC-BY-4.0. See third_party/licenses/fleurs.txt and the per-clip
+provenance in testdata/natural/manifest.json.

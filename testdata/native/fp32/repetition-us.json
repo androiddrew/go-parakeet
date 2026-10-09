@@ -1,0 +1,219 @@
+{
+  "runtime": "1.22.0",
+  "precision": "fp32",
+  "audio_sha256": "6f163dc9ff5ff127637604e55a797cb098f4bef578ebd171f8e15039b13a562a",
+  "feature_length": 478,
+  "encoded_length": 60,
+  "text": "This is very, very important. We need to check it again, and again before we leave.",
+  "tokens": [
+    {
+      "id": 5831,
+      "piece": "▁This",
+      "frame": 0,
+      "start_seconds": 0.0,
+      "advance": 3
+    },
+    {
+      "id": 508,
+      "piece": "▁is",
+      "frame": 3,
+      "start_seconds": 0.24,
+      "advance": 3
+    },
+    {
+      "id": 5254,
+      "piece": "▁very",
+      "frame": 6,
+      "start_seconds": 0.48,
+      "advance": 3
+    },
+    {
+      "id": 7877,
+      "piece": ",",
+      "frame": 9,
+      "start_seconds": 0.72,
+      "advance": 3
+    },
+    {
+      "id": 5254,
+      "piece": "▁very",
+      "frame": 12,
+      "start_seconds": 0.96,
+      "advance": 4
+    },
+    {
+      "id": 5984,
+      "piece": "▁important",
+      "frame": 16,
+      "start_seconds": 1.28,
+      "advance": 4
+    },
+    {
+      "id": 7883,
+      "piece": ".",
+      "frame": 21,
+      "start_seconds": 1.68,
+      "advance": 2
+    },
+    {
+      "id": 1842,
+      "piece": "▁We",
+      "frame": 23,
+      "start_seconds": 1.84,
+      "advance": 3
+    },
+    {
+      "id": 3410,
+      "piece": "▁need",
+      "frame": 26,
+      "start_seconds": 2.08,
+      "advance": 2
+    },
+    {
+      "id": 366,
+      "piece": "▁to",
+      "frame": 28,
+      "start_seconds": 2.24,
+      "advance": 1
+    },
+    {
+      "id": 774,
+      "piece": "▁che",
+      "frame": 29,
+      "start_seconds": 2.32,
+      "advance": 2
+    },
+    {
+      "id": 725,
+      "piece": "ck",
+      "frame": 31,
+      "start_seconds": 2.48,
+      "advance": 1
+    },
+    {
+      "id": 869,
+      "piece": "▁it",
+      "frame": 32,
+      "start_seconds": 2.56,
+      "advance": 2
+    },
+    {
+      "id": 6255,
+      "piece": "▁aga",
+      "frame": 34,
+      "start_seconds": 2.72,
+      "advance": 2
+    },
+    {
+      "id": 281,
+      "piece": "in",
+      "frame": 36,
+      "start_seconds": 2.88,
+      "advance": 2
+    },
+    {
+      "id": 7877,
+      "piece": ",",
+      "frame": 38,
+      "start_seconds": 3.04,
+      "advance": 2
+    },
+    {
+      "id": 575,
+      "piece": "▁and",
+      "frame": 40,
+      "start_seconds": 3.2,
+      "advance": 2
+    },
+    {
+      "id": 6255,
+      "piece": "▁aga",
+      "frame": 42,
+      "start_seconds": 3.36,
+      "advance": 2
+    },
+    {
+      "id": 281,
+      "piece": "in",
+      "frame": 44,
+      "start_seconds": 3.52,
+      "advance": 2
+    },
+    {
+      "id": 555,
+      "piece": "▁be",
+      "frame": 46,
+      "start_seconds": 3.68,
+      "advance": 2
+    },
+    {
+      "id": 786,
+      "piece": "for",
+      "frame": 48,
+      "start_seconds": 3.84,
+      "advance": 2
+    },
+    {
+      "id": 7864,
+      "piece": "e",
+      "frame": 50,
+      "start_seconds": 4.0,
+      "advance": 1
+    },
+    {
+      "id": 750,
+      "piece": "▁we",
+      "frame": 51,
+      "start_seconds": 4.08,
+      "advance": 2
+    },
+    {
+      "id": 481,
+      "piece": "▁le",
+      "frame": 53,
+      "start_seconds": 4.24,
+      "advance": 2
+    },
+    {
+      "id": 998,
+      "piece": "ave",
+      "frame": 55,
+      "start_seconds": 4.4,
+      "advance": 2
+    },
+    {
+      "id": 7883,
+      "piece": ".",
+      "frame": 57,
+      "start_seconds": 4.5600000000000005,
+      "advance": 1
+    }
+  ],
+  "stages": {
+    "samples": {
+      "file": "../blobs/0f61de1b1ab015aee669de20005a37cab3651f98b1f27d1abcd678234bbfab08.f32.gz",
+      "shape": [
+        76331
+      ],
+      "sha256": "0f61de1b1ab015aee669de20005a37cab3651f98b1f27d1abcd678234bbfab08"
+    },
+    "features": {
+      "file": "../blobs/d2590e60b7221aea2c516a109f78e3e4ef1fd7a32754b20eebb89d4d27cce702.f32.gz",
+      "shape": [
+        1,
+        128,
+        478
+      ],
+      "sha256": "d2590e60b7221aea2c516a109f78e3e4ef1fd7a32754b20eebb89d4d27cce702"
+    },
+    "encoder": {
+      "file": "../blobs/534fee39c5f76a01f796be8dfaef6f618d75ce5931e1e62ca9f7a320baa00d69.f32.gz",
+      "shape": [
+        1,
+        1024,
+        60
+      ],
+      "sha256": "534fee39c5f76a01f796be8dfaef6f618d75ce5931e1e62ca9f7a320baa00d69"
+    }
+  }
+}

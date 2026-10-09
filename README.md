@@ -7,11 +7,14 @@ audio decoding/resampling and their own CLI or serving layer.
 
 ## Development status
 
-Implementation is in progress; v0.1.0 has not been released. CPU/CUDA inference,
+The **v0.1.0 release candidate** has passed local acceptance and final review.
+Hosted CI on the candidate commit and publication remain. CPU/CUDA inference,
 **long-audio windowing**, and **finalized-chunk callbacks** are implemented.
 Both transcription methods accept complete audio of at least 20 ms and use the
 same pipeline. A 308-second recording has been checked on CPU FP32/INT8 and CUDA
-FP32; see [VALIDATION.md](VALIDATION.md) for evidence and remaining release gates.
+FP32. Frozen native fixtures also cover 18 natural-speech clips in six languages.
+See [VALIDATION.md](VALIDATION.md) for evidence, accuracy limits, and release scope,
+and [RELEASING.md](RELEASING.md) for the acceptance/publishing procedure.
 
 ## Usage
 
@@ -151,10 +154,10 @@ that can deadlock. Close the engine after transcription returns.
 
 Requires Go 1.25 or newer, CGO, an installed ONNX Runtime, and separately
 downloaded model files. The Go binding targets C API 22; native ONNX Runtime
-1.22.2 is the release compatibility target. Tested so far: Linux/amd64, Go
-1.26.4, native ORT **1.22.0**, CPU FP32/INT8, and CUDA FP32 on an RTX 4090. See
-[VALIDATION.md](VALIDATION.md) for evidence and outstanding checks; 1.22.2 has
-not yet been exercised. These are tested configurations, not exact version-string
+1.22.2 is the validated release baseline: Linux/amd64, Go 1.25/1.26.4,
+CPU FP32/INT8, and CUDA FP32 on an RTX 4090. Native **ORT 1.22.0** was also tested
+during development. See [VALIDATION.md](VALIDATION.md) for evidence. These are
+tested configurations, not exact version-string
 restrictions. Check the resolved binding with
 `go list -m github.com/yalue/onnxruntime_go`; a consuming application's dependency
 graph can select a newer binding through Go's minimal version selection.
@@ -207,11 +210,19 @@ go build ./cmd/inference-probe
 ```
 
 Unit tests require neither model assets nor a native runtime. Native lifecycle
-tests opt in using `PARAKEET_TEST_ORT` and `PARAKEET_TEST_ASSETS`; parity tests
-also require `PARAKEET_TEST_REFERENCE`. They run in subprocesses because ortenv
+tests opt in using `PARAKEET_TEST_ORT` and `PARAKEET_TEST_ASSETS` and default to
+the frozen fixtures in `testdata/`; `PARAKEET_TEST_REFERENCE` is an optional
+override. They run in subprocesses because ortenv
 retains its environment. See [testdata/README.md](testdata/README.md) for fixture
 generation and CPU/CUDA commands. CUDA needs both the `cuda` build tag and
 `PARAKEET_TEST_CUDA_ORT`.
+
+CI builds pinned ORT 1.22.2 on Linux and runs native INT8 parity, natural-speech,
+streaming and lifecycle tests. Fixture checksums are verified in ordinary unit
+tests; native CI requires no live TTS service or Python inference stack.
+Natural-speech checks distinguish Go/Python implementation parity from model
+accuracy. The three Greek examples have materially higher word error than the
+other pilot languages, especially with INT8; the full results are recorded.
 
 `cmd/inference-probe` accepts already-resampled little-endian float32 PCM and
 prints JSON metadata, timings, text, and tokens. It accepts long recordings;
@@ -231,3 +242,7 @@ go run ./cmd/inference-probe --assets runtime-assets/parakeet \
 
 Original code is [Apache-2.0](LICENSE). See [THIRD_PARTY.md](THIRD_PARTY.md),
 [NOTICE](NOTICE), and [ASSETS.md](ASSETS.md) for code/model attribution.
+
+`cmd/inference-bench` and `tools/benchmark.py` record first/warm request timings,
+RSS (including native allocations), Go heap, and sampled VRAM. Reproduction and
+interpretation are in RELEASING.md; measured data is in `validation/benchmarks.json`.

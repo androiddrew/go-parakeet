@@ -1,17 +1,21 @@
 package parakeet
 
 import (
+	"bytes"
+	"compress/gzip"
 	"context"
 	"crypto/sha256"
 	"encoding/binary"
 	"encoding/json"
 	"errors"
 	"fmt"
+	"io"
 	"math"
 	"os"
 	"os/exec"
 	"path/filepath"
 	"reflect"
+	"strings"
 	"sync"
 	"testing"
 
@@ -21,14 +25,44 @@ import (
 func nativeConfig(t *testing.T) Config {
 	t.Helper()
 	dir, lib := os.Getenv("PARAKEET_TEST_ASSETS"), os.Getenv("PARAKEET_TEST_ORT")
-	if dir == "" || lib == "" {
+	if dir == "" && lib == "" {
 		t.Skip("set PARAKEET_TEST_ASSETS and PARAKEET_TEST_ORT for native tests")
 	}
+	return nativeConfigFor(t, lib)
+}
+
+func nativeConfigFor(t *testing.T, lib string) Config {
+	t.Helper()
+	dir := os.Getenv("PARAKEET_TEST_ASSETS")
+	if dir == "" || lib == "" {
+		t.Fatal("native tests require both an ORT selector and PARAKEET_TEST_ASSETS")
+	}
 	suffix := ""
-	if os.Getenv("PARAKEET_TEST_PRECISION") == "int8" {
+	if testPrecision(t) == "int8" {
 		suffix = ".int8"
 	}
 	return Config{ORTLibrary: lib, PreprocessorPath: filepath.Join(dir, "nemo128.onnx"), EncoderPath: filepath.Join(dir, "encoder-model"+suffix+".onnx"), DecoderPath: filepath.Join(dir, "decoder_joint-model"+suffix+".onnx"), ConfigPath: filepath.Join(dir, "config.json"), VocabPath: filepath.Join(dir, "vocab.txt")}
+}
+
+func testPrecision(t *testing.T) string {
+	t.Helper()
+	switch p := os.Getenv("PARAKEET_TEST_PRECISION"); p {
+	case "", "fp32":
+		return "fp32"
+	case "int8":
+		return p
+	default:
+		t.Fatalf("unsupported PARAKEET_TEST_PRECISION %q", p)
+		return ""
+	}
+}
+
+func referenceDir(t *testing.T) string {
+	t.Helper()
+	if dir := os.Getenv("PARAKEET_TEST_REFERENCE"); dir != "" {
+		return dir
+	}
+	return filepath.Join("testdata", "native", testPrecision(t))
 }
 
 func nativeSubprocess(t *testing.T) bool {
@@ -51,6 +85,16 @@ func readFloat32(t *testing.T, path, expected string) []float32 {
 	raw, err := os.ReadFile(path)
 	if err != nil {
 		t.Fatal(err)
+	}
+	if strings.HasSuffix(path, ".gz") {
+		reader, err := gzip.NewReader(bytes.NewReader(raw))
+		if err != nil {
+			t.Fatal(err)
+		}
+		raw, err = io.ReadAll(reader)
+		if err := errors.Join(err, reader.Close()); err != nil {
+			t.Fatal(err)
+		}
 	}
 	if expected != "" && fmt.Sprintf("%x", sha256.Sum256(raw)) != expected {
 		t.Fatal("fixture checksum mismatch:", path)
@@ -80,10 +124,7 @@ func compareFloats(t *testing.T, got, want []float32) {
 
 func TestNativeParity(t *testing.T) {
 	c := nativeConfig(t)
-	dir := os.Getenv("PARAKEET_TEST_REFERENCE")
-	if dir == "" {
-		t.Skip("set PARAKEET_TEST_REFERENCE to generated Python stage fixtures")
-	}
+	dir := referenceDir(t)
 	if !nativeSubprocess(t) {
 		return
 	}
@@ -96,6 +137,9 @@ func TestNativeParity(t *testing.T) {
 			t.Error(err)
 		}
 	}()
+	if version := os.Getenv("PARAKEET_TEST_EXPECT_ORT"); version != "" && e.Initialization().RuntimeVersion != version {
+		t.Fatalf("expected ORT %s, loaded %s", version, e.Initialization().RuntimeVersion)
+	}
 	files, err := filepath.Glob(filepath.Join(dir, "*.json"))
 	if err != nil || len(files) == 0 {
 		t.Fatal("no reference fixtures", err)

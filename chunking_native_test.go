@@ -17,10 +17,7 @@ import (
 
 func speechCorpus(t *testing.T) ([]float32, string) {
 	t.Helper()
-	dir := os.Getenv("PARAKEET_TEST_REFERENCE")
-	if dir == "" {
-		t.Skip("set PARAKEET_TEST_REFERENCE for native chunking fixtures")
-	}
+	dir := referenceDir(t)
 	var samples []float32
 	var text strings.Builder
 	for _, name := range []string{"clean-us", "clean-gb", "repetition-us", "repetition-gb"} {
@@ -192,9 +189,6 @@ func testChunkedInference(t *testing.T, c Config) {
 
 func TestNativeChunking(t *testing.T) {
 	c := nativeConfig(t)
-	if os.Getenv("PARAKEET_TEST_REFERENCE") == "" {
-		t.Skip("set PARAKEET_TEST_REFERENCE")
-	}
 	if !nativeSubprocess(t) {
 		return
 	}

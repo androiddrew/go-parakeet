@@ -16,12 +16,9 @@ func TestCUDAInferenceCycles(t *testing.T) {
 	if lib == "" {
 		t.Skip("set PARAKEET_TEST_CUDA_ORT to opt into GPU inference")
 	}
-	c := nativeConfig(t)
+	c := nativeConfigFor(t, lib)
 	c.ORTLibrary, c.Provider = lib, CUDA
-	dir := os.Getenv("PARAKEET_TEST_REFERENCE")
-	if dir == "" {
-		t.Fatal("PARAKEET_TEST_REFERENCE is required for CUDA validation")
-	}
+	dir := referenceDir(t)
 	if os.Getenv("PARAKEET_TEST_PRECISION") == "int8" {
 		t.Fatal("CUDA validation requires FP32 assets")
 	}
@@ -83,7 +80,7 @@ func TestCUDAChunking(t *testing.T) {
 	if lib == "" {
 		t.Skip("set PARAKEET_TEST_CUDA_ORT to opt into GPU inference")
 	}
-	c := nativeConfig(t)
+	c := nativeConfigFor(t, lib)
 	c.ORTLibrary, c.Provider = lib, CUDA
 	if os.Getenv("PARAKEET_TEST_PRECISION") == "int8" {
 		t.Fatal("CUDA validation requires FP32")
@@ -99,7 +96,7 @@ func TestCUDALongRecording(t *testing.T) {
 	if lib == "" || os.Getenv("PARAKEET_TEST_LONG") != "1" {
 		t.Skip("set PARAKEET_TEST_CUDA_ORT and PARAKEET_TEST_LONG=1")
 	}
-	c := nativeConfig(t)
+	c := nativeConfigFor(t, lib)
 	c.ORTLibrary, c.Provider = lib, CUDA
 	if os.Getenv("PARAKEET_TEST_PRECISION") == "int8" {
 		t.Fatal("CUDA validation requires FP32")
@@ -108,4 +105,36 @@ func TestCUDALongRecording(t *testing.T) {
 		return
 	}
 	testLongRecording(t, c)
+}
+
+func TestCUDANaturalSpeech(t *testing.T) {
+	lib := os.Getenv("PARAKEET_TEST_CUDA_ORT")
+	if lib == "" {
+		t.Skip("set PARAKEET_TEST_CUDA_ORT")
+	}
+	c := nativeConfigFor(t, lib)
+	c.Provider = CUDA
+	if testPrecision(t) != "fp32" {
+		t.Fatal("CUDA requires FP32")
+	}
+	if !nativeSubprocess(t) {
+		return
+	}
+	testNaturalSpeech(t, c)
+}
+
+func TestCUDAEncoderLimit(t *testing.T) {
+	lib := os.Getenv("PARAKEET_TEST_CUDA_ORT")
+	if lib == "" || os.Getenv("PARAKEET_TEST_LIMIT") != "1" {
+		t.Skip("set PARAKEET_TEST_CUDA_ORT and PARAKEET_TEST_LIMIT=1")
+	}
+	c := nativeConfigFor(t, lib)
+	c.Provider = CUDA
+	if testPrecision(t) != "fp32" {
+		t.Fatal("CUDA requires FP32")
+	}
+	if !nativeSubprocess(t) {
+		return
+	}
+	testEncoderLimit(t, c)
 }

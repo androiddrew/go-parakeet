@@ -12,6 +12,7 @@ third-party notices are under `third_party/licenses/`.
 | Original Parakeet TDT 0.6B v3 weights | [NVIDIA model card](https://huggingface.co/nvidia/parakeet-tdt-0.6b-v3) | CC-BY-4.0; external model assets |
 | ONNX weights, configuration, vocabulary | [istupakov conversion](https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/tree/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce), `8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce` | CC-BY-4.0 as declared by the pinned conversion card; converted/quantized from NVIDIA's weights |
 | `nemo128.onnx` | Same pinned asset bundle; hash in SHA256SUMS | Graph metadata identifies Ilya Stupakov and MIT License; preprocessing source is onnx-asr |
+| Natural speech and human transcripts in `testdata/natural` | Google FLEURS, revision `70bb2e84b976b7e960aa89f1c648e09c59f894dd` | CC-BY-4.0; retained `fleurs.txt`, per-clip provenance in `manifest.json` |
 
 The decoder in `internal/decoder/greedy.go` adapts the decisions in
 `src/onnx_asr/asr.py` and `src/onnx_asr/models/nemo.py`. Changes separate native
@@ -40,3 +41,13 @@ Python ONNX tooling and FFmpeg are optional development tools. FFmpeg's terms
 depend on the installed build; this repository neither embeds nor links it.
 Fixture prompts are original test material. Generated audio records the source
 service, voice, request, converter version, and content checksums in its manifest.
+The frozen synthetic corpus and original prompts in `testdata/native` use the
+repository's Apache-2.0 terms; model weights retain their own terms. The FLEURS
+audio/transcripts retain CC-BY-4.0 and are converted as described in `fleurs.txt`.
+Python-generated predictions are stored separately from human transcripts.
+
+`tools/interop` is an optional, separate development module using go-kokoro and
+go-g2p v0.2.0 (Apache-2.0); their dependencies/assets retain the attribution in
+those modules. They are not dependencies of the inference library. The runtime
+builder downloads upstream ORT source at a fixed commit under its MIT license;
+native binaries and NVIDIA development/runtime libraries are not redistributed.

@@ -1,0 +1,226 @@
+{
+  "runtime": "1.22.0",
+  "precision": "fp32",
+  "audio_sha256": "ddba7f097f91e8e3b4e3b5a52a86354d654b81d5f031886dc12ac5e54d173d17",
+  "feature_length": 420,
+  "encoded_length": 53,
+  "text": "Our meeting starts at half past ten. Please bring a notebook and a pencil.",
+  "tokens": [
+    {
+      "id": 452,
+      "piece": "▁O",
+      "frame": 0,
+      "start_seconds": 0.0,
+      "advance": 1
+    },
+    {
+      "id": 344,
+      "piece": "ur",
+      "frame": 1,
+      "start_seconds": 0.08,
+      "advance": 2
+    },
+    {
+      "id": 525,
+      "piece": "▁me",
+      "frame": 3,
+      "start_seconds": 0.24,
+      "advance": 1
+    },
+    {
+      "id": 291,
+      "piece": "et",
+      "frame": 4,
+      "start_seconds": 0.32,
+      "advance": 2
+    },
+    {
+      "id": 381,
+      "piece": "ing",
+      "frame": 6,
+      "start_seconds": 0.48,
+      "advance": 1
+    },
+    {
+      "id": 1878,
+      "piece": "▁star",
+      "frame": 7,
+      "start_seconds": 0.56,
+      "advance": 3
+    },
+    {
+      "id": 769,
+      "piece": "ts",
+      "frame": 10,
+      "start_seconds": 0.8,
+      "advance": 1
+    },
+    {
+      "id": 407,
+      "piece": "▁at",
+      "frame": 11,
+      "start_seconds": 0.88,
+      "advance": 2
+    },
+    {
+      "id": 1991,
+      "piece": "▁hal",
+      "frame": 13,
+      "start_seconds": 1.04,
+      "advance": 2
+    },
+    {
+      "id": 7894,
+      "piece": "f",
+      "frame": 15,
+      "start_seconds": 1.2,
+      "advance": 2
+    },
+    {
+      "id": 4791,
+      "piece": "▁past",
+      "frame": 17,
+      "start_seconds": 1.36,
+      "advance": 3
+    },
+    {
+      "id": 1300,
+      "piece": "▁ten",
+      "frame": 20,
+      "start_seconds": 1.6,
+      "advance": 2
+    },
+    {
+      "id": 7883,
+      "piece": ".",
+      "frame": 25,
+      "start_seconds": 2.0,
+      "advance": 2
+    },
+    {
+      "id": 373,
+      "piece": "▁P",
+      "frame": 27,
+      "start_seconds": 2.16,
+      "advance": 1
+    },
+    {
+      "id": 337,
+      "piece": "le",
+      "frame": 28,
+      "start_seconds": 2.24,
+      "advance": 1
+    },
+    {
+      "id": 1605,
+      "piece": "ase",
+      "frame": 29,
+      "start_seconds": 2.32,
+      "advance": 2
+    },
+    {
+      "id": 1283,
+      "piece": "▁br",
+      "frame": 31,
+      "start_seconds": 2.48,
+      "advance": 1
+    },
+    {
+      "id": 381,
+      "piece": "ing",
+      "frame": 32,
+      "start_seconds": 2.56,
+      "advance": 2
+    },
+    {
+      "id": 279,
+      "piece": "▁a",
+      "frame": 34,
+      "start_seconds": 2.72,
+      "advance": 2
+    },
+    {
+      "id": 7033,
+      "piece": "▁note",
+      "frame": 36,
+      "start_seconds": 2.88,
+      "advance": 2
+    },
+    {
+      "id": 953,
+      "piece": "bo",
+      "frame": 38,
+      "start_seconds": 3.04,
+      "advance": 2
+    },
+    {
+      "id": 429,
+      "piece": "ok",
+      "frame": 40,
+      "start_seconds": 3.2,
+      "advance": 1
+    },
+    {
+      "id": 575,
+      "piece": "▁and",
+      "frame": 41,
+      "start_seconds": 3.2800000000000002,
+      "advance": 2
+    },
+    {
+      "id": 279,
+      "piece": "▁a",
+      "frame": 43,
+      "start_seconds": 3.44,
+      "advance": 2
+    },
+    {
+      "id": 2119,
+      "piece": "▁pen",
+      "frame": 45,
+      "start_seconds": 3.6,
+      "advance": 3
+    },
+    {
+      "id": 5070,
+      "piece": "cil",
+      "frame": 48,
+      "start_seconds": 3.84,
+      "advance": 3
+    },
+    {
+      "id": 7883,
+      "piece": ".",
+      "frame": 51,
+      "start_seconds": 4.08,
+      "advance": 1
+    }
+  ],
+  "stages": {
+    "samples": {
+      "file": "../blobs/a8228fa10e398539b934f3485955bf4f85fd4fb4a182371d31e6c3e749642dbc.f32.gz",
+      "shape": [
+        67115
+      ],
+      "sha256": "a8228fa10e398539b934f3485955bf4f85fd4fb4a182371d31e6c3e749642dbc"
+    },
+    "features": {
+      "file": "../blobs/75f5a95bb86c2b110812b4effde0f13ac92274cc2651eff053b42ef787058fd6.f32.gz",
+      "shape": [
+        1,
+        128,
+        420
+      ],
+      "sha256": "75f5a95bb86c2b110812b4effde0f13ac92274cc2651eff053b42ef787058fd6"
+    },
+    "encoder": {
+      "file": "../blobs/be70cbc92ca249cfebb4b886218c0eb3bebf8e749789c311fea793abdb5f9c43.f32.gz",
+      "shape": [
+        1,
+        1024,
+        53
+      ],
+      "sha256": "be70cbc92ca249cfebb4b886218c0eb3bebf8e749789c311fea793abdb5f9c43"
+    }
+  }
+}

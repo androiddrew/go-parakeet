@@ -1,0 +1,233 @@
+{
+  "runtime": "1.22.0",
+  "precision": "fp32",
+  "audio_sha256": "a828a12e55511073549cc0befaefcccfcd4073b60259037b5cca0be9f4cb56ce",
+  "feature_length": 586,
+  "encoded_length": 74,
+  "text": "One more time, one more time, the red boat passed the green boat, near the bridge.",
+  "tokens": [
+    {
+      "id": 452,
+      "piece": "▁O",
+      "frame": 0,
+      "start_seconds": 0.0,
+      "advance": 3
+    },
+    {
+      "id": 432,
+      "piece": "ne",
+      "frame": 3,
+      "start_seconds": 0.24,
+      "advance": 3
+    },
+    {
+      "id": 3486,
+      "piece": "▁more",
+      "frame": 6,
+      "start_seconds": 0.48,
+      "advance": 4
+    },
+    {
+      "id": 4407,
+      "piece": "▁time",
+      "frame": 10,
+      "start_seconds": 0.8,
+      "advance": 4
+    },
+    {
+      "id": 7877,
+      "piece": ",",
+      "frame": 14,
+      "start_seconds": 1.12,
+      "advance": 4
+    },
+    {
+      "id": 2678,
+      "piece": "▁one",
+      "frame": 18,
+      "start_seconds": 1.44,
+      "advance": 4
+    },
+    {
+      "id": 3486,
+      "piece": "▁more",
+      "frame": 22,
+      "start_seconds": 1.76,
+      "advance": 4
+    },
+    {
+      "id": 4407,
+      "piece": "▁time",
+      "frame": 26,
+      "start_seconds": 2.08,
+      "advance": 4
+    },
+    {
+      "id": 7877,
+      "piece": ",",
+      "frame": 30,
+      "start_seconds": 2.4,
+      "advance": 3
+    },
+    {
+      "id": 506,
+      "piece": "▁the",
+      "frame": 33,
+      "start_seconds": 2.64,
+      "advance": 3
+    },
+    {
+      "id": 4577,
+      "piece": "▁red",
+      "frame": 36,
+      "start_seconds": 2.88,
+      "advance": 4
+    },
+    {
+      "id": 1321,
+      "piece": "▁bo",
+      "frame": 40,
+      "start_seconds": 3.2,
+      "advance": 2
+    },
+    {
+      "id": 296,
+      "piece": "at",
+      "frame": 42,
+      "start_seconds": 3.36,
+      "advance": 1
+    },
+    {
+      "id": 2771,
+      "piece": "▁pass",
+      "frame": 46,
+      "start_seconds": 3.68,
+      "advance": 2
+    },
+    {
+      "id": 326,
+      "piece": "ed",
+      "frame": 48,
+      "start_seconds": 3.84,
+      "advance": 2
+    },
+    {
+      "id": 506,
+      "piece": "▁the",
+      "frame": 50,
+      "start_seconds": 4.0,
+      "advance": 2
+    },
+    {
+      "id": 2708,
+      "piece": "▁gre",
+      "frame": 52,
+      "start_seconds": 4.16,
+      "advance": 2
+    },
+    {
+      "id": 274,
+      "piece": "en",
+      "frame": 54,
+      "start_seconds": 4.32,
+      "advance": 2
+    },
+    {
+      "id": 1321,
+      "piece": "▁bo",
+      "frame": 56,
+      "start_seconds": 4.48,
+      "advance": 2
+    },
+    {
+      "id": 296,
+      "piece": "at",
+      "frame": 58,
+      "start_seconds": 4.64,
+      "advance": 1
+    },
+    {
+      "id": 7877,
+      "piece": ",",
+      "frame": 59,
+      "start_seconds": 4.72,
+      "advance": 2
+    },
+    {
+      "id": 409,
+      "piece": "▁ne",
+      "frame": 61,
+      "start_seconds": 4.88,
+      "advance": 1
+    },
+    {
+      "id": 287,
+      "piece": "ar",
+      "frame": 62,
+      "start_seconds": 4.96,
+      "advance": 2
+    },
+    {
+      "id": 506,
+      "piece": "▁the",
+      "frame": 64,
+      "start_seconds": 5.12,
+      "advance": 2
+    },
+    {
+      "id": 302,
+      "piece": "▁b",
+      "frame": 66,
+      "start_seconds": 5.28,
+      "advance": 1
+    },
+    {
+      "id": 2484,
+      "piece": "rid",
+      "frame": 67,
+      "start_seconds": 5.36,
+      "advance": 2
+    },
+    {
+      "id": 559,
+      "piece": "ge",
+      "frame": 69,
+      "start_seconds": 5.5200000000000005,
+      "advance": 2
+    },
+    {
+      "id": 7883,
+      "piece": ".",
+      "frame": 71,
+      "start_seconds": 5.68,
+      "advance": 1
+    }
+  ],
+  "stages": {
+    "samples": {
+      "file": "../blobs/b3d813cd4213b9f6d02d7031912b26f55c68401e45569ccf041ccf3b210503d9.f32.gz",
+      "shape": [
+        93611
+      ],
+      "sha256": "b3d813cd4213b9f6d02d7031912b26f55c68401e45569ccf041ccf3b210503d9"
+    },
+    "features": {
+      "file": "../blobs/e5d2f539cc951498ceca7754b52a9be3c95c8d767a29ac20b9337c9b9dfc372a.f32.gz",
+      "shape": [
+        1,
+        128,
+        586
+      ],
+      "sha256": "e5d2f539cc951498ceca7754b52a9be3c95c8d767a29ac20b9337c9b9dfc372a"
+    },
+    "encoder": {
+      "file": "../blobs/bced0a44896b8c5234d22e11e1d770ba34e1af6ee9a14d8f5f2da35b1fec7669.f32.gz",
+      "shape": [
+        1,
+        1024,
+        74
+      ],
+      "sha256": "bced0a44896b8c5234d22e11e1d770ba34e1af6ee9a14d8f5f2da35b1fec7669"
+    }
+  }
+}

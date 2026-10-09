@@ -1,0 +1,39 @@
+{
+  "version": "1.22.2",
+  "source": "https://github.com/microsoft/onnxruntime",
+  "commit": "5630b081cd25e4eccc7516a652ff956e51676794",
+  "platform": "Linux amd64, Ubuntu 24.04",
+  "compiler": "GCC 12.4.0",
+  "configuration": "Release, shared library, Ninja, default operators, upstream unit tests not built; go-parakeet acceptance tests run separately",
+  "cpu_library_sha256": "a2c82a5a3bad4865c2a397fd4c9e79ec82a8f5da0369d19a5ce88a89c5a628c4",
+  "cuda_library_sha256": "6d10486681350f5741077f3b0d76ec015b1ef4cc60dad1f7af587a730ac3e760",
+  "cuda_compiler": "12.0.140",
+  "cuda_architecture": "89",
+  "cudnn": "9.8.0.87",
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "driver": "595.91.07",
+  "benchmark_nvml_note": "Host NVML 595.99.02 mismatched the loaded kernel. Only the sampler preloaded an extracted NVML 595.91.07 library; inference used its normal loader environment.",
+  "nvml_source": "https://download.nvidia.com/XFree86/Linux-x86_64/595.91.07/NVIDIA-Linux-x86_64-595.91.07.run",
+  "nvml_archive_sha256": "ca23c88dd24b07a191644e1e11cfb7bcdd7537305749af40f980018b095e6313",
+  "post_reboot_validation": {
+    "date": "2026-10-09",
+    "driver_and_system_nvml": "595.99.02",
+    "runtime_version": "1.22.2",
+    "preserved_runtime_files_verified": 34,
+    "fixture": "testdata/native/fp32/clean-us.json",
+    "text_and_token_ids_match": true,
+    "placement": {
+      "preprocessor": {"cpu_nodes": 35},
+      "encoder": {"cuda_nodes": 1515, "cpu_nodes": 482},
+      "decoder": {"cuda_nodes": 23}
+    },
+    "placement_scope": "Both temporary inspection and retained inference sessions during a successful CUDA transcription",
+    "loader": "Preserved cuDNN 9.8 via LD_LIBRARY_PATH; no legacy NVML preload",
+    "local_probe_report": "artifacts/release/post-reboot-cuda.json",
+    "probe_report_sha256": "959537b1e81f5673c197d731d34760326ae49fa5b0b332dd54e3cc41857b3e83",
+    "local_placement_log": "artifacts/release/post-reboot-cuda.log",
+    "placement_log_sha256": "aa8326e2d791a6fc9ea1e5d9674d0801ccb61036525ae3af26a45aec2c0c7b79"
+  },
+  "reproduction": "tools/build-runtime.py; exact local build commands and timestamps remain in the build-report.json next to each development build",
+  "redistribution": "Native runtime, CUDA, cuDNN and NVML binaries are not included in this repository. These hashes identify tested local builds, not portable binary download artifacts."
+}
