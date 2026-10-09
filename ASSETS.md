@@ -1,47 +1,40 @@
 # Parakeet assets
 
-The supported export is
+The engine needs the pinned
 [istupakov/parakeet-tdt-0.6b-v3-onnx](https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/tree/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce)
-at revision `8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce`.
+export at revision `8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce`. Download each file from
+`https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/resolve/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce/<file>`.
 
-| File | Approximate size | Use |
+| File | Size | Use |
 |---|---:|---|
-| `config.json`, `vocab.txt`, `README.md` | 95 KB | Model contract, vocabulary, retained model card |
-| `nemo128.onnx` | 140 KB | 16 kHz audio to normalized 128-bin mel features |
+| `nemo128.onnx` | 140 KB | 16 kHz audio to normalized 128-bin mel features (both precisions) |
 | `encoder-model.onnx` | 42 MB | FP32 encoder graph |
 | `encoder-model.onnx.data` | 2.44 GB | FP32 encoder external weights; must be beside the graph |
 | `decoder_joint-model.onnx` | 73 MB | FP32 decoder and joint network |
-| `encoder-model.int8.onnx` | 652 MB | Quantized CPU encoder |
-| `decoder_joint-model.int8.onnx` | 18 MB | Quantized CPU decoder and joint network |
+| `encoder-model.int8.onnx` | 652 MB | INT8 encoder |
+| `decoder_joint-model.int8.onnx` | 18 MB | INT8 decoder and joint network |
+| `README.md` | — | Conversion model card; retain when redistributing |
 
-The model weights declare CC-BY-4.0. Retain the model card and source/conversion
-attribution when redistributing them. Preprocessing provenance and code licenses
-are documented in [THIRD_PARTY.md](THIRD_PARTY.md).
-
-## Download
-
-The optional developer utility uses Python 3.11+ (standard library only). Python
-is not needed by the inference library:
+Choose FP32 or INT8; you need `nemo128.onnx` plus that precision's encoder and
+decoder. [`SHA256SUMS`](SHA256SUMS) pins each file's exact contents. Its paths
+assume a `parakeet/` directory under an asset root:
 
 ```bash
-python3 tools/download-assets.py --root runtime-assets --precision fp32
-# CPU quantized assets, or use --precision all for both sets:
-python3 tools/download-assets.py --root runtime-assets --precision int8
+cd /path/to/asset-root && sha256sum -c --ignore-missing /path/to/go-parakeet/SHA256SUMS
 ```
 
-Downloads use immutable revision URLs and verify [SHA256SUMS](SHA256SUMS) before
-installing files. Existing files are verified, never silently replaced on a
-checksum mismatch. All assets reside in `runtime-assets/parakeet/`, outside Git.
-To download manually, use:
+`--ignore-missing` accommodates the precision you did not download; make sure
+every file you need is listed as `OK`.
 
-```
-https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/resolve/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce/<filename>
-```
+The vocabulary is embedded in the library (`internal/assets/vocab.txt`, the
+export's unmodified `vocab.txt`; see THIRD_PARTY.md). The model files are not in
+Git. Expected tensors are validated when `New` loads each graph; unsupported
+exports fail at load time.
 
-Verify from your asset root with `sha256sum -c --ignore-missing
-/path/to/go-parakeet/SHA256SUMS`. Ensure every file for the selected precision is
-present; `--ignore-missing` accommodates the unselected precision.
+The model weights declare CC-BY-4.0. Retain the model card and source/conversion
+attribution when redistributing them.
 
-Install ONNX Runtime independently. The binding requests C API 22; 1.22.2 is the
-release validation target. CUDA/cuDNN dependencies follow the native runtime
-build. Downloading a model does not install or configure that runtime.
+Supply an independently installed ONNX Runtime through ortenv by path or loader
+name. The current binding requests C API 22; native 1.22.0 and 1.22.2 are tested
+baselines, not exact-version restrictions. GPU use requires the dependencies
+appropriate to the selected native runtime.

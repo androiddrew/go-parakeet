@@ -26,17 +26,17 @@ type Engine struct {
 }
 
 // New validates assets and tensor metadata and eagerly creates the sessions.
-// Call Close on every successfully constructed engine.
+// Close is mandatory. Concurrent calls on one engine are serialized, including Close.
 func New(c Config) (_ *Engine, err error) {
 	if c.Provider != "" && c.Provider != CPU && c.Provider != CUDA {
-		return nil, fmt.Errorf("unsupported provider %q", c.Provider)
+		return nil, fmt.Errorf("unsupported provider %q; choose cpu or cuda", c.Provider)
 	}
 	if c.Threads < 0 || c.DeviceID < 0 {
 		return nil, errors.New("threads and device ID must be nonnegative")
 	}
 	for _, file := range []struct{ name, path string }{
 		{"PreprocessorPath", c.PreprocessorPath}, {"EncoderPath", c.EncoderPath},
-		{"DecoderPath", c.DecoderPath}, {"ConfigPath", c.ConfigPath}, {"VocabPath", c.VocabPath},
+		{"DecoderPath", c.DecoderPath},
 	} {
 		if file.path == "" {
 			return nil, fmt.Errorf("%s is required", file.name)
@@ -56,14 +56,11 @@ func New(c Config) (_ *Engine, err error) {
 		}
 	}()
 	start := time.Now()
-	if err = assets.LoadConfig(c.ConfigPath); err != nil {
-		return nil, err
-	}
 	e.vocab, err = assets.LoadVocabulary(c.VocabPath)
+	e.initialization.VocabSeconds = time.Since(start).Seconds()
 	if err != nil {
 		return nil, err
 	}
-	e.initialization.AssetsSeconds = time.Since(start).Seconds()
 	start = time.Now()
 	if err = ortruntime.Init(c.ORTLibrary); err != nil {
 		return nil, err
@@ -101,7 +98,8 @@ func New(c Config) (_ *Engine, err error) {
 	return e, nil
 }
 
-// Close releases all owned native objects and leaves the environment loaded.
+// Close releases all owned native objects. It is idempotent. The ONNX Runtime
+// environment stays initialized for other engines and later calls to New.
 func (e *Engine) Close() error {
 	e.mu.Lock()
 	defer e.mu.Unlock()
@@ -126,6 +124,7 @@ func (e *Engine) Close() error {
 	return err
 }
 
+// Initialization returns how long New spent in each loading stage.
 func (e *Engine) Initialization() Initialization { return e.initialization }
 
 // ModelInfo returns an owned metadata copy. Negative dimensions are dynamic.

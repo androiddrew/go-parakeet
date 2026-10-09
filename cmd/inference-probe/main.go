@@ -25,6 +25,7 @@ func run() (err error) {
 	device := flag.Int("device", 0, "CUDA device ID")
 	threads := flag.Int("threads", 1, "intra-op threads")
 	input := flag.String("input", "", "16 kHz mono little-endian float32 PCM file")
+	vocab := flag.String("vocab", "", "vocabulary file (default: embedded Parakeet TDT v3)")
 	verbose := flag.Bool("verbose", false, "ORT node-placement diagnostics to stderr")
 	metadata := flag.Bool("metadata-only", false, "inspect models without transcribing")
 	stream := flag.Bool("stream", false, "emit finalized chunk events and a final summary as JSON lines")
@@ -71,8 +72,7 @@ func run() (err error) {
 	e, err := parakeet.New(parakeet.Config{
 		ORTLibrary: *lib, PreprocessorPath: filepath.Join(*dir, "nemo128.onnx"),
 		EncoderPath: filepath.Join(*dir, "encoder-model"+suffix+".onnx"), DecoderPath: filepath.Join(*dir, "decoder_joint-model"+suffix+".onnx"),
-		ConfigPath: filepath.Join(*dir, "config.json"), VocabPath: filepath.Join(*dir, "vocab.txt"),
-		Provider: parakeet.Provider(*provider), DeviceID: *device, Threads: *threads, Verbose: *verbose,
+		VocabPath: *vocab, Provider: parakeet.Provider(*provider), DeviceID: *device, Threads: *threads, Verbose: *verbose,
 	})
 	if err != nil {
 		return err

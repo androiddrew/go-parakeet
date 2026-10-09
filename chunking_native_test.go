@@ -79,7 +79,7 @@ func testChunkedInference(t *testing.T, c Config) {
 	}
 	if os.Getenv("PARAKEET_TEST_PRECISION") == "int8" {
 		// The quantized encoder omits a phrase in the 8-second stress windows
-		// themselves. Gate accuracy on longer contexts; see VALIDATION.md.
+		// themselves. Gate accuracy on longer contexts; see the README.
 		configs[0].window, configs[0].overlap = 16*time.Second, 4*time.Second
 		configs[3].window, configs[3].overlap = 10400*time.Millisecond, 4*time.Second
 	}

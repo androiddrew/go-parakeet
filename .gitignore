@@ -2,6 +2,3 @@
 /runtime-assets/
 /artifacts/
 /inference-probe
-/inference-bench
-__pycache__/
-/.venv/

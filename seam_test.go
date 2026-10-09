@@ -19,10 +19,11 @@ func tokenText(tokens []Token) string {
 
 func TestSeamAlignment(t *testing.T) {
 	for _, test := range []struct {
-		name         string
-		left, right  []Token
-		boundary     int
-		want, method string
+		name        string
+		left, right []Token
+		boundary    int
+		want        string
+		method      Seam
 	}{
 		{"overlap", []Token{wordToken("open", 98), wordToken("the", 105), wordToken("blue", 110), wordToken("door.", 116)}, []Token{wordToken("the", 106), wordToken("blue", 111), wordToken("door", 117), wordToken("now", 125)}, 110, "open the blue door now", "aligned"},
 		{"repetition", []Token{wordToken("very,", 100), wordToken("very", 106), wordToken("important.", 112)}, []Token{wordToken("very", 101), wordToken("very", 107), wordToken("important", 113), wordToken("today", 125)}, 108, "very, very important today", "aligned"},

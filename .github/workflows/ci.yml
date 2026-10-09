@@ -9,60 +9,62 @@ on:
 permissions:
   contents: read
 
+env:
+  ORT_VERSION: 1.22.0
+  ORT_SHA256: 8344d55f93d5bc5021ce342db50f62079daf39aaafb5d311a451846228be49b3
+  PARAKEET_RELEASE: https://huggingface.co/istupakov/parakeet-tdt-0.6b-v3-onnx/resolve/8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce
+
 jobs:
-  unit:
+  test:
+    name: Test (Go ${{ matrix.go }})
     runs-on: ubuntu-24.04
+    timeout-minutes: 60
     strategy:
       fail-fast: false
       matrix:
-        go: ["1.25.x", "stable"]
+        go: ["1.25.x", "stable"] # declared minimum and latest
+    env:
+      PARAKEET_TEST_PRECISION: int8 # the FP32 encoder weights are 2.4 GB
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
         with:
           go-version: ${{ matrix.go }}
-      - name: Formatting
-        run: test -z "$(gofmt -l .)"
-      - run: go vet ./...
-      - run: go test -race ./...
-      - run: go build ./cmd/inference-probe
-      - run: go build ./cmd/inference-bench
-
-  native:
-    name: Native CPU (ORT 1.22.2, INT8)
-    runs-on: ubuntu-24.04
-    timeout-minutes: 60
-    env:
-      PARAKEET_TEST_PRECISION: int8
-      PARAKEET_TEST_EXPECT_ORT: 1.22.2
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
-        with:
-          go-version: "1.25.x"
-      - uses: actions/cache@v4
-        id: ort
-        with:
-          path: |
-            ~/.cache/parakeet-ort/Release/libonnxruntime.so*
-            ~/.cache/parakeet-ort/build-report.json
-          key: ort-1.22.2-linux-x64-gcc12-${{ hashFiles('tools/build-runtime.py') }}
-      - name: Build pinned CPU runtime
-        if: steps.ort.outputs.cache-hit != 'true'
+      - name: Install ONNX Runtime
         run: |
-          sudo apt-get update
-          sudo apt-get install -y g++-12 cmake ninja-build git patch python3
-          python3 tools/build-runtime.py --source "$RUNNER_TEMP/ort-source" \
-            --build "$HOME/.cache/parakeet-ort" --jobs 2 \
-            --cc /usr/bin/gcc-12 --cxx /usr/bin/g++-12
-      - uses: actions/cache@v4
+          curl -fsSL -o ort.tgz "https://github.com/microsoft/onnxruntime/releases/download/v${ORT_VERSION}/onnxruntime-linux-x64-${ORT_VERSION}.tgz"
+          echo "${ORT_SHA256}  ort.tgz" | sha256sum -c -
+          tar -xzf ort.tgz -C "$RUNNER_TEMP"
+          echo "PARAKEET_TEST_ORT=$RUNNER_TEMP/onnxruntime-linux-x64-${ORT_VERSION}/lib/libonnxruntime.so.${ORT_VERSION}" >> "$GITHUB_ENV"
+      - name: Cache Parakeet INT8 model
+        id: cache
+        uses: actions/cache@v6
         with:
           path: ~/parakeet-assets
           key: parakeet-int8-${{ hashFiles('SHA256SUMS') }}
-      - name: Provision and verify INT8 assets
-        run: python3 tools/download-assets.py --root "$HOME/parakeet-assets" --precision int8
-      - name: Native parity, natural speech, streaming and lifecycle checks
+      - name: Download Parakeet INT8 model
+        if: steps.cache.outputs.cache-hit != 'true'
         run: |
-          PARAKEET_TEST_ORT="$HOME/.cache/parakeet-ort/Release/libonnxruntime.so.1.22.2" \
-          PARAKEET_TEST_ASSETS="$HOME/parakeet-assets/parakeet" \
-            go test -race -count=1 -timeout=15m -v ./...
+          mkdir -p ~/parakeet-assets/parakeet
+          for f in nemo128.onnx encoder-model.int8.onnx decoder_joint-model.int8.onnx; do
+            curl -fsSL -o ~/parakeet-assets/parakeet/$f "$PARAKEET_RELEASE/$f"
+          done
+      - name: Verify Parakeet files
+        run: |
+          (cd ~/parakeet-assets && sha256sum -c --ignore-missing "$GITHUB_WORKSPACE/SHA256SUMS")
+          test "$(cd ~/parakeet-assets && sha256sum -c --ignore-missing "$GITHUB_WORKSPACE/SHA256SUMS" | wc -l)" -eq 3
+          echo "PARAKEET_TEST_ASSETS=$HOME/parakeet-assets/parakeet" >> "$GITHUB_ENV"
+      - run: go vet ./...
+      - run: go test -race -timeout=30m ./...
+
+  lint:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version: stable
+      - name: gofmt
+        run: test -z "$(gofmt -l .)" || { gofmt -l .; exit 1; }
+      - run: go run honnef.co/go/tools/cmd/staticcheck@v0.8.1 ./...
+      - run: go run golang.org/x/vuln/cmd/govulncheck@v1.8.0 ./...

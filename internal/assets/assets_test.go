@@ -43,6 +43,16 @@ func TestVocabularyValidation(t *testing.T) {
 	}
 }
 
+func TestEmbeddedVocabulary(t *testing.T) {
+	v, err := LoadVocabulary("")
+	if err != nil {
+		t.Fatal(err)
+	}
+	if len(v.Pieces) != VocabSize || v.Blank != VocabSize-1 || v.Pieces[v.Blank] != "<blk>" {
+		t.Fatal("incorrect embedded vocabulary")
+	}
+}
+
 func TestTextAssembly(t *testing.T) {
 	for _, test := range []struct {
 		pieces []string

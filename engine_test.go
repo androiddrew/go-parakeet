@@ -18,8 +18,8 @@ func TestAudioValidation(t *testing.T) {
 		{Request{SampleRate: 16000}, ErrInvalidAudio},
 		{Request{Samples: make([]float32, 319), SampleRate: 16000}, ErrInvalidAudio},
 		{Request{Samples: make([]float32, 320), SampleRate: 24000}, ErrInvalidAudio},
-		{Request{Samples: make([]float32, MaxSamples+1), SampleRate: 16000, Chunking: ChunkOptions{SinglePass: true}}, ErrAudioTooLong},
-		{Request{Samples: make([]float32, MaxSamples+1), SampleRate: 16000}, nil},
+		{Request{Samples: make([]float32, MaxWindowSamples+1), SampleRate: 16000, Chunking: ChunkOptions{SinglePass: true}}, ErrAudioTooLong},
+		{Request{Samples: make([]float32, MaxWindowSamples+1), SampleRate: 16000}, nil},
 	} {
 		if err := validateAudio(context.Background(), test.request); !errors.Is(err, test.want) {
 			t.Fatalf("%v, wanted %v", err, test.want)

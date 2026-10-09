@@ -1,10 +1,12 @@
-// Package assets validates the supported Parakeet export's configuration and vocabulary.
+// Package assets validates the supported Parakeet export's vocabulary.
 package assets
 
 import (
 	"bufio"
-	"encoding/json"
+	"bytes"
+	_ "embed"
 	"fmt"
+	"io"
 	"os"
 	"strconv"
 	"strings"
@@ -14,7 +16,6 @@ import (
 
 const (
 	Features    = 128
-	Subsampling = 8
 	EncoderDim  = 1024
 	StateLayers = 2
 	StateDim    = 640
@@ -28,34 +29,31 @@ type Vocabulary struct {
 	Blank  int
 }
 
-func LoadConfig(path string) error {
-	raw, err := os.ReadFile(path)
-	if err != nil {
-		return fmt.Errorf("read model config: %w", err)
-	}
-	var c struct {
-		ModelType   string `json:"model_type"`
-		Features    int    `json:"features_size"`
-		Subsampling int    `json:"subsampling_factor"`
-	}
-	if err := json.Unmarshal(raw, &c); err != nil {
-		return fmt.Errorf("parse model config: %w", err)
-	}
-	if c.ModelType != "nemo-conformer-tdt" || c.Features != Features || c.Subsampling != Subsampling {
-		return fmt.Errorf("unsupported model config: require nemo-conformer-tdt, 128 features, subsampling 8")
-	}
-	return nil
-}
+// defaultVocab is vocab.txt from istupakov/parakeet-tdt-0.6b-v3-onnx at
+// revision 8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce (CC-BY-4.0), converted
+// from NVIDIA Parakeet TDT 0.6B v3. See THIRD_PARTY.md.
+//
+//go:embed vocab.txt
+var defaultVocab []byte
 
+// LoadVocabulary reads a SentencePiece "piece id" file. An empty path selects
+// the embedded Parakeet TDT v3 vocabulary.
 func LoadVocabulary(path string) (Vocabulary, error) {
+	if path == "" {
+		return parseVocabulary(bytes.NewReader(defaultVocab))
+	}
 	f, err := os.Open(path)
 	if err != nil {
 		return Vocabulary{}, fmt.Errorf("open vocabulary: %w", err)
 	}
 	defer f.Close()
+	return parseVocabulary(f)
+}
+
+func parseVocabulary(r io.Reader) (Vocabulary, error) {
 	v := Vocabulary{Pieces: make([]string, VocabSize), Blank: -1}
 	seen := make(map[string]bool)
-	s := bufio.NewScanner(f)
+	s := bufio.NewScanner(r)
 	count := 0
 	for s.Scan() {
 		line := s.Text()

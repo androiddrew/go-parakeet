@@ -12,7 +12,7 @@ import (
 	"github.com/androiddrew/go-parakeet/internal/decoder"
 )
 
-// TranscribeStream delivers finalized, caller-owned chunks synchronously. Text
+// TranscribeStream delivers finalized, caller-owned chunks to yield, in order. Text
 // is final and concatenates verbatim to Transcribe's result. Empty text chunks
 // can report progress through silence. The library retains no aggregate output.
 //
@@ -23,13 +23,13 @@ import (
 // engine's inference methods or Close. Requests and Close stay serialized during callbacks.
 // Native Run cannot be interrupted mid-call. The complete input audio is supplied
 // up front and must remain unmodified until this method returns.
-func (e *Engine) TranscribeStream(ctx context.Context, request Request, emit func(ChunkResult) error) (Summary, error) {
+func (e *Engine) TranscribeStream(ctx context.Context, request Request, yield func(ChunkResult) error) (Summary, error) {
 	e.mu.Lock()
 	defer e.mu.Unlock()
 	if e.closed || e.decoder == nil {
 		return Summary{}, ErrClosed
 	}
-	return streamTranscript(ctx, request, emit, e.runWindow)
+	return streamTranscript(ctx, request, yield, e.runWindow)
 }
 
 type windowRunner func(context.Context, []float32, int) ([]Token, Timings, error)
@@ -80,9 +80,9 @@ func (t *Timings) add(other Timings) {
 	t.AssemblySeconds += other.AssemblySeconds
 }
 
-func streamTranscript(ctx context.Context, request Request, emit func(ChunkResult) error, run windowRunner) (Summary, error) {
+func streamTranscript(ctx context.Context, request Request, yield func(ChunkResult) error, run windowRunner) (Summary, error) {
 	var summary Summary
-	if emit == nil {
+	if yield == nil {
 		return summary, errors.New("transcription callback is required")
 	}
 	if err := ctx.Err(); err != nil {
@@ -119,7 +119,7 @@ func streamTranscript(ctx context.Context, request Request, emit func(ChunkResul
 			return summary, err
 		}
 		start = time.Now()
-		method := ""
+		var method Seam
 		if index == 0 {
 			pending = tokens
 		} else {
@@ -172,7 +172,7 @@ func streamTranscript(ctx context.Context, request Request, emit func(ChunkResul
 		if err := ctx.Err(); err != nil {
 			return summary, err
 		}
-		if err := emit(chunk); err != nil {
+		if err := yield(chunk); err != nil {
 			return summary, fmt.Errorf("deliver chunk %d: %w", index, err)
 		}
 		summary.DeliveredChunks++

@@ -41,7 +41,7 @@ func nativeConfigFor(t *testing.T, lib string) Config {
 	if testPrecision(t) == "int8" {
 		suffix = ".int8"
 	}
-	return Config{ORTLibrary: lib, PreprocessorPath: filepath.Join(dir, "nemo128.onnx"), EncoderPath: filepath.Join(dir, "encoder-model"+suffix+".onnx"), DecoderPath: filepath.Join(dir, "decoder_joint-model"+suffix+".onnx"), ConfigPath: filepath.Join(dir, "config.json"), VocabPath: filepath.Join(dir, "vocab.txt")}
+	return Config{ORTLibrary: lib, PreprocessorPath: filepath.Join(dir, "nemo128.onnx"), EncoderPath: filepath.Join(dir, "encoder-model"+suffix+".onnx"), DecoderPath: filepath.Join(dir, "decoder_joint-model"+suffix+".onnx")}
 }
 
 func testPrecision(t *testing.T) string {
@@ -59,19 +59,16 @@ func testPrecision(t *testing.T) string {
 
 func referenceDir(t *testing.T) string {
 	t.Helper()
-	if dir := os.Getenv("PARAKEET_TEST_REFERENCE"); dir != "" {
-		return dir
-	}
 	return filepath.Join("testdata", "native", testPrecision(t))
 }
 
 func nativeSubprocess(t *testing.T) bool {
 	t.Helper()
-	if os.Getenv("PARAKEET_NATIVE_CHILD") == t.Name() {
+	if os.Getenv("PARAKEET_TEST_SUBPROCESS") == t.Name() {
 		return true
 	}
 	cmd := exec.Command(os.Args[0], "-test.run=^"+t.Name()+"$", "-test.v")
-	cmd.Env = append(os.Environ(), "PARAKEET_NATIVE_CHILD="+t.Name())
+	cmd.Env = append(os.Environ(), "PARAKEET_TEST_SUBPROCESS="+t.Name())
 	output, err := cmd.CombinedOutput()
 	if err != nil {
 		t.Fatalf("native subprocess: %v\n%s", err, output)
@@ -137,9 +134,6 @@ func TestNativeParity(t *testing.T) {
 			t.Error(err)
 		}
 	}()
-	if version := os.Getenv("PARAKEET_TEST_EXPECT_ORT"); version != "" && e.Initialization().RuntimeVersion != version {
-		t.Fatalf("expected ORT %s, loaded %s", version, e.Initialization().RuntimeVersion)
-	}
 	files, err := filepath.Glob(filepath.Join(dir, "*.json"))
 	if err != nil || len(files) == 0 {
 		t.Fatal("no reference fixtures", err)

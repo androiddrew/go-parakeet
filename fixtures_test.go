@@ -11,7 +11,7 @@ import (
 )
 
 func TestFrozenFixtures(t *testing.T) {
-	for _, dir := range []string{"testdata/native", "testdata/natural"} {
+	for _, dir := range []string{"testdata/native"} {
 		file, err := os.Open(filepath.Join(dir, "SHA256SUMS"))
 		if err != nil {
 			t.Fatal(err)

@@ -94,7 +94,7 @@ func TestChunkOptions(t *testing.T) {
 			t.Fatalf("%+v: %v", bad, err)
 		}
 	}
-	p, err := planAudio(MaxSamples+1, ChunkOptions{})
+	p, err := planAudio(MaxWindowSamples+1, ChunkOptions{})
 	if err != nil || p.Size != 30*SampleRate || p.Overlap != 4*SampleRate || p.Count() < 2 {
 		t.Fatalf("%+v %v", p, err)
 	}
@@ -102,7 +102,7 @@ func TestChunkOptions(t *testing.T) {
 	if err != nil || p.Size != 62*chunking.FrameSamples || p.Overlap != 15*chunking.FrameSamples {
 		t.Fatalf("rounding: %+v %v", p, err)
 	}
-	if _, err := planAudio(MaxSamples+1, ChunkOptions{SinglePass: true}); !errors.Is(err, ErrAudioTooLong) {
+	if _, err := planAudio(MaxWindowSamples+1, ChunkOptions{SinglePass: true}); !errors.Is(err, ErrAudioTooLong) {
 		t.Fatal(err)
 	}
 }

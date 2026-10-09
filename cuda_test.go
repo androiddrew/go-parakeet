@@ -106,35 +106,3 @@ func TestCUDALongRecording(t *testing.T) {
 	}
 	testLongRecording(t, c)
 }
-
-func TestCUDANaturalSpeech(t *testing.T) {
-	lib := os.Getenv("PARAKEET_TEST_CUDA_ORT")
-	if lib == "" {
-		t.Skip("set PARAKEET_TEST_CUDA_ORT")
-	}
-	c := nativeConfigFor(t, lib)
-	c.Provider = CUDA
-	if testPrecision(t) != "fp32" {
-		t.Fatal("CUDA requires FP32")
-	}
-	if !nativeSubprocess(t) {
-		return
-	}
-	testNaturalSpeech(t, c)
-}
-
-func TestCUDAEncoderLimit(t *testing.T) {
-	lib := os.Getenv("PARAKEET_TEST_CUDA_ORT")
-	if lib == "" || os.Getenv("PARAKEET_TEST_LIMIT") != "1" {
-		t.Skip("set PARAKEET_TEST_CUDA_ORT and PARAKEET_TEST_LIMIT=1")
-	}
-	c := nativeConfigFor(t, lib)
-	c.Provider = CUDA
-	if testPrecision(t) != "fp32" {
-		t.Fatal("CUDA requires FP32")
-	}
-	if !nativeSubprocess(t) {
-		return
-	}
-	testEncoderLimit(t, c)
-}

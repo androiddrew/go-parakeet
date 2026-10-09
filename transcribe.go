@@ -32,7 +32,7 @@ func validateAudio(ctx context.Context, request Request) error {
 		return fmt.Errorf("%w: require at least 320 samples (20 ms)", ErrInvalidAudio)
 	}
 	if request.Chunking.SinglePass && len(request.Samples) > MaxWindowSamples {
-		return fmt.Errorf("%w: maximum %d samples", ErrAudioTooLong, MaxSamples)
+		return fmt.Errorf("%w: maximum %d samples", ErrAudioTooLong, MaxWindowSamples)
 	}
 	for i, sample := range request.Samples {
 		if i%16384 == 0 {
@@ -143,7 +143,7 @@ func runSequence(session *ort.DynamicAdvancedSession, data []float32, shape ort.
 		return sequence{}, errors.New("expected one int64 sequence length")
 	}
 	dims := values.GetShape()
-	if len(dims) != 3 || dims[0] != 1 || dims[1] != int64(channels) || dims[2] <= 0 || dims[2] > int64(MaxSamples) {
+	if len(dims) != 3 || dims[0] != 1 || dims[1] != int64(channels) || dims[2] <= 0 || dims[2] > int64(MaxWindowSamples) {
 		return sequence{}, fmt.Errorf("invalid sequence shape %v", dims)
 	}
 	count := valid.GetData()[0]

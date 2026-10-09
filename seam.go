@@ -121,7 +121,7 @@ func align(left, right []seamWord) []wordMatch {
 // reconcile owns the unresolved left tail and a complete right window. It
 // chooses a word-aligned splice near the acoustic boundary. Ambiguous/missing
 // matches fall back to timestamp ownership rather than lexical deduplication.
-func reconcile(left, right []Token, from, to, boundary int) ([]Token, string) {
+func reconcile(left, right []Token, from, to, boundary int) ([]Token, Seam) {
 	lw, rw := words(left), words(right)
 	lc, rc := candidates(lw, from, to, boundary), candidates(rw, from, to, boundary)
 	matches := align(lc, rc)
@@ -140,7 +140,7 @@ func reconcile(left, right []Token, from, to, boundary int) ([]Token, string) {
 		confident = utf8.RuneCountInString(m.left.key) >= 4 && distance(m.left.frame, m.right.frame) <= 2 && occurrences(lc) == 1 && occurrences(rc) == 1
 	}
 	leftEnd, rightStart := 0, len(right)
-	method := "timestamp"
+	method := SeamTimestamp
 	if confident {
 		best, bestDistance := matches[0], int(^uint(0)>>1)
 		for _, m := range matches {
@@ -149,7 +149,7 @@ func reconcile(left, right []Token, from, to, boundary int) ([]Token, string) {
 			}
 		}
 		leftEnd, rightStart = best.left.end, best.right.end
-		method = "aligned"
+		method = SeamAligned
 	} else if len(left) == 0 || len(right) == 0 || left[len(left)-1].Frame+2 < right[0].Frame {
 		// Disjoint emission spans need no midpoint cut: doing so can discard
 		// speech recovered by the other hypothesis inside an otherwise empty
