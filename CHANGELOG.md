@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-10-09
+
 ### Added
 
 - Parakeet TDT 0.6B v3 inference with pinned ONNX assets, CPU FP32/INT8 and CUDA FP32.
