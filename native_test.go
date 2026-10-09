@@ -175,6 +175,9 @@ func TestNativeParity(t *testing.T) {
 			if err != nil {
 				t.Fatal(err)
 			}
+			if testPrecision(t) == "int8" {
+				t.Log("INT8 baselines come from an AVX2 CPU; quantized kernels differ by CPU feature set (see testdata/README.md)")
+			}
 			compareFloats(t, encoded.data, stage("encoder"))
 			if encoded.length != reference.EncodedLength {
 				t.Fatal("encoder length mismatch")

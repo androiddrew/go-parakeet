@@ -23,8 +23,6 @@ jobs:
       fail-fast: false
       matrix:
         go: ["1.25.x", "stable"] # declared minimum and latest
-    env:
-      PARAKEET_TEST_PRECISION: int8 # the FP32 encoder weights are 2.4 GB
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-go@v7
@@ -36,23 +34,25 @@ jobs:
           echo "${ORT_SHA256}  ort.tgz" | sha256sum -c -
           tar -xzf ort.tgz -C "$RUNNER_TEMP"
           echo "PARAKEET_TEST_ORT=$RUNNER_TEMP/onnxruntime-linux-x64-${ORT_VERSION}/lib/libonnxruntime.so.${ORT_VERSION}" >> "$GITHUB_ENV"
-      - name: Cache Parakeet INT8 model
+      # FP32, not INT8: quantized kernels differ by CPU (e.g. AVX2 vs AVX-512
+      # VNNI runners), so INT8 tensor parity depends on the runner's hardware.
+      - name: Cache Parakeet FP32 model
         id: cache
         uses: actions/cache@v6
         with:
           path: ~/parakeet-assets
-          key: parakeet-int8-${{ hashFiles('SHA256SUMS') }}
-      - name: Download Parakeet INT8 model
+          key: parakeet-fp32-${{ hashFiles('SHA256SUMS') }}
+      - name: Download Parakeet FP32 model
         if: steps.cache.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/parakeet-assets/parakeet
-          for f in nemo128.onnx encoder-model.int8.onnx decoder_joint-model.int8.onnx; do
+          for f in nemo128.onnx encoder-model.onnx encoder-model.onnx.data decoder_joint-model.onnx; do
             curl -fsSL -o ~/parakeet-assets/parakeet/$f "$PARAKEET_RELEASE/$f"
           done
       - name: Verify Parakeet files
         run: |
           (cd ~/parakeet-assets && sha256sum -c --ignore-missing "$GITHUB_WORKSPACE/SHA256SUMS")
-          test "$(cd ~/parakeet-assets && sha256sum -c --ignore-missing "$GITHUB_WORKSPACE/SHA256SUMS" | wc -l)" -eq 3
+          test "$(cd ~/parakeet-assets && sha256sum -c --ignore-missing "$GITHUB_WORKSPACE/SHA256SUMS" | wc -l)" -eq 4
           echo "PARAKEET_TEST_ASSETS=$HOME/parakeet-assets/parakeet" >> "$GITHUB_ENV"
       - run: go vet ./...
       - run: go test -race -timeout=30m ./...

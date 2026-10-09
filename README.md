@@ -220,7 +220,10 @@ in a fresh subprocess because ortenv keeps the environment loaded until process
 exit. The fixtures in `testdata/` hold the exact audio, tensors and token
 decisions expected from a Python reference; see
 [testdata/README.md](testdata/README.md). CI runs everything against the
-official ONNX Runtime 1.22.0 release with INT8 assets.
+official ONNX Runtime 1.22.0 release with FP32 assets. INT8 parity baselines
+were recorded on an AVX2 CPU; quantized kernels differ by CPU feature set, so
+INT8 tensor parity can fail on other hardware (for example AVX-512 VNNI) even
+when transcription is unaffected.
 
 `PARAKEET_TEST_LONG=1` additionally transcribes a recording over 300 seconds.
 CUDA tests need both the `cuda` build tag and `PARAKEET_TEST_CUDA_ORT` (FP32):
